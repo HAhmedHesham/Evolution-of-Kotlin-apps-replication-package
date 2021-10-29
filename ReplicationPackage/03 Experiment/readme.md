@@ -15,7 +15,7 @@ Within the index.html the following script must be added in the ``<head>`` tag:
 
 ``<script src="/node_modules/perfume.js/dist/perfume.umd.min.js"></script>``
     
-    ``<script>
+    <script>
         perfumeResults = [];
         loadtimeResult = [];
         function xml_http_post(url, data, callback) {var req = new XMLHttpRequest(); req.open("POST", url, true); 
@@ -29,4 +29,4 @@ Within the index.html the following script must be added in the ``<head>`` tag:
         setTimeout(function(){ objectToSend = "{'perfumeResults':"+JSON.stringify(perfumeResults)+JSON.stringify(loadtimeResult)+"}"; 
         xml_http_post("http://192.168.0.243:8080/",objectToSend,null); },5000); };
         window.addEventListener ?window.addEventListener("load",load_log, true) : window.attachEvent && window.attachEvent("onload", load_log);
-    </script>``
+    </script>
