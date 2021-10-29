@@ -14,6 +14,7 @@ Each URL must be of the following syntax: ``Local-IP-Address:PortNumber/path/to/
 Within the index.html the following script must be added in the ``<head>`` tag:
 
 ``<script src="/node_modules/perfume.js/dist/perfume.umd.min.js"></script>``
+    
     ``<script>
         perfumeResults = [];
         loadtimeResult = [];
