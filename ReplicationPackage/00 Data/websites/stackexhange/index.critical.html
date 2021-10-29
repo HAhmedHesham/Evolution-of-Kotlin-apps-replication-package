@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)https://stackexchange.com/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="globalsign-domain-verification" content="ZjrAvK_A6dWV7rk42ZzORiOAGOfHsDCi8viChOIoKF">
+    <script src="/node_modules/perfume.js/dist/perfume.umd.min.js"></script>
+    <script>
+        perfumeResults = [];
+        loadtimeResult = [];
+        function xml_http_post(url, data, callback) {var req = new XMLHttpRequest(); req.open("POST", url, true); 
+        req.send(data);} 
+        const perfume = new Perfume({  analyticsTracker: (options) => {    const { metricName, data, eventProperties, navigatorInformation } = options; 
+        perfumeResults.push(options); } });
+        function load_log() {
+        // calculate loadTime based on diff between when DOM is loaded and navigation was started
+        var loadTime = window.performance.timing.domContentLoadedEventEnd- window.performance.timing.navigationStart;
+        loadtimeResult.push({'loadTime': loadTime})
+        setTimeout(function(){ objectToSend = "{'perfumeResults':"+JSON.stringify(perfumeResults)+JSON.stringify(loadtimeResult)+"}"; 
+        xml_http_post("http://192.168.0.243:8080/",objectToSend,null); },5000); };
+        window.addEventListener ?window.addEventListener("load",load_log, true) : window.attachEvent && window.attachEvent("onload", load_log);
+    </script>
+    <title>
+    Hot Questions - Stack Exchange
+</title>
+<style>.svg-icon{vertical-align:bottom}.svg-icon:not(.native) *{fill:currentColor}.s-input{-webkit-appearance:none;width:100%;margin:0;padding:.6em .7em;border:1px solid var(--bc-darker);border-radius:3px;background-color:var(--white);color:var(--fc-dark);font-size:13px;font-family:inherit;scrollbar-color:var(--scrollbar) transparent}@supports (-webkit-overflow-scrolling:touch){.s-input{font-size:16px;padding:.36em .55em}.s-input::-webkit-input-placeholder{line-height:normal!important}}.s-input::-webkit-input-placeholder{color:var(--black-200)}.s-input::-webkit-scrollbar{width:10px;height:10px;background-color:transparent}.s-input::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.s-input::-webkit-scrollbar-thumb{border-radius:10px;background-color:var(--scrollbar)}.s-input::-webkit-scrollbar-corner{background-color:transparent;border-color:transparent}.s-input::-webkit-contacts-auto-fill-button{background-color:var(--black)}.s-input:-webkit-autofill{border-color:var(--blue-300);-webkit-text-fill-color:var(--black);-webkit-box-shadow:0 0 0 1000px var(--theme-secondary-050) inset}.s-input.s-input__search{padding-left:32px}.s-input-icon{position:absolute;top:50%;right:.7em;margin-top:-9px}.s-input-icon.s-input-icon__search{right:auto;left:.7em;color:var(--black-200)}.s-popover{display:none;position:absolute;max-width:24rem;padding:12px;z-index:2000;border-radius:5px;border:1px solid var(--bc-medium);background-color:var(--white);box-shadow:var(--bs-md);color:var(--fc-dark);font-size:13px;min-width:12rem;width:100%}.s-popover--arrow,.s-popover--arrow:after,.s-popover--arrow:before{position:absolute;display:block;width:12px;height:12px;z-index:-1}.s-popover--arrow{color:var(--white)}.s-popover--arrow:before{content:'';transform:rotate(45deg)}.s-popover--arrow:after{content:'';transform:rotate(45deg);border-radius:1.5px;background:currentColor}.s-spinner{position:relative;width:24px;height:24px;text-align:left}.s-spinner:after,.s-spinner:before{content:'';position:absolute;width:100%;height:100%;border:3px solid currentColor;border-radius:50%}.s-spinner:before{opacity:.25;transform:rotate(90deg)}.s-spinner:after{border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;animation:s-spinner-rotate .9s infinite cubic-bezier(.5,.1,.5,.9)}.s-spinner.s-spinner__sm{width:16px;height:16px}.s-spinner.s-spinner__sm:after,.s-spinner.s-spinner__sm:before{border-width:2px}@media not all and (min-resolution:.001dpcm){@supports (-webkit-appearance:none) and (stroke-color:transparent){.s-spinner,.s-spinner:after,.s-spinner:before{box-shadow:0 0 0 2px transparent}}}@keyframes s-spinner-rotate{from{transform:rotate(0)}to{transform:rotate(360deg)}}body{--ff-sans:-apple-system,BlinkMacSystemFont,"Segoe UI","Liberation Sans",sans-serif;--ff-serif:Georgia,Cambria,"Times New Roman",Times,serif;--ff-mono:ui-monospace,"Cascadia Mono","Segoe UI Mono","Liberation Mono",Menlo,Monaco,Consolas,monospace;--theme-body-font-family:var(--ff-sans)}body{--theme-body-font-color:var(--black-800);--theme-link-color:var(--theme-secondary-400);--theme-link-color-hover:var(--theme-secondary-350);--theme-link-color-visited:var(--theme-secondary-500);--theme-button-color:var(--theme-secondary-400);--theme-button-background-color:transparent;--theme-button-hover-color:var(--theme-secondary-500);--theme-button-hover-background-color:var(--theme-secondary-050);--theme-button-active-background-color:var(--theme-secondary-100);--theme-button-selected-color:var(--theme-secondary-900);--theme-button-selected-background-color:var(--theme-secondary-150);--theme-button-primary-color:var(--white);--theme-button-primary-background-color:var(--theme-secondary-400);--theme-button-primary-hover-color:var(--white);--theme-button-primary-hover-background-color:var(--theme-secondary-500);--theme-button-primary-active-background-color:var(--theme-secondary-700);--theme-button-primary-selected-color:var(--white);--theme-button-primary-selected-background-color:var(--theme-secondary-700);--theme-button-primary-number-color:var(--theme-secondary-900);--theme-button-filled-color:var(--theme-secondary-700);--theme-button-filled-background-color:var(--theme-secondary-050);--theme-button-filled-border-color:var(--theme-secondary-350);--theme-button-filled-hover-color:var(--theme-secondary-800);--theme-button-filled-hover-background-color:var(--theme-secondary-100);--theme-button-filled-active-background-color:var(--theme-secondary-150);--theme-button-filled-active-border-color:var(--theme-secondary-350);--theme-button-filled-selected-color:var(--theme-secondary-900);--theme-button-filled-selected-background-color:var(--theme-secondary-300);--theme-button-filled-selected-border-color:var(--theme-secondary-500);--theme-button-outlined-border-color:var(--theme-secondary-300);--theme-button-outlined-selected-border-color:var(--theme-secondary-400)}:root{--theme-base-primary-color-h:27;--theme-base-primary-color-s:90%;--theme-base-primary-color-l:55%;--theme-base-primary-color-r:243.525;--theme-base-primary-color-g:129.9225;--theme-base-primary-color-b:36.975;--theme-base-secondary-color-h:206;--theme-base-secondary-color-s:100%;--theme-base-secondary-color-l:40%;--theme-base-secondary-color-r:0;--theme-base-secondary-color-g:115.6;--theme-base-secondary-color-b:204}body:not(.theme-dark){--white:hsl(0,0%,100%);--black:hsl(210,8%,5%);--orange:hsl(27,90%,55%);--yellow:hsl(47,83%,91%);--green:hsl(140,40%,55%);--blue:hsl(206,100%,40%);--powder:hsl(205,46%,92%);--red:hsl(358,62%,52%);--black-025:hsl(210,8%,97.5%);--black-050:hsl(210,8%,95%);--black-075:hsl(210,8%,90%);--black-100:hsl(210,8%,85%);--black-150:hsl(210,8%,80%);--black-200:hsl(210,8%,75%);--black-300:hsl(210,8%,65%);--black-350:hsl(210,8%,60%);--black-400:hsl(210,8%,55%);--black-500:hsl(210,8%,45%);--black-600:hsl(210,8%,35%);--black-700:hsl(210,8%,25%);--black-750:hsl(210,8%,20%);--black-800:hsl(210,8%,15%);--black-900:hsl(210,8%,5%);--orange-050:hsl(27,100%,97%);--orange-100:hsl(27,95%,90%);--orange-200:hsl(27,90%,83%);--orange-300:hsl(27,90%,70%);--orange-400:hsl(27,90%,55%);--orange-500:hsl(27,90%,50%);--orange-600:hsl(27,90%,45%);--orange-700:hsl(27,90%,39%);--orange-800:hsl(27,87%,35%);--orange-900:hsl(27,80%,30%);--blue-050:hsl(206,100%,97%);--blue-100:hsl(206,96%,90%);--blue-200:hsl(206,93%,83.5%);--blue-300:hsl(206,90%,69.5%);--blue-400:hsl(206,85%,57.5%);--blue-500:hsl(206,100%,52%);--blue-600:hsl(206,100%,40%);--blue-700:hsl(209,100%,37.5%);--blue-800:hsl(209,100%,32%);--blue-900:hsl(209,100%,26%);--powder-050:hsl(205,47%,97%);--powder-100:hsl(205,46%,92%);--powder-200:hsl(205,53%,88%);--powder-300:hsl(205,57%,81%);--powder-400:hsl(205,56%,76%);--powder-500:hsl(205,41%,63%);--powder-600:hsl(205,36%,53%);--powder-700:hsl(205,47%,42%);--powder-800:hsl(205,46%,32%);--powder-900:hsl(205,46%,22%);--green-025:hsl(140,42%,95%);--green-050:hsl(140,40%,90%);--green-100:hsl(140,40%,85%);--green-200:hsl(140,40%,75%);--green-300:hsl(140,40%,65%);--green-400:hsl(140,40%,55%);--green-500:hsl(140,40%,47%);--green-600:hsl(140,40%,40%);--green-700:hsl(140,41%,31%);--green-800:hsl(140,40%,27%);--green-900:hsl(140,40%,20%);--yellow-050:hsl(47,87%,94%);--yellow-100:hsl(47,83%,91%);--yellow-200:hsl(47,65%,84%);--yellow-300:hsl(47,69%,69%);--yellow-400:hsl(47,79%,58%);--yellow-500:hsl(47,73%,50%);--yellow-600:hsl(47,76%,46%);--yellow-700:hsl(47,79%,40%);--yellow-800:hsl(47,82%,34%);--yellow-900:hsl(47,84%,28%);--red-050:hsl(358,75%,97%);--red-100:hsl(358,76%,90%);--red-200:hsl(358,74%,83%);--red-300:hsl(358,70%,70%);--red-400:hsl(358,68%,59%);--red-500:hsl(358,62%,52%);--red-600:hsl(358,62%,47%);--red-700:hsl(358,64%,41%);--red-800:hsl(358,64%,35%);--red-900:hsl(358,67%,29%);--gold:hsl(48,100%,50%);--gold-lighter:hsl(48,100%,91%);--gold-darker:hsl(45,100%,47%);--silver:hsl(210,6%,72%);--silver-lighter:hsl(0,0%,91%);--silver-darker:hsl(210,3%,61%);--bronze:hsl(28,38%,67%);--bronze-lighter:hsl(28,40%,92%);--bronze-darker:hsl(28,31%,52%);--bc-lightest:var(--black-025);--bc-lighter:var(--black-050);--bc-light:var(--black-075);--bc-medium:var(--black-100);--bc-dark:var(--black-150);--bc-darker:var(--black-200);--fc-dark:hsl(210,8%,5%);--fc-medium:hsl(210,8%,25%);--fc-light:hsl(210,8%,45%);--focus-ring-success:hsla(140,40%,75%,0.4);--focus-ring-warning:hsla(47,79%,58%,0.4);--focus-ring-error:hsla(358,62%,47%,0.15);--focus-ring-muted:hsla(210,8%,15%,0.1);--bs-sm:0 1px 2px hsla(0,0%,0%,0.05),0 1px 4px hsla(0,0%,0%,0.05),0 2px 8px hsla(0,0%,0%,0.05);--bs-md:0 1px 3px hsla(0,0%,0%,0.06),0 2px 6px hsla(0,0%,0%,0.06),0 3px 8px hsla(0,0%,0%,0.09);--bs-lg:0 1px 4px hsla(0,0%,0%,0.09),0 3px 8px hsla(0,0%,0%,0.09),0 4px 13px hsla(0,0%,0%,0.13);--scrollbar:hsla(0,0%,0%,0.2);--highlight-bg:hsl(0,0%,96.5%);--highlight-color:var(--black-750);--highlight-comment:hsl(210,8%,43.5%);--highlight-punctuation:var(--black-600);--highlight-namespace:hsl(27,99%,36%);--highlight-attribute:hsl(206,98.5%,29%);--highlight-literal:hsl(27,99%,36%);--highlight-symbol:hsl(306,43%,35%);--highlight-keyword:hsl(206,98.5%,29%);--highlight-variable:hsl(80,80.5%,26.5%);--highlight-addition:var(--green-700);--highlight-deletion:var(--red-600)}body:not(.theme-dark){--theme-primary-color-h:var(--theme-light-primary-color-h, var(--theme-base-primary-color-h));--theme-primary-color-s:var(--theme-light-primary-color-s, var(--theme-base-primary-color-s));--theme-primary-color-l:var(--theme-light-primary-color-l, var(--theme-base-primary-color-l));--theme-primary-color-r:var(--theme-light-primary-color-r, var(--theme-base-primary-color-r));--theme-primary-color-g:var(--theme-light-primary-color-g, var(--theme-base-primary-color-g));--theme-primary-color-b:var(--theme-light-primary-color-b, var(--theme-base-primary-color-b));--theme-secondary-color-h:var(--theme-light-secondary-color-h, var(--theme-base-secondary-color-h));--theme-secondary-color-s:var(--theme-light-secondary-color-s, var(--theme-base-secondary-color-s));--theme-secondary-color-l:var(--theme-light-secondary-color-l, var(--theme-base-secondary-color-l));--theme-secondary-color-r:var(--theme-light-secondary-color-r, var(--theme-base-secondary-color-r));--theme-secondary-color-g:var(--theme-light-secondary-color-g, var(--theme-base-secondary-color-g));--theme-secondary-color-b:var(--theme-light-secondary-color-b, var(--theme-base-secondary-color-b));--theme-primary-color:hsl(var(--theme-primary-color-h), var(--theme-primary-color-s), var(--theme-primary-color-l));--theme-primary-900:hsl(var(--theme-primary-color-h), var(--theme-primary-color-s), calc(var(--theme-primary-color-l) - 26%));--theme-primary-800:hsl(var(--theme-primary-color-h), var(--theme-primary-color-s), calc(var(--theme-primary-color-l) - 21%));--theme-primary-700:hsl(var(--theme-primary-color-h), var(--theme-primary-color-s), calc(var(--theme-primary-color-l) - 16%));--theme-primary-600:hsl(var(--theme-primary-color-h), var(--theme-primary-color-s), calc(var(--theme-primary-color-l) - 10%));--theme-primary-500:hsl(var(--theme-primary-color-h), var(--theme-primary-color-s), calc(var(--theme-primary-color-l) - 5%));--theme-primary-400:var(--theme-primary-color);--theme-primary-350:rgb(calc(51 + var(--theme-primary-color-r) * .8), calc(51 + var(--theme-primary-color-g) * .8), calc(51 + var(--theme-primary-color-b) * .8));--theme-primary-300:rgb(calc(89.25 + var(--theme-primary-color-r) * .65), calc(89.25 + var(--theme-primary-color-g) * .65), calc(89.25 + var(--theme-primary-color-b) * .65));--theme-primary-200:rgb(calc(122.4 + var(--theme-primary-color-r) * .52), calc(122.4 + var(--theme-primary-color-g) * .52), calc(122.4 + var(--theme-primary-color-b) * .52));--theme-primary-150:rgb(calc(165.75 + var(--theme-primary-color-r) * .35), calc(165.75 + var(--theme-primary-color-g) * .35), calc(165.75 + var(--theme-primary-color-b) * .35));--theme-primary-100:rgb(calc(198.9 + var(--theme-primary-color-r) * .22), calc(198.9 + var(--theme-primary-color-g) * .22), calc(198.9 + var(--theme-primary-color-b) * .22));--theme-primary-075:rgb(calc(216.75 + var(--theme-primary-color-r) * .15), calc(216.75 + var(--theme-primary-color-g) * .15), calc(216.75 + var(--theme-primary-color-b) * .15));--theme-primary-050:rgb(calc(234.6 + var(--theme-primary-color-r) * .08), calc(234.6 + var(--theme-primary-color-g) * .08), calc(234.6 + var(--theme-primary-color-b) * .08));--theme-primary-025:rgb(calc(244.8 + var(--theme-primary-color-r) * .04), calc(244.8 + var(--theme-primary-color-g) * .04), calc(244.8 + var(--theme-primary-color-b) * .04));--theme-secondary-color:hsl(var(--theme-secondary-color-h), var(--theme-secondary-color-s), var(--theme-secondary-color-l));--theme-secondary-900:hsl(var(--theme-secondary-color-h), var(--theme-secondary-color-s), calc(var(--theme-secondary-color-l) - 26%));--theme-secondary-800:hsl(var(--theme-secondary-color-h), var(--theme-secondary-color-s), calc(var(--theme-secondary-color-l) - 21%));--theme-secondary-700:hsl(var(--theme-secondary-color-h), var(--theme-secondary-color-s), calc(var(--theme-secondary-color-l) - 16%));--theme-secondary-600:hsl(var(--theme-secondary-color-h), var(--theme-secondary-color-s), calc(var(--theme-secondary-color-l) - 10%));--theme-secondary-500:hsl(var(--theme-secondary-color-h), var(--theme-secondary-color-s), calc(var(--theme-secondary-color-l) - 5%));--theme-secondary-400:var(--theme-secondary-color);--theme-secondary-350:rgb(calc(51 + var(--theme-secondary-color-r) * .8), calc(51 + var(--theme-secondary-color-g) * .8), calc(51 + var(--theme-secondary-color-b) * .8));--theme-secondary-300:rgb(calc(89.25 + var(--theme-secondary-color-r) * .65), calc(89.25 + var(--theme-secondary-color-g) * .65), calc(89.25 + var(--theme-secondary-color-b) * .65));--theme-secondary-200:rgb(calc(122.4 + var(--theme-secondary-color-r) * .52), calc(122.4 + var(--theme-secondary-color-g) * .52), calc(122.4 + var(--theme-secondary-color-b) * .52));--theme-secondary-150:rgb(calc(165.75 + var(--theme-secondary-color-r) * .35), calc(165.75 + var(--theme-secondary-color-g) * .35), calc(165.75 + var(--theme-secondary-color-b) * .35));--theme-secondary-100:rgb(calc(198.9 + var(--theme-secondary-color-r) * .22), calc(198.9 + var(--theme-secondary-color-g) * .22), calc(198.9 + var(--theme-secondary-color-b) * .22));--theme-secondary-075:rgb(calc(216.75 + var(--theme-secondary-color-r) * .15), calc(216.75 + var(--theme-secondary-color-g) * .15), calc(216.75 + var(--theme-secondary-color-b) * .15));--theme-secondary-050:rgb(calc(234.6 + var(--theme-secondary-color-r) * .08), calc(234.6 + var(--theme-secondary-color-g) * .08), calc(234.6 + var(--theme-secondary-color-b) * .08));--theme-secondary-025:rgb(calc(244.8 + var(--theme-secondary-color-r) * .04), calc(244.8 + var(--theme-secondary-color-g) * .04), calc(244.8 + var(--theme-secondary-color-b) * .04));--focus-ring:hsla(var(--theme-secondary-color-h), var(--theme-secondary-color-s), var(--theme-secondary-color-l), .15);--theme-body-font-color:var(--black-800)}.bar-sm{border-radius:3px!important}.fc-orange-400{color:var(--orange-400)!important}.bg-powder-050{background-color:var(--powder-050)!important}.gs8{margin:-4px}.gs8>.flex--item{margin:4px}.gsx,.gsx>[class*=flex--item]{margin-top:0;margin-bottom:0}.fw-wrap{flex-wrap:wrap!important}.jc-center{justify-content:center!important}.jc-end{justify-content:flex-end!important}.ai-center{align-items:center!important}.fl-grow1{flex-grow:1!important}.fl1{flex:1 auto!important}.mtn1{margin-top:-1px!important}.ml8{margin-left:8px!important}.ml-auto{margin-left:auto!important}.mx-auto{margin-left:auto!important;margin-right:auto!important}.p0{padding:0!important}.p24{padding:24px!important}.px12{padding-left:12px!important;padding-right:12px!important}.py8{padding-top:8px!important;padding-bottom:8px!important}h1,h2,h3{margin-top:0}.list-reset{list-style:none;margin:0;padding:0}.d-flex{display:flex!important}.d-none{display:none!important}.v-visible-sr{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal}.ps-relative{position:relative!important}.overflow-x-auto{overflow-x:auto!important;scrollbar-color:var(--scrollbar) transparent}.overflow-x-auto::-webkit-scrollbar{width:10px;height:10px;background-color:transparent}.overflow-x-auto::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.overflow-x-auto::-webkit-scrollbar-thumb{border-radius:10px;background-color:var(--scrollbar)}.overflow-x-auto::-webkit-scrollbar-corner{background-color:transparent;border-color:transparent}.overflow-y-auto{overflow-y:auto!important;scrollbar-color:var(--scrollbar) transparent}.overflow-y-auto::-webkit-scrollbar{width:10px;height:10px;background-color:transparent}.overflow-y-auto::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.overflow-y-auto::-webkit-scrollbar-thumb{border-radius:10px;background-color:var(--scrollbar)}.overflow-y-auto::-webkit-scrollbar-corner{background-color:transparent;border-color:transparent}.wmx12{max-width:97.2307692rem!important}.wmx100{max-width:100%!important}.wmn4{min-width:32.4102564rem!important}.h100{height:100%!important}.hmx3{max-height:24.3076923rem!important}@media (max-width:640px){.sm\:d-block{display:block!important}.sm\:wmn-initial{min-width:initial!important}}.topbar-dialog{font-family:var(--ff-sans);color:var(--black-700);font-size:12px;background-color:var(--white);box-shadow:var(--bs-sm);z-index:999;position:absolute;text-align:left;border-left:1px solid var(--black-075);border-right:1px solid var(--black-075);border-bottom:1px solid var(--black-075)}.topbar-dialog a:not(.s-btn):not(.nav-links--link){color:var(--blue-600);text-decoration:none}.topbar-dialog a:not(.s-btn):not(.nav-links--link):visited{color:var(--blue-600)}.topbar-dialog .related-links{color:var(--black-400);white-space:nowrap}.topbar-dialog .related-links a,.topbar-dialog .related-links a:visited{margin-left:10px;color:var(--blue-600)}.topbar-dialog.siteSwitcher-dialog{width:375px;overflow-y:scroll;overflow-x:hidden;min-height:390px;max-height:390px;scrollbar-color:var(--scrollbar) transparent}.topbar-dialog.siteSwitcher-dialog::-webkit-scrollbar{width:10px;height:10px;background-color:transparent}.topbar-dialog.siteSwitcher-dialog::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.topbar-dialog.siteSwitcher-dialog::-webkit-scrollbar-thumb{border-radius:10px;background-color:var(--scrollbar)}.topbar-dialog.siteSwitcher-dialog::-webkit-scrollbar-corner{background-color:transparent;border-color:transparent}.topbar-dialog.siteSwitcher-dialog .call-to-login{padding:7px 0 7px 0;text-align:center;line-height:1.3}.topbar-dialog.siteSwitcher-dialog .modal-content{padding:0}.topbar-dialog.siteSwitcher-dialog .modal-content li:first-child{padding-top:2px}.topbar-dialog.siteSwitcher-dialog .modal-content li:last-child{padding-bottom:2px}.topbar-dialog.siteSwitcher-dialog .modal-content li{padding-left:7px;padding-right:7px}.topbar-dialog.siteSwitcher-dialog .modal-content#your-communities-section{max-height:none}.topbar-dialog.siteSwitcher-dialog .current-site .current-site-link{font-weight:700}.topbar-dialog.siteSwitcher-dialog .current-site li{border:none}.topbar-dialog.siteSwitcher-dialog .L-shaped-icon-container{float:left;padding:0;margin:8px 6px 0 15px}.topbar-dialog.siteSwitcher-dialog .L-shaped-icon{width:10px;height:10px;border:solid #b9c1c5;border-width:0 0 1px 1px;display:inline-block}.topbar-dialog ul{padding-left:0;margin-left:0;margin-bottom:0}.topbar-dialog ul li{list-style:none;margin-left:0;line-height:1.3}.topbar-dialog .header{background-color:var(--black-050);width:100%;box-sizing:border-box;position:relative;clear:both;display:flex;justify-content:space-between;align-items:center;padding:8px 10px}.topbar-dialog .header h3{font-family:var(--ff-sans);color:var(--black-500);font-weight:700;text-transform:uppercase;font-size:11px;margin-bottom:0;display:inline-block}.topbar-dialog .header h3 a{font-size:inherit;color:inherit;font-family:var(--ff-sans)}.topbar-dialog .modal-content{width:100%;max-height:300px;position:relative}.topbar-dialog .modal-content li{border-bottom:1px solid var(--black-050);margin-bottom:0}.topbar-dialog .modal-content li>*{padding:8px}.topbar-dialog .modal-content li>a>*{white-space:normal}.topbar-dialog .modal-content li:last-child{border-bottom:none}.topbar-dialog .site-icon{width:16px;height:16px;vertical-align:top;flex:none}html{--top-bar-allocated-space:50px}.top-bar{position:fixed;min-width:auto;box-shadow:var(--bs-sm);top:0;left:0;width:100%;z-index:5050;background-color:#232629;height:50px;font-family:var(--ff-sans);box-sizing:border-box}.top-bar .-main{height:100%;flex-shrink:0;display:flex;flex-flow:row nowrap;align-items:center}.top-bar .-logo{box-sizing:content-box;padding:0 12px;height:100%;flex:1 0 auto;display:flex;align-items:center;background-color:transparent}.top-bar *{box-sizing:border-box}.top-bar .navigation{font-size:14px;height:100%;max-width:500px;opacity:1;transform-origin:left center;flex:1 0 auto}.top-bar .navigation .-list{list-style:none;margin:0;padding:0;display:flex;flex-flow:row nowrap;height:100%}.top-bar .navigation .-item{display:inline-flex;line-height:1}.top-bar .navigation .-link{display:inline-flex;align-items:center;padding:0 12px;color:#babfc4;text-decoration:none;white-space:nowrap;position:relative}.top-bar .-secondary .-ctas{padding-left:4px;padding-right:8px;white-space:nowrap}.top-bar .-secondary .-item{position:relative;flex-shrink:0;display:inline-flex;padding-bottom:0;height:100%}.top-bar .-secondary .-item.searchbar-trigger{display:none}@media screen and (max-width:816px){.top-bar .-secondary .-item.searchbar-trigger{display:inline-flex}}.top-bar .-secondary .-link{color:#9ea5ac;display:inline-flex;align-items:center;padding:0 10px;text-decoration:none;white-space:nowrap;position:relative}.top-bar .-secondary .-link .svg-icon{vertical-align:text-top}.top-bar .searchbar{-webkit-transform:translate3d(0,0,0);flex-shrink:10000}.top-bar .searchbar .s-input{border-color:#3a3f44;background-color:#3a3f44;box-shadow:none;color:#e3e5e7}.top-bar .searchbar .s-input::-webkit-input-placeholder{color:#babfc4;font-style:normal}.top-bar .searchbar .s-input::-moz-placeholder{color:#babfc4;font-style:normal;opacity:1}.top-bar .searchbar .s-input:-ms-input-placeholder{color:#babfc4;font-style:normal}.top-bar .searchbar .s-input::-ms-input-placeholder{color:#babfc4;font-style:normal}@media screen and (max-width:816px){.top-bar .searchbar{display:none;position:absolute;left:0;top:100%;right:0;max-width:100%;padding:8px 12px;background:#f1f2f3}.top-bar .searchbar .s-input{border-color:var(--black-200);background-color:var(--white);color:var(--black-700)}.top-bar .searchbar .s-input::-webkit-input-placeholder{color:var(--black-200);font-style:normal}.top-bar .searchbar .s-input::-moz-placeholder{color:var(--black-200);font-style:normal;opacity:1}.top-bar .searchbar .s-input:-ms-input-placeholder{color:var(--black-200);font-style:normal}.top-bar .searchbar .s-input::-ms-input-placeholder{color:var(--black-200);font-style:normal}}@media screen and (max-width:1090px){.top-bar .navigation .-link{padding:0 8px}}@media screen and (max-width:980px){.top-bar .navigation{font-size:12px}}.site-footer *,.site-footer :after,.site-footer :before{box-sizing:border-box}.site-footer .-list{margin:0;list-style:none}.site-footer .-item{padding-bottom:0}.site-footer .-link{color:#5c8eb2;padding:4px 0;line-height:1.30769231;display:inline-block;text-decoration:none}.site-footer--back{display:none;align-items:center;justify-content:center;height:32px;width:32px;border-radius:3px;margin-top:-4px;margin-right:12px;background-color:#5c8eb2;color:#fff;opacity:.85}.site-footer--logo{flex:0 0 64px;margin:-12px 0 32px 0}@media screen and (max-width:640px){.site-footer--logo{display:none}}.site-footer--col{display:none;padding:0 12px 24px 0;flex:1 0 auto}.site-footer--categories{display:none;flex-grow:1}@supports (display:grid){.site-footer--categories{grid-template-columns:repeat(auto-fit,minmax(130px,1fr))}}@media screen and (max-width:640px){.site-footer--category{padding-left:44px}}.top-bar .favicon{width:16px;height:16px;background-color:transparent;background-repeat:no-repeat;background-size:16px;background-image:url('../Img/favicons-sprite16.png?v=fd9ee425c546')}.top-bar div.favicon{display:inline-block}@media only screen and (min--moz-device-pixel-ratio:1.5),only screen and (-o-min-device-pixel-ratio:3/2),only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5){.top-bar .favicon{background-image:url('../Img/favicons-sprite32.png?v=7ff4f72f6f76')}}@media only screen and (min--moz-device-pixel-ratio:1.5),only screen and (-o-min-device-pixel-ratio:3/2),only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5){.top-bar .favicon{-moz-background-size:16px 6894px;-o-background-size:16px 6894px;-webkit-background-size:16px 6894px;background-size:16px 6894px}}.top-bar .favicon-stackexchange{background-position:0 -5994px}.top-bar .favicon-stackexchangemeta{background-position:0 -6012px}body,div,form,header,html,img,li,nav,section,span,ul{margin:0;padding:0;border:none}header,nav,section{display:block}body,html{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,Roboto,"Noto Sans","Droid Sans",sans-serif;font-size:14px;color:#444;line-height:1.4;background:#fff url('index_files/Img/bg-site.png?v=2') repeat top left}a{color:#366fb3;text-decoration:none}a:visited{color:#12457c}h1,h2,h3{font-weight:400;margin:0 0 10px 0}ul{list-style:none;padding-left:0;margin-bottom:20px}.fr{float:right}.cbo{clear:both}.contentWrapper{margin:0 auto;width:960px}header.siteHeader{height:110px;margin-top:50px}header.siteHeader h1{background:transparent url('index_files/Img/se-logo.png?v=8f7dca5b94db') no-repeat left top;display:block;float:left;width:223px;height:52px;text-indent:-999em;margin-top:15px}@media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5){header h1{background:transparent url('index_files/Img/se-logo@2x.png?v=5663d7dbb7ab') no-repeat left top;background-size:223px 52px}}ul.navMain{list-style:none;float:right;margin:40px 0 0 0}ul.navMain li{display:inline}ul.navMain li a{font-size:14px;color:#2a3c5e;margin-left:35px}#content{width:100%;background-color:#fdfdfd;border-top:1px solid #fff;min-height:500px;box-shadow:0 1px 1px rgba(0,0,0,.2);-webkit-box-shadow:0 1px 1px rgba(0,0,0,.2);-moz-box-shadow:0 1px 1px rgba(0,0,0,.2);padding-bottom:30px}.svg-icon{vertical-align:bottom}.svg-icon:not(.native) *{fill:currentColor}#mainArea{width:725px;margin:10px 15px 20px 0;float:left;clear:both}#mainArea.at-top{margin-top:0}#sideBar{width:220px;float:left;margin-top:10px}.module{color:#444;padding:0 15px 15px;margin-bottom:10px;clear:both;font-size:12px}.question-container{border-bottom:1px solid #f0f0f0;overflow:auto;padding:15px;width:693px;clear:both;box-shadow:0 1px 0 #fff;-webkit-box-shadow:0 1px 0 #fff;-moz-box-shadow:0 1px 0 #fff}.question-container:first-child{padding-top:0}.question{float:left;width:628px}.question.question-hot{width:628px}.question h2{font-size:18px;line-height:22px;margin-bottom:4px}.question .metaInfo{float:left}.hot-question-site-icon{float:left;margin-right:15px;margin-top:3px}.hot-question-site-icon img{width:32px;height:32px}.favicon{height:16px;width:16px;display:inline-block;margin-top:-5px;vertical-align:middle}.metaInfo{color:#999;font-size:11px}.post-tag{color:#566e76!important;font-size:11px;font-weight:400;display:inline-block;background-color:#f7fdff;text-decoration:none;white-space:nowrap;overflow:visible;margin-right:2px;padding:.3em .8em;line-height:1.2;border:1px solid #c0d4db;border-radius:15px;border-image:initial}.btn{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,Roboto,"Noto Sans","Droid Sans",sans-serif;font-weight:700;display:inline-block;text-align:center;text-decoration:none;padding:.3em .7em;-moz-box-shadow:0 1px 2px rgba(0,0,0,.2),0 2px 0 rgba(255,255,255,.15) inset;-webkit-box-shadow:0 1px 2px rgba(0,0,0,.2),0 2px 0 rgba(255,255,255,.15) inset;box-shadow:0 1px 2px rgba(0,0,0,.2),0 2px 0 rgba(255,255,255,.15) inset;color:#fff!important;border:1px solid #c47b07;background:-webkit-gradient(linear,left top,left bottom,from(#fba00c),to(#f67c16));background:-moz-linear-gradient(top,#fba00c,#f67c16);background:-o-linear-gradient(top,#fba00c,#f67c16);background:linear-gradient(to bottom,#fba00c,#f67c16);font-size:1em;line-height:1.5;border-radius:6px;text-shadow:0 0 2px rgba(0,0,0,.5)}.dno{display:none}.owner{font-size:11px}.users-sidebar{overflow:auto;padding:0;width:220px}.users-sidebar .userDetails{overflow-x:hidden}.users-sidebar .userDetails img{display:block;border:none;margin-bottom:10px;margin-right:5px;width:30px;height:30px;float:left}.users-sidebar .userDetails .sb-userName{font-size:12px;white-space:nowrap}#overlay-header{text-align:center;border-bottom:1px solid #000;opacity:0;display:none;background:rgba(255,255,255,.949219);font-size:20px;line-height:20px;font-weight:700;left:0;padding:10px 10%;position:fixed;top:0;width:80%;z-index:-1;-webkit-box-shadow:0 1px 15px #9c9c9c;-moz-box-shadow:0 1px 15px #9c9c9c;box-shadow:0 1px 15px #9c9c9c}.subheader{border-bottom:1px solid #e5e5e5;clear:both;height:32px;margin-bottom:0;margin-top:5px;padding:0}.heading{color:#444;font-size:15px;margin:3px 0 3px 0;font-weight:700;line-height:27px}.tabs{float:right;margin:3px 0 3px 5px}.tabs a{font-size:12px;color:#666;padding:0 10px;margin:3px 3px 3px 0;line-height:25px;float:left;text-decoration:none;display:block;border-bottom:2px solid transparent}.tabs a.youarehere{color:#f35d5f;border-bottom:2px solid #f35d5f;font-weight:700}#noscript-warning{height:20px;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,Roboto,"Noto Sans","Droid Sans",sans-serif;position:fixed;top:0;left:0;width:100%;z-index:101;text-align:center;color:#fff;background-color:#ae0000;padding:5px 0 5px 0}#noscript-padding{padding-top:30px}.row:after{clear:both;content:'';display:block}.row .column{float:left}.hero-box{background:#e9f7fd;padding:30px;border:2px solid #dde9ef;margin:22px auto 0 auto;text-align:center}.hero-box .close{margin-top:-22px;margin-right:-20px;float:right}.hero-box .title{color:#515a61;font-size:18px;font-weight:800;width:80%;margin:0 10% 20px 10%}.hero-box .blurb{margin:18px 0}.hero-box em{font-weight:800;font-style:normal}.hero-box .column{width:30%;float:left;margin:0 10px;font-size:14px;color:#515a61}.featured-site{border:2px solid #e8edee;padding:5px;border-radius:6px}.featured-site .site-icon{float:left;margin-top:-5px;margin-left:-5px}.featured-site .featured-site-icon{height:60px;width:60px}.featured-site .site-details{display:inline-block;width:140px;vertical-align:top;color:#444;font-size:12px;margin-left:10px}.featured-site .site-details a{font-size:13px;font-weight:700}.featured-site .site-stats{display:inline-block}.featured-site .stats-container{float:left;margin-left:15px}.featured-site .stats-container:first-of-type{margin-left:5px}.featured-site .stats{font-size:22px;font-weight:300;color:#f35d5f}.featured-site .stats-label{font-size:12px;font-weight:700;color:#444}.featured-sidebar{padding:0}.top-bar .login-link{color:#d6d9dc}</style><link rel="stylesheet" type="text/css" href="./index_files/chrome.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="./index_files/all.css" type="text/css" media="print" onload="this.media='all'">
+    <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackexchange/Img/favicon.ico">
+    <link rel="apple-touch-icon" href="https://cdn.sstatic.net/Sites/stackexchange/Img/apple-touch-icon.png">
+    <link rel="search" type="application/opensearchdescription+xml" title="Stack Exchange" href="https://stackexchange.com/opensearch.xml">
+    <meta name="description" content="We make Stack Overflow and 170+ other community-powered Q&amp;A sites.">
+    <script type="text/javascript" async="" src="./index_files/ga.js.download"></script><script src="./index_files/jquery.min.js.download"></script>
+    <script src="./index_files/master.js.download"></script>
+    <script src="./index_files/universal-login.js.download"></script>
+    <script>$(function() { UniversalAuth.performAuth(); });</script>
+        <script src="./index_files/topbar.js.download"></script>
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed of hot questions" href="https://stackexchange.com/feeds/questions">
+    <link rel="openid.server" href="https://stackid.ds.stackexchange.com/openid/provider">
+    <link rel="openid2.provider" href="https://stackid.ds.stackexchange.com/openid/provider">
+
+    
+<style data-emotion="css"></style><style type="text/css"> 
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+      </style></head>
+<body>
+    <noscript><div id="noscript-padding"></div></noscript>
+    <div class="wrapper">
+        <div id="overlay-header"></div>
+
+<header class="top-bar js-top-bar top-bar__network">
+    <div class="wmx12 mx-auto d-flex ai-center h100" role="menubar">
+        <div class="-main flex--item">
+                <a href="https://stackexchange.com/" class="-logo js-gps-track">
+                    <svg aria-hidden="true" class="native mtn1 svg-icon iconLogoSEAlternativeSm" width="107" height="15" viewBox="0 0 107 15"><path d="m48.41 11.93-1.96-3.2-1.04 1.16v2.04h-1.42V2.18h1.42v6.01L48.14 5h1.72l-2.44 2.7 2.74 4.22h-1.75Zm-7.06.08c-1.59 0-3.14-.96-3.14-3.56s1.55-3.54 3.14-3.54c.97 0 1.65.27 2.31.97l-.97.93c-.44-.48-.79-.66-1.34-.66s-1 .22-1.3.62c-.31.38-.42.87-.42 1.68 0 .81.1 1.32.41 1.7.3.4.76.62 1.3.62.56 0 .9-.18 1.35-.66l.97.92c-.66.7-1.34.98-2.31.98Zm-5.66-3.15h-1.65c-.83 0-1.26.37-1.26 1s.4.99 1.3.99c.53 0 .93-.04 1.3-.4.22-.2.31-.53.31-1.03v-.56Zm.03 3.07v-.63c-.51.5-1 .71-1.87.71-.87 0-1.46-.2-1.89-.63a2.1 2.1 0 01-.55-1.49c0-1.16.82-2 2.42-2h1.86v-.5c0-.87-.44-1.3-1.54-1.3-.77 0-1.15.18-1.54.68l-.92-.86c.66-.77 1.35-1 2.52-1 1.93 0 2.9.8 2.9 2.38v4.64h-1.39Zm-5.9 0c-1.32 0-1.93-.93-1.93-1.93V6.18h-.8V5.1h.8V3h1.41v2.1h1.36v1.07H29.3v3.75c0 .5.25.81.78.81h.58v1.2h-.85Zm-6.33.08c-1.48 0-2.55-.34-3.49-1.28l1-.98c.72.72 1.51.94 2.52.94 1.3 0 2.04-.55 2.04-1.5 0-.42-.13-.78-.39-1.01-.25-.23-.5-.33-1.08-.41l-1.16-.17a3.4 3.4 0 01-1.88-.78 2.41 2.41 0 01-.72-1.86c0-1.7 1.25-2.86 3.3-2.86 1.3 0 2.22.33 3.07 1.1l-.96.94a2.92 2.92 0 00-2.15-.75c-1.16 0-1.8.65-1.8 1.52 0 .35.1.67.37.9.25.22.65.38 1.11.45l1.13.17c.91.13 1.42.35 1.84.72.54.47.8 1.17.8 2 0 1.8-1.48 2.86-3.55 2.86Z" fill="#FEFEFE"></path><path d="M104.16 7.09c-.2-.42-.6-.74-1.2-.74s-.99.32-1.18.74c-.1.25-.15.44-.16.75h2.7a2 2 0 00-.16-.75Zm-2.54 1.96c0 .9.56 1.57 1.55 1.57.78 0 1.16-.21 1.61-.66l1.08 1.04a3.4 3.4 0 01-2.7 1.11c-1.68 0-3.29-.76-3.29-3.62 0-2.3 1.26-3.6 3.1-3.6 1.97 0 3.1 1.44 3.1 3.37v.79h-4.45Zm-5.48-2.57C95.1 6.48 95 7.37 95 8.3c0 .94.1 1.85 1.15 1.85 1.05 0 1.18-.91 1.18-1.85 0-.93-.13-1.82-1.18-1.82Zm-.17 8.22c-1.1 0-1.84-.21-2.58-.92l1.1-1.11c.4.38.8.54 1.4.54 1.06 0 1.43-.74 1.43-1.46v-.72c-.47.51-1 .7-1.7.7-.69 0-1.29-.23-1.68-.62-.67-.66-.73-1.57-.73-2.8 0-1.24.06-2.13.73-2.8.4-.39 1-.62 1.7-.62.75 0 1.24.2 1.73.75v-.67h1.72v6.8c0 1.7-1.21 2.93-3.12 2.93Zm-5.76-2.67V7.76c0-.96-.61-1.28-1.17-1.28-.56 0-1.18.32-1.18 1.28v4.27h-1.78V4.97h1.73v.65a2.44 2.44 0 011.78-.73c.7 0 1.28.23 1.67.62.58.57.73 1.24.73 2v4.52H90.2Zm-7.1-2.98h-1.4c-.64 0-1 .3-1 .8 0 .49.33.81 1.02.81.5 0 .8-.04 1.12-.34.2-.17.26-.46.26-.89v-.38Zm.04 2.98v-.6c-.48.47-.93.67-1.74.67-.8 0-1.4-.2-1.82-.62-.38-.4-.58-.97-.58-1.59 0-1.12.77-2.05 2.42-2.05h1.68V7.5c0-.77-.38-1.11-1.32-1.11-.68 0-1 .16-1.37.58l-1.13-1.1c.7-.75 1.38-.97 2.57-.97 1.99 0 3.02.84 3.02 2.5v4.64h-1.73Zm-6.93 0v-4.3c0-.94-.6-1.25-1.15-1.25-.56 0-1.15.32-1.15 1.24v4.31h-1.77V2.38h1.77v3.24a2.35 2.35 0 011.7-.73c1.56 0 2.38 1.08 2.38 2.57v4.57h-1.78Zm-6.96.08c-1.42 0-3.18-.76-3.18-3.62 0-2.85 1.76-3.6 3.18-3.6.98 0 1.72.3 2.34.95l-1.2 1.2c-.36-.4-.68-.56-1.14-.56-.42 0-.75.14-1.01.46-.27.33-.4.8-.4 1.55s.13 1.24.4 1.58c.26.3.59.46 1 .46.47 0 .79-.16 1.15-.56l1.2 1.18c-.62.65-1.36.96-2.34.96Zm-5.53-.08-1.3-2.11-1.3 2.11H59l2.45-3.6-2.35-3.46h2.12L62.42 7l1.21-2.02h2.13L63.4 8.43l2.46 3.6h-2.13Zm-11.75 0V2.06h6.6V3.8h-4.65v2.33h3.96v1.74h-3.96v2.42h4.65v1.74h-6.6Z" fill="#2F96E8"></path><path d="M0 3c0-1.1.9-2 2-2h8a2 2 0 012 2H0Z" fill="#8FD8F7"></path><path d="M12 10H0c0 1.1.9 2 2 2h5v3l3-3a2 2 0 002-2Z" fill="#155397"></path><path fill="#46A2D9" d="M0 4h12v2H0z"></path><path fill="#2D6DB5" d="M0 7h12v2H0z"></path></svg>
+                </a>
+
+
+                <nav class="navigation" role="navigation" aria-label="site navigation">
+                    <ol class="-list">
+                                <li class="-item"><a href="https://stackexchange.com/tour" class="-link">Tour</a></li>
+                                <li class="-item"><a href="https://stackexchange.com/about" class="-link">About Us</a></li>
+                                <li class="-item"><a href="https://meta.stackexchange.com/" class="-link">Meta</a></li>
+                    </ol>
+                </nav>
+
+        </div>
+
+
+            <form id="search" role="search" action="https://stackexchange.com/search" class="flex--item fl-grow1 searchbar px12 js-searchbar " autocomplete="off">
+                    <div class="ps-relative">
+                        <input name="q" type="text" placeholder="Search all sites" autocomplete="off" maxlength="240" class="s-input s-input__search js-search-field " aria-label="Search" aria-controls="top-search" data-controller="s-popover" data-action="focus-&gt;s-popover#show" data-s-popover-placement="bottom-start">
+                        <svg aria-hidden="true" class="s-input-icon s-input-icon__search svg-icon iconSearch" width="18" height="18" viewBox="0 0 18 18"><path d="m18 16.5-5.14-5.18h-.35a7 7 0 10-1.19 1.19v.35L16.5 18l1.5-1.5ZM12 7A5 5 0 112 7a5 5 0 0110 0Z"></path></svg>
+                        <div class="s-popover p0 wmx100 wmn4 sm:wmn-initial js-top-search-popover" id="top-search" role="menu">
+    <div class="s-popover--arrow"></div>
+    <div class="js-spinner p24 d-flex ai-center jc-center d-none">
+        <div class="s-spinner s-spinner__sm fc-orange-400">
+            <div class="v-visible-sr">Loading…</div>
+        </div>
+    </div>
+
+    <span class="v-visible-sr js-screen-reader-info"></span>
+    <div class="js-ac-results overflow-y-auto hmx3 d-none"></div>
+
+    <div class="js-search-hints" aria-describedby="Tips for searching"></div>
+</div>
+                    </div>
+            </form>
+        
+        
+
+<ol class="overflow-x-auto ml-auto -secondary d-flex ai-center list-reset h100 user-logged-out" role="presentation">
+        <li class="-item searchbar-trigger"><a href="https://stackexchange.com/#" class="-link js-searchbar-trigger" role="button" aria-label="Search" aria-haspopup="true" aria-controls="search" title="Click to show search"><svg aria-hidden="true" class="svg-icon iconSearch" width="18" height="18" viewBox="0 0 18 18"><path d="m18 16.5-5.14-5.18h-.35a7 7 0 10-1.19 1.19v.35L16.5 18l1.5-1.5ZM12 7A5 5 0 112 7a5 5 0 0110 0Z"></path></svg></a></li>
+        <li class="-item site-switcher-item">
+            <a href="https://stackexchange.com/" class="-link js-site-switcher-button js-gps-track" data-gps-track="site_switcher.show" aria-label="Site switcher" title="A list of all 178 Stack Exchange sites" role="menuitem" aria-haspopup="true" aria-expanded="false" data-ga="[&quot;top navigation&quot;,&quot;stack exchange click&quot;,null,null,null]">
+                <svg aria-hidden="true" class="svg-icon iconStackExchange" width="18" height="18" viewBox="0 0 18 18"><path d="M15 1H3a2 2 0 00-2 2v2h16V3a2 2 0 00-2-2ZM1 13c0 1.1.9 2 2 2h8v3l3-3h1a2 2 0 002-2v-2H1v2Zm16-7H1v4h16V6Z"></path></svg>
+            </a>
+        </li>
+
+            <li class="-ctas">
+                            <a href="https://stackexchange.com/users/login?ssrc=head&amp;returnurl=https%3a%2f%2fstackexchange.com" class="login-link s-btn s-btn__filled py8 js-gps-track" rel="nofollow" data-gps-track="login.click" data-ga="[&quot;top navigation&quot;,&quot;login button click&quot;,null,null,null]">Log in</a>
+
+            </li>
+
+    <li class="js-topbar-dialog-corral" role="presentation">
+            
+
+    <div class="topbar-dialog siteSwitcher-dialog dno" role="menu">
+        <div class="header fw-wrap">
+            <h3 class="flex--item">
+                <a href="https://stackexchange.com/">current community</a>
+            </h3>
+            <div class="flex--item fl1">
+                <div class="ai-center d-flex jc-end">
+                    <button class="js-close-button s-btn s-btn__muted p0 ml8 d-none sm:d-block" type="button" aria-label="Close">
+                        <svg aria-hidden="true" class="svg-icon iconClear" width="18" height="18" viewBox="0 0 18 18"><path d="M15 4.41 13.59 3 9 7.59 4.41 3 3 4.41 7.59 9 3 13.59 4.41 15 9 10.41 13.59 15 15 13.59 10.41 9 15 4.41Z"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-content bg-powder-050 current-site-container">
+            <ul class="current-site ">
+                    <li class="d-flex">
+                            <div class="fl1">
+                <a href="https://stackexchange.com/" class="current-site-link site-link js-gps-track d-flex gs8 gsx" data-id="155" data-gps-track="site_switcher.click({ item_type:3 })">
+        <div class="favicon favicon-stackexchange site-icon flex--item" title="Stack Exchange"></div>
+        <span class="flex--item fl1">
+            Stack Exchange
+        </span>
+    </a>
+
+    </div>
+    <div class="related-links">
+            <a href="https://chat.stackexchange.com/?tab=site&amp;host=stackexchange.com" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:6 })">chat</a>
+    </div>
+
+                    </li>
+                    <li class="related-site d-flex">
+                            <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                            <a href="https://meta.stackexchange.com/" class=" site-link js-gps-track d-flex gs8 gsx" data-id="4" data-gps-track="site.switch({ target_site:4, item_type:3 }),site_switcher.click({ item_type:4 })">
+        <div class="favicon favicon-stackexchangemeta site-icon flex--item" title="Meta Stack Exchange"></div>
+        <span class="flex--item fl1">
+            Meta Stack Exchange
+        </span>
+    </a>
+
+                    </li>
+            </ul>
+        </div>
+
+        <div class="header" id="your-communities-header">
+            <h3>
+your communities            </h3>
+
+        </div>
+        <div class="modal-content" id="your-communities-section">
+
+                <div class="call-to-login">
+<a href="https://stackexchange.com/users/login#create-account" class="login-link js-gps-track" data-gps-track="site_switcher.click({ item_type:10 })">Sign up</a> or <a href="https://stackexchange.com/users/login" class="login-link js-gps-track" data-gps-track="site_switcher.click({ item_type:11 })">log in</a> to customize your list.                </div>
+        </div>
+
+        <div class="header">
+            <h3><a href="https://stackexchange.com/sites">more stack exchange communities</a>
+            </h3>
+            <a href="https://stackoverflow.blog/" class="fr">company blog</a>
+        </div>
+        <div class="modal-content">
+                <div class="child-content"></div>
+        </div>        
+    </div>
+
+    </li>
+</ol>
+
+    </div>
+</header>
+
+        <header class="siteHeader">
+            <div class="contentWrapper">
+                <a href="https://stackexchange.com/"><h1>Stack Exchange</h1></a>
+
+                <ul class="navMain">
+                    <li><a href="https://stackexchange.com/sites">All Sites</a></li>
+                    <li><a href="https://stackexchange.com/leagues">Top Users</a></li>
+                    <li><a href="https://stackexchange.com/digests">Digests</a></li>
+                </ul>
+            </div>
+        </header>
+
+        
+
+
+        <section id="content">
+            <div class="contentWrapper">
+                
+
+
+<div class="hero-box">
+    <div class="close"><a title="click to close"><img src="./index_files/close.png" alt="close"></a></div>
+    <div class="row">
+        <div class="text">
+            <h3 class="title">Stack Exchange Q&amp;A communities are different. Here's how:</h3>
+        </div>
+        <div>
+            <div class="column">
+                <img src="./index_files/bubble.png" alt="Speech bubbles">
+                <div class="blurb">
+                    <em>Expert communities.</em><br>
+                    Each of our <span class="old">177</span> 
+                    communities is built by people passionate about a focused topic.
+                </div>
+            </div>
+            <div class="column">
+                <img src="./index_files/vote.png" alt="Voting arrows">
+                <div class="blurb">
+                    <em>The right answer. Right on top.</em><br>
+                    Experts like you can vote on posts, so the most helpful answers are easy to find.
+                </div>
+            </div>
+            <div class="column">
+                <img src="./index_files/check.png" alt="checkmark">
+                <div class="blurb">
+                    <em>Share knowledge. Earn trust.</em><br>
+                    Earn reputation and additional privileges for posts others find helpful.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row"><a data-loc="1" href="https://stackexchange.com/tour" class="tour-link btn">Learn more</a></div>
+    <script>
+        $('.hero-box .close').click(function () {
+            $.cookie("hero", "closed", { path: "/", expires: 365 });
+            var $hero = $(".hero-box");
+            $hero.slideUp('fast', function () { $hero.remove(); });
+            StackExchange.helpers.gps('hero.closed');
+            return false;
+        });
+    </script>
+</div>
+    
+
+<div id="mainArea" class="at-top" data-location="0">
+
+    
+
+<div class="subheader">
+    <div class="tabs">
+                <a href="https://stackexchange.com/" class="youarehere">hot</a>
+
+                <a href="https://stackexchange.com/questions?tab=realtime">real-time</a>
+
+    </div>
+</div>
+<br class="cbo">
+
+    <div id="question-list">
+            
+    <div data-sid="academia.stackexchange.com" class="question-container">
+        <a href="https://academia.stackexchange.com/questions/176307/what-is-the-best-practice-to-deal-with-students-who-sit-in-the-back-and-laugh-at">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on academia.stackexchange.com"><img src="./index_files/icon-48.png" alt="Academia Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://academia.stackexchange.com/questions/176307/what-is-the-best-practice-to-deal-with-students-who-sit-in-the-back-and-laugh-at" title="This question has been arbitrarily awarded 83.622 hotness points">
+                    What is the best practice to deal with students who sit in the back and laugh at other students' questions?
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://academia.stackexchange.com/questions/tagged/teaching" class="post-tag ">teaching</a>
+                        <a href="https://academia.stackexchange.com/questions/tagged/communication" class="post-tag ">communication</a>
+                        <a href="https://academia.stackexchange.com/questions/tagged/lecture-teaching-method" class="post-tag ">lecture-teaching-method</a>
+6 answers |
+                    asked 10 hours ago
+                    <span class="owner">
+                        by <a href="https://academia.stackexchange.com/users/53935/rsc05">rsc05</a> on
+                    </span>
+                <a href="https://academia.stackexchange.com/" class="question-host">
+academia                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="skeptics.stackexchange.com" class="question-container">
+        <a href="https://skeptics.stackexchange.com/questions/52441/did-a-black-history-month-website-call-white-people-genetically-defective-des">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on skeptics.stackexchange.com"><img src="./index_files/icon-48(1).png" alt="Skeptics Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://skeptics.stackexchange.com/questions/52441/did-a-black-history-month-website-call-white-people-genetically-defective-des" title="This question has been arbitrarily awarded 67.484 hotness points">
+                    Did a 'Black History Month website' call white people ‘genetically defective descendants of albino mutants’?
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://skeptics.stackexchange.com/questions/tagged/united-kingdom" class="post-tag ">united-kingdom</a>
+                        <a href="https://skeptics.stackexchange.com/questions/tagged/genetics" class="post-tag ">genetics</a>
+                        <a href="https://skeptics.stackexchange.com/questions/tagged/racism" class="post-tag ">racism</a>
+3 answers |
+                    asked 12 hours ago
+                    <span class="owner">
+                        by <a href="https://skeptics.stackexchange.com/users/56721/pinegulf">pinegulf</a> on
+                    </span>
+                <a href="https://skeptics.stackexchange.com/" class="question-host">
+skeptics                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="codegolf.stackexchange.com" class="question-container">
+        <a href="https://codegolf.stackexchange.com/questions/236010/increment-the-time">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on codegolf.stackexchange.com"><img src="./index_files/icon-48(2).png" alt="Code Golf Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://codegolf.stackexchange.com/questions/236010/increment-the-time" title="This question has been arbitrarily awarded 45.482 hotness points">
+                    Increment The Time
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://codegolf.stackexchange.com/questions/tagged/code-golf" class="post-tag ">code-golf</a>
+                        <a href="https://codegolf.stackexchange.com/questions/tagged/string" class="post-tag ">string</a>
+                        <a href="https://codegolf.stackexchange.com/questions/tagged/number" class="post-tag ">number</a>
+                        <a href="https://codegolf.stackexchange.com/questions/tagged/date" class="post-tag ">date</a>
+24 answers |
+                    asked yesterday
+                    <span class="owner">
+                        by <a href="https://codegolf.stackexchange.com/users/24877/flawr">flawr</a> on
+                    </span>
+                <a href="https://codegolf.stackexchange.com/" class="question-host">
+codegolf                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="scifi.stackexchange.com" class="question-container">
+        <a href="https://scifi.stackexchange.com/questions/254659/what-is-this-item-in-the-movie-aliens">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on scifi.stackexchange.com"><img src="./index_files/icon-48(3).png" alt="Science Fiction &amp; Fantasy Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://scifi.stackexchange.com/questions/254659/what-is-this-item-in-the-movie-aliens" title="This question has been arbitrarily awarded 44.169 hotness points">
+                    What is this item in the movie Aliens?
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://scifi.stackexchange.com/questions/tagged/alien-franchise" class="post-tag ">alien-franchise</a>
+                        <a href="https://scifi.stackexchange.com/questions/tagged/object-identification" class="post-tag ">object-identification</a>
+                        <a href="https://scifi.stackexchange.com/questions/tagged/aliens-1986" class="post-tag ">aliens-1986</a>
+1 answers |
+                    asked 11 hours ago
+                    <span class="owner">
+                        by <a href="https://scifi.stackexchange.com/users/134473/damar">Damar</a> on
+                    </span>
+                <a href="https://scifi.stackexchange.com/" class="question-host">
+scifi                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="academia.stackexchange.com" class="question-container">
+        <a href="https://academia.stackexchange.com/questions/176246/could-i-use-colors-to-distinguish-variables-in-a-paper">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on academia.stackexchange.com"><img src="./index_files/icon-48.png" alt="Academia Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://academia.stackexchange.com/questions/176246/could-i-use-colors-to-distinguish-variables-in-a-paper" title="This question has been arbitrarily awarded 44.01 hotness points">
+                    Could I use colors to distinguish variables in a paper?
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://academia.stackexchange.com/questions/tagged/paper-submission" class="post-tag ">paper-submission</a>
+                        <a href="https://academia.stackexchange.com/questions/tagged/writing" class="post-tag ">writing</a>
+                        <a href="https://academia.stackexchange.com/questions/tagged/formatting" class="post-tag ">formatting</a>
+                        <a href="https://academia.stackexchange.com/questions/tagged/submission" class="post-tag ">submission</a>
+10 answers |
+                    asked yesterday
+                    <span class="owner">
+                        by <a href="https://academia.stackexchange.com/users/139335/anders-gustafson">Anders Gustafson</a> on
+                    </span>
+                <a href="https://academia.stackexchange.com/" class="question-host">
+academia                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="politics.stackexchange.com" class="question-container">
+        <a href="https://politics.stackexchange.com/questions/69156/why-does-russia-view-missile-defense-as-a-strategic-threat">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on politics.stackexchange.com"><img src="./index_files/icon-48(4).png" alt="Politics Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://politics.stackexchange.com/questions/69156/why-does-russia-view-missile-defense-as-a-strategic-threat" title="This question has been arbitrarily awarded 38.613 hotness points">
+                    Why does Russia view missile defense as a strategic threat?
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://politics.stackexchange.com/questions/tagged/russian-federation" class="post-tag ">russian-federation</a>
+                        <a href="https://politics.stackexchange.com/questions/tagged/war" class="post-tag ">war</a>
+3 answers |
+                    asked 15 hours ago
+                    <span class="owner">
+                        by <a href="https://politics.stackexchange.com/users/22967/allure">Allure</a> on
+                    </span>
+                <a href="https://politics.stackexchange.com/" class="question-host">
+politics                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="rpg.stackexchange.com" class="question-container">
+        <a href="https://rpg.stackexchange.com/questions/191958/can-the-spell-find-traps-find-traps-in-legal-documents">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on rpg.stackexchange.com"><img src="./index_files/icon-48(5).png" alt="Role-playing Games Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://rpg.stackexchange.com/questions/191958/can-the-spell-find-traps-find-traps-in-legal-documents" title="This question has been arbitrarily awarded 34.751 hotness points">
+                    Can the spell Find Traps find traps in legal documents?
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://rpg.stackexchange.com/questions/tagged/dnd-5e" class="post-tag ">dnd-5e</a>
+                        <a href="https://rpg.stackexchange.com/questions/tagged/spells" class="post-tag ">spells</a>
+                        <a href="https://rpg.stackexchange.com/questions/tagged/traps" class="post-tag ">traps</a>
+5 answers |
+                    asked yesterday
+                    <span class="owner">
+                        by <a href="https://rpg.stackexchange.com/users/51180/ayden-s">Ayden s</a> on
+                    </span>
+                <a href="https://rpg.stackexchange.com/" class="question-host">
+rpg                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="electronics.stackexchange.com" class="question-container">
+        <a href="https://electronics.stackexchange.com/questions/589340/please-help-me-debug-my-circuit">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on electronics.stackexchange.com"><img src="./index_files/icon-48(6).png" alt="Electrical Engineering Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://electronics.stackexchange.com/questions/589340/please-help-me-debug-my-circuit" title="This question has been arbitrarily awarded 32.817 hotness points">
+                    Please help me debug my circuit
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://electronics.stackexchange.com/questions/tagged/circuit-analysis" class="post-tag ">circuit-analysis</a>
+                        <a href="https://electronics.stackexchange.com/questions/tagged/resistance" class="post-tag ">resistance</a>
+                        <a href="https://electronics.stackexchange.com/questions/tagged/multimeter" class="post-tag ">multimeter</a>
+                        <a href="https://electronics.stackexchange.com/questions/tagged/short-circuit" class="post-tag ">short-circuit</a>
+                        <a href="https://electronics.stackexchange.com/questions/tagged/guitar-pedal" class="post-tag ">guitar-pedal</a>
+2 answers |
+                    asked 12 hours ago
+                    <span class="owner">
+                        by <a href="https://electronics.stackexchange.com/users/297235/linus">Linus</a> on
+                    </span>
+                <a href="https://electronics.stackexchange.com/" class="question-host">
+electronics                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="scifi.stackexchange.com" class="question-container">
+        <a href="https://scifi.stackexchange.com/questions/254631/in-the-star-trek-universe-are-transporter-effects-visible-and-or-audible">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on scifi.stackexchange.com"><img src="./index_files/icon-48(3).png" alt="Science Fiction &amp; Fantasy Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://scifi.stackexchange.com/questions/254631/in-the-star-trek-universe-are-transporter-effects-visible-and-or-audible" title="This question has been arbitrarily awarded 31.888 hotness points">
+                    In the Star Trek universe, are transporter effects visible and/or audible?
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://scifi.stackexchange.com/questions/tagged/star-trek" class="post-tag ">star-trek</a>
+                        <a href="https://scifi.stackexchange.com/questions/tagged/star-trek-transporter" class="post-tag ">star-trek-transporter</a>
+3 answers |
+                    asked yesterday
+                    <span class="owner">
+                        by <a href="https://scifi.stackexchange.com/users/42282/thaimin">thaimin</a> on
+                    </span>
+                <a href="https://scifi.stackexchange.com/" class="question-host">
+scifi                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="worldbuilding.stackexchange.com" class="question-container">
+        <a href="https://worldbuilding.stackexchange.com/questions/214735/what-would-be-the-most-effective-role-to-place-150-300-modern-soldiers-in-during">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on worldbuilding.stackexchange.com"><img src="./index_files/icon-48(7).png" alt="Worldbuilding Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://worldbuilding.stackexchange.com/questions/214735/what-would-be-the-most-effective-role-to-place-150-300-modern-soldiers-in-during" title="This question has been arbitrarily awarded 31.477 hotness points">
+                    What would be the most effective role to place 150-300 modern soldiers in during the Civil War?
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://worldbuilding.stackexchange.com/questions/tagged/warfare" class="post-tag ">warfare</a>
+                        <a href="https://worldbuilding.stackexchange.com/questions/tagged/time-travel" class="post-tag ">time-travel</a>
+                        <a href="https://worldbuilding.stackexchange.com/questions/tagged/tactics" class="post-tag ">tactics</a>
+13 answers |
+                    asked yesterday
+                    <span class="owner">
+                        by <a href="https://worldbuilding.stackexchange.com/users/52876/dt-cooper">DT Cooper</a> on
+                    </span>
+                <a href="https://worldbuilding.stackexchange.com/" class="question-host">
+worldbuilding                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="security.stackexchange.com" class="question-container">
+        <a href="https://security.stackexchange.com/questions/255804/how-is-it-possible-to-get-infected-with-malware-by-opening-a-file-on-a-mac-or-wi">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on security.stackexchange.com"><img src="./index_files/icon-48(8).png" alt="Information Security Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://security.stackexchange.com/questions/255804/how-is-it-possible-to-get-infected-with-malware-by-opening-a-file-on-a-mac-or-wi" title="This question has been arbitrarily awarded 26.668 hotness points">
+                    How is it possible to get infected with malware by opening a file on a Mac or Windows machine?
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://security.stackexchange.com/questions/tagged/malware" class="post-tag ">malware</a>
+5 answers |
+                    asked yesterday
+                    <span class="owner">
+                        by <a href="https://security.stackexchange.com/users/268102/alien">Alien</a> on
+                    </span>
+                <a href="https://security.stackexchange.com/" class="question-host">
+security                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="linguistics.stackexchange.com" class="question-container">
+        <a href="https://linguistics.stackexchange.com/questions/43071/why-is-it-called-proto-germanic">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on linguistics.stackexchange.com"><img src="./index_files/icon-48(9).png" alt="Linguistics Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://linguistics.stackexchange.com/questions/43071/why-is-it-called-proto-germanic" title="This question has been arbitrarily awarded 23.169 hotness points">
+                    Why is it called proto-Germanic?
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://linguistics.stackexchange.com/questions/tagged/historical-linguistics" class="post-tag ">historical-linguistics</a>
+                        <a href="https://linguistics.stackexchange.com/questions/tagged/germanic-languages" class="post-tag ">germanic-languages</a>
+                        <a href="https://linguistics.stackexchange.com/questions/tagged/proto-germanic" class="post-tag ">proto-germanic</a>
+3 answers |
+                    asked 11 hours ago
+                    <span class="owner">
+                        by <a href="https://linguistics.stackexchange.com/users/31190/theonlygusti">theonlygusti</a> on
+                    </span>
+                <a href="https://linguistics.stackexchange.com/" class="question-host">
+linguistics                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="codegolf.stackexchange.com" class="question-container">
+        <a href="https://codegolf.stackexchange.com/questions/235964/implement-the-hyperfactorial">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on codegolf.stackexchange.com"><img src="./index_files/icon-48(2).png" alt="Code Golf Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://codegolf.stackexchange.com/questions/235964/implement-the-hyperfactorial" title="This question has been arbitrarily awarded 19.779 hotness points">
+                    Implement the hyperfactorial
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://codegolf.stackexchange.com/questions/tagged/code-golf" class="post-tag ">code-golf</a>
+                        <a href="https://codegolf.stackexchange.com/questions/tagged/math" class="post-tag ">math</a>
+                        <a href="https://codegolf.stackexchange.com/questions/tagged/combinatorics" class="post-tag ">combinatorics</a>
+35 answers |
+                    asked yesterday
+                    <span class="owner">
+                        by <a href="https://codegolf.stackexchange.com/users/98355/nirvana">Nirvana</a> on
+                    </span>
+                <a href="https://codegolf.stackexchange.com/" class="question-host">
+codegolf                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="worldbuilding.stackexchange.com" class="question-container">
+        <a href="https://worldbuilding.stackexchange.com/questions/214799/whats-the-closest-bodily-damage-there-is-to-simulating-the-effects-of-cast-fro">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on worldbuilding.stackexchange.com"><img src="./index_files/icon-48(7).png" alt="Worldbuilding Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://worldbuilding.stackexchange.com/questions/214799/whats-the-closest-bodily-damage-there-is-to-simulating-the-effects-of-cast-fro" title="This question has been arbitrarily awarded 18.324 hotness points">
+                    What's the closest bodily damage there is to simulating the effects of "cast from lifespan" magic?
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://worldbuilding.stackexchange.com/questions/tagged/biology" class="post-tag ">biology</a>
+                        <a href="https://worldbuilding.stackexchange.com/questions/tagged/anatomy" class="post-tag ">anatomy</a>
+                        <a href="https://worldbuilding.stackexchange.com/questions/tagged/health" class="post-tag ">health</a>
+7 answers |
+                    asked 23 hours ago
+                    <span class="owner">
+                        by <a href="https://worldbuilding.stackexchange.com/users/82267/cyrus-drake">Cyrus Drake</a> on
+                    </span>
+                <a href="https://worldbuilding.stackexchange.com/" class="question-host">
+worldbuilding                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="unix.stackexchange.com" class="question-container">
+        <a href="https://unix.stackexchange.com/questions/671932/find-returns-same-path-twice-but-truncated">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on unix.stackexchange.com"><img src="./index_files/icon-48(10).png" alt="Unix &amp; Linux Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://unix.stackexchange.com/questions/671932/find-returns-same-path-twice-but-truncated" title="This question has been arbitrarily awarded 17.817 hotness points">
+                    Find returns same path twice, but truncated
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://unix.stackexchange.com/questions/tagged/grep" class="post-tag ">grep</a>
+                        <a href="https://unix.stackexchange.com/questions/tagged/find" class="post-tag ">find</a>
+                        <a href="https://unix.stackexchange.com/questions/tagged/regular-expression" class="post-tag ">regular-expression</a>
+2 answers |
+                    asked 9 hours ago
+                    <span class="owner">
+                        by <a href="https://unix.stackexchange.com/users/454474/justinian482">justinian482</a> on
+                    </span>
+                <a href="https://unix.stackexchange.com/" class="question-host">
+unix                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="travel.stackexchange.com" class="question-container">
+        <a href="https://travel.stackexchange.com/questions/168993/why-was-this-border-agent-rude-to-me">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on travel.stackexchange.com"><img src="./index_files/icon-48(11).png" alt="Travel Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://travel.stackexchange.com/questions/168993/why-was-this-border-agent-rude-to-me" title="This question has been arbitrarily awarded 17.564 hotness points">
+                    Why was this border agent rude to me?
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://travel.stackexchange.com/questions/tagged/customs-and-immigration" class="post-tag ">customs-and-immigration</a>
+                        <a href="https://travel.stackexchange.com/questions/tagged/passports" class="post-tag ">passports</a>
+                        <a href="https://travel.stackexchange.com/questions/tagged/borders" class="post-tag ">borders</a>
+6 answers |
+                    asked Oct 2 at 16:46
+                    <span class="owner">
+                        by <a href="https://travel.stackexchange.com/users/123295/user123295">user123295</a> on
+                    </span>
+                <a href="https://travel.stackexchange.com/" class="question-host">
+travel                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="scifi.stackexchange.com" class="question-container">
+        <a href="https://scifi.stackexchange.com/questions/254632/why-does-deathly-hallows-imply-that-dumbledore-dueled-grindelwald-in-1904">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on scifi.stackexchange.com"><img src="./index_files/icon-48(3).png" alt="Science Fiction &amp; Fantasy Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://scifi.stackexchange.com/questions/254632/why-does-deathly-hallows-imply-that-dumbledore-dueled-grindelwald-in-1904" title="This question has been arbitrarily awarded 16.363 hotness points">
+                    Why does Deathly Hallows imply that Dumbledore dueled Grindelwald in 1904?
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://scifi.stackexchange.com/questions/tagged/harry-potter" class="post-tag ">harry-potter</a>
+                        <a href="https://scifi.stackexchange.com/questions/tagged/albus-dumbledore" class="post-tag ">albus-dumbledore</a>
+                        <a href="https://scifi.stackexchange.com/questions/tagged/gellert-grindelwald" class="post-tag ">gellert-grindelwald</a>
+4 answers |
+                    asked yesterday
+                    <span class="owner">
+                        by <a href="https://scifi.stackexchange.com/users/79438/kyle-v">Kyle V</a> on
+                    </span>
+                <a href="https://scifi.stackexchange.com/" class="question-host">
+scifi                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="mathoverflow.net" class="question-container">
+        <a href="https://mathoverflow.net/questions/405477/low-order-symmetric-group-2-generation-n-5-6-8">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on mathoverflow.net"><img src="./index_files/icon-48(12).png" alt="MathOverflow"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://mathoverflow.net/questions/405477/low-order-symmetric-group-2-generation-n-5-6-8" title="This question has been arbitrarily awarded 15.759 hotness points">
+                    Low-order symmetric group 2-generation: n=5,6,8
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://mathoverflow.net/questions/tagged/gr.group-theory" class="post-tag ">gr.group-theory</a>
+                        <a href="https://mathoverflow.net/questions/tagged/finite-groups" class="post-tag ">finite-groups</a>
+2 answers |
+                    asked 14 hours ago
+                    <span class="owner">
+                        by <a href="https://mathoverflow.net/users/4177/david-roberts">David Roberts</a> on
+                    </span>
+                <a href="https://mathoverflow.net/" class="question-host">
+mathoverflow                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="tex.stackexchange.com" class="question-container">
+        <a href="https://tex.stackexchange.com/questions/617815/build-both-the-exam-and-the-solution-at-once">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on tex.stackexchange.com"><img src="./index_files/icon-48(13).png" alt="TeX - LaTeX Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://tex.stackexchange.com/questions/617815/build-both-the-exam-and-the-solution-at-once" title="This question has been arbitrarily awarded 15.577 hotness points">
+                    Build both the exam and the solution at once?
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://tex.stackexchange.com/questions/tagged/exam" class="post-tag ">exam</a>
+                        <a href="https://tex.stackexchange.com/questions/tagged/command-line" class="post-tag ">command-line</a>
+3 answers |
+                    asked 9 hours ago
+                    <span class="owner">
+                        by <a href="https://tex.stackexchange.com/users/85416/nowox">nowox</a> on
+                    </span>
+                <a href="https://tex.stackexchange.com/" class="question-host">
+tex                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="puzzling.stackexchange.com" class="question-container">
+        <a href="https://puzzling.stackexchange.com/questions/111975/who-robbed-the-store">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on puzzling.stackexchange.com"><img src="./index_files/icon-48(14).png" alt="Puzzling Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://puzzling.stackexchange.com/questions/111975/who-robbed-the-store" title="This question has been arbitrarily awarded 14.96 hotness points">
+                    Who robbed the store?
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://puzzling.stackexchange.com/questions/tagged/logical-deduction" class="post-tag ">logical-deduction</a>
+                        <a href="https://puzzling.stackexchange.com/questions/tagged/liars" class="post-tag ">liars</a>
+10 answers |
+                    asked 2 days ago
+                    <span class="owner">
+                        by <a href="https://puzzling.stackexchange.com/users/62537/dmitry-kamenetsky">Dmitry Kamenetsky</a> on
+                    </span>
+                <a href="https://puzzling.stackexchange.com/" class="question-host">
+puzzling                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="academia.stackexchange.com" class="question-container">
+        <a href="https://academia.stackexchange.com/questions/176192/what-are-legitimate-reasons-for-students-to-use-their-personal-rather-than-univ">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on academia.stackexchange.com"><img src="./index_files/icon-48.png" alt="Academia Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://academia.stackexchange.com/questions/176192/what-are-legitimate-reasons-for-students-to-use-their-personal-rather-than-univ" title="This question has been arbitrarily awarded 14.569 hotness points">
+                    What are legitimate reasons for students to use their personal, rather than university, email accounts?
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://academia.stackexchange.com/questions/tagged/email" class="post-tag ">email</a>
+15 answers |
+                    asked Oct 2 at 19:19
+                    <span class="owner">
+                        by <a href="https://academia.stackexchange.com/users/147621/fles">fles</a> on
+                    </span>
+                <a href="https://academia.stackexchange.com/" class="question-host">
+academia                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="travel.stackexchange.com" class="question-container">
+        <a href="https://travel.stackexchange.com/questions/169039/advice-and-suggestions-for-someone-taking-their-first-flight-to-the-usa">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on travel.stackexchange.com"><img src="./index_files/icon-48(11).png" alt="Travel Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://travel.stackexchange.com/questions/169039/advice-and-suggestions-for-someone-taking-their-first-flight-to-the-usa" title="This question has been arbitrarily awarded 13.784 hotness points">
+                    Advice and suggestions for someone taking their first flight to the USA
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://travel.stackexchange.com/questions/tagged/usa" class="post-tag ">usa</a>
+                        <a href="https://travel.stackexchange.com/questions/tagged/uk" class="post-tag ">uk</a>
+                        <a href="https://travel.stackexchange.com/questions/tagged/international-travel" class="post-tag ">international-travel</a>
+                        <a href="https://travel.stackexchange.com/questions/tagged/solo-travel" class="post-tag ">solo-travel</a>
+3 answers |
+                    asked 10 hours ago
+                    <span class="owner">
+                        by <a href="https://travel.stackexchange.com/users/123341/sutton">Sutton</a> on
+                    </span>
+                <a href="https://travel.stackexchange.com/" class="question-host">
+travel                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="gaming.stackexchange.com" class="question-container">
+        <a href="https://gaming.stackexchange.com/questions/391094/anyone-recognise-this-probably-text-adventure-game">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on gaming.stackexchange.com"><img src="./index_files/icon-48(15).png" alt="Arqade"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://gaming.stackexchange.com/questions/391094/anyone-recognise-this-probably-text-adventure-game" title="This question has been arbitrarily awarded 13.657 hotness points">
+                    Anyone recognise this (probably text adventure) game?
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://gaming.stackexchange.com/questions/tagged/game-identification" class="post-tag ">game-identification</a>
+1 answers |
+                    asked 9 hours ago
+                    <span class="owner">
+                        by <a href="https://gaming.stackexchange.com/users/625/bonnici">Bonnici</a> on
+                    </span>
+                <a href="https://gaming.stackexchange.com/" class="question-host">
+gaming                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="retrocomputing.stackexchange.com" class="question-container">
+        <a href="https://retrocomputing.stackexchange.com/questions/21928/making-loops-faster-with-the-cp1600-cpu">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on retrocomputing.stackexchange.com"><img src="./index_files/icon-48(16).png" alt="Retrocomputing Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://retrocomputing.stackexchange.com/questions/21928/making-loops-faster-with-the-cp1600-cpu" title="This question has been arbitrarily awarded 13.563 hotness points">
+                    Making loops faster with the CP1600 CPU?
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://retrocomputing.stackexchange.com/questions/tagged/cpu" class="post-tag ">cpu</a>
+2 answers |
+                    asked 20 hours ago
+                    <span class="owner">
+                        by <a href="https://retrocomputing.stackexchange.com/users/15461/b-degnan">b degnan</a> on
+                    </span>
+                <a href="https://retrocomputing.stackexchange.com/" class="question-host">
+retrocomputing                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="law.stackexchange.com" class="question-container">
+        <a href="https://law.stackexchange.com/questions/73434/how-a-plain-clothes-officer-entering-your-house-is-not-an-unreasonable-search">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on law.stackexchange.com"><img src="./index_files/icon-48(17).png" alt="Law Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://law.stackexchange.com/questions/73434/how-a-plain-clothes-officer-entering-your-house-is-not-an-unreasonable-search" title="This question has been arbitrarily awarded 13.169 hotness points">
+                    How a plain-clothes officer entering your house is not an unreasonable search?
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://law.stackexchange.com/questions/tagged/united-states" class="post-tag ">united-states</a>
+                        <a href="https://law.stackexchange.com/questions/tagged/constitutional-law" class="post-tag ">constitutional-law</a>
+                        <a href="https://law.stackexchange.com/questions/tagged/us-constitution" class="post-tag ">us-constitution</a>
+                        <a href="https://law.stackexchange.com/questions/tagged/search-and-seizure" class="post-tag ">search-and-seizure</a>
+1 answers |
+                    asked 11 hours ago
+                    <span class="owner">
+                        by <a href="https://law.stackexchange.com/users/12089/robertspierre">robertspierre</a> on
+                    </span>
+                <a href="https://law.stackexchange.com/" class="question-host">
+law                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="politics.stackexchange.com" class="question-container">
+        <a href="https://politics.stackexchange.com/questions/69161/what-strategy-was-isis-employing-with-terrorist-attacks-in-the-west">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on politics.stackexchange.com"><img src="./index_files/icon-48(4).png" alt="Politics Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://politics.stackexchange.com/questions/69161/what-strategy-was-isis-employing-with-terrorist-attacks-in-the-west" title="This question has been arbitrarily awarded 13.012 hotness points">
+                    What strategy was ISIS employing with terrorist attacks in the West?
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://politics.stackexchange.com/questions/tagged/terrorism" class="post-tag ">terrorism</a>
+                        <a href="https://politics.stackexchange.com/questions/tagged/islamic-state" class="post-tag ">islamic-state</a>
+3 answers |
+                    asked 11 hours ago
+                    <span class="owner">
+                        by <a href="https://politics.stackexchange.com/users/10425/colmde">colmde</a> on
+                    </span>
+                <a href="https://politics.stackexchange.com/" class="question-host">
+politics                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="stackoverflow.com" class="question-container">
+        <a href="https://stackoverflow.com/questions/69437526/what-is-this-odd-sorting-algorithm">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on stackoverflow.com"><img src="./index_files/icon-48(18).png" alt="Stack Overflow"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://stackoverflow.com/questions/69437526/what-is-this-odd-sorting-algorithm" title="This question has been arbitrarily awarded 12.243 hotness points">
+                    What is this odd sorting algorithm?
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://stackoverflow.com/questions/tagged/python" class="post-tag ">python</a>
+                        <a href="https://stackoverflow.com/questions/tagged/algorithm" class="post-tag ">algorithm</a>
+                        <a href="https://stackoverflow.com/questions/tagged/sorting" class="post-tag ">sorting</a>
+4 answers |
+                    asked yesterday
+                    <span class="owner">
+                        by <a href="https://stackoverflow.com/users/16759116/dont-talk-just-code">don't talk just code</a> on
+                    </span>
+                <a href="https://stackoverflow.com/" class="question-host">
+stackoverflow                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="money.stackexchange.com" class="question-container">
+        <a href="https://money.stackexchange.com/questions/145373/safe-ish-investment-options-for-young-well-compensated-couple">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on money.stackexchange.com"><img src="./index_files/icon-48(19).png" alt="Personal Finance &amp; Money Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://money.stackexchange.com/questions/145373/safe-ish-investment-options-for-young-well-compensated-couple" title="This question has been arbitrarily awarded 11.799 hotness points">
+                    Safe-ish Investment options for young, well-compensated couple
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://money.stackexchange.com/questions/tagged/investing" class="post-tag ">investing</a>
+                        <a href="https://money.stackexchange.com/questions/tagged/savings" class="post-tag ">savings</a>
+                        <a href="https://money.stackexchange.com/questions/tagged/retirement" class="post-tag ">retirement</a>
+9 answers |
+                    asked 2 days ago
+                    <span class="owner">
+                        by <a href="https://money.stackexchange.com/users/107568/jemmy">Jemmy</a> on
+                    </span>
+                <a href="https://money.stackexchange.com/" class="question-host">
+money                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="rpg.stackexchange.com" class="question-container">
+        <a href="https://rpg.stackexchange.com/questions/191972/what-are-martial-classes">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on rpg.stackexchange.com"><img src="./index_files/icon-48(5).png" alt="Role-playing Games Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://rpg.stackexchange.com/questions/191972/what-are-martial-classes" title="This question has been arbitrarily awarded 11.645 hotness points">
+                    What are martial classes?
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://rpg.stackexchange.com/questions/tagged/dnd-5e" class="post-tag ">dnd-5e</a>
+                        <a href="https://rpg.stackexchange.com/questions/tagged/terminology" class="post-tag ">terminology</a>
+3 answers |
+                    asked yesterday
+                    <span class="owner">
+                        by <a href="https://rpg.stackexchange.com/users/44723/akixkisu">Akixkisu</a> on
+                    </span>
+                <a href="https://rpg.stackexchange.com/" class="question-host">
+rpg                </a>
+            </div>
+        </div>
+    </div>
+    <div data-sid="codereview.stackexchange.com" class="question-container">
+        <a href="https://codereview.stackexchange.com/questions/268639/creating-a-code-from-an-equation-in-python-using-classes">
+                <div class="hot-question-site-icon">
+                    <span title="view this question on codereview.stackexchange.com"><img src="./index_files/icon-48(20).png" alt="Code Review Stack Exchange"></span>
+                </div>
+        </a>
+
+        <div class="question question-hot">
+            <h2>
+                <a class="question-link" href="https://codereview.stackexchange.com/questions/268639/creating-a-code-from-an-equation-in-python-using-classes" title="This question has been arbitrarily awarded 11.54 hotness points">
+                    Creating a code from an equation in Python using classes
+                </a>
+            </h2>
+            <div class="metaInfo">
+                        <a href="https://codereview.stackexchange.com/questions/tagged/python" class="post-tag ">python</a>
+                        <a href="https://codereview.stackexchange.com/questions/tagged/python-3.x" class="post-tag ">python-3.x</a>
+                        <a href="https://codereview.stackexchange.com/questions/tagged/object-oriented" class="post-tag ">object-oriented</a>
+                        <a href="https://codereview.stackexchange.com/questions/tagged/python-2.x" class="post-tag ">python-2.x</a>
+                        <a href="https://codereview.stackexchange.com/questions/tagged/classes" class="post-tag ">classes</a>
+3 answers |
+                    asked yesterday
+                    <span class="owner">
+                        by <a href="https://codereview.stackexchange.com/users/250053/jeronimo-dcosta">jeronimo dcosta</a> on
+                    </span>
+                <a href="https://codereview.stackexchange.com/" class="question-host">
+codereview                </a>
+            </div>
+        </div>
+    </div>
+
+<div class="page-sizer fr"><a href="https://stackexchange.com/?pagesize=15" title="show 15 items per page" class="page-numbers">15</a>
+<a href="https://stackexchange.com/?pagesize=30" title="show 30 items per page" class="current page-numbers">30</a>
+<a href="https://stackexchange.com/?pagesize=50" title="show 50 items per page" class="page-numbers">50</a>
+<span class="page-numbers desc">per page</span>
+</div><div class="pager fl">
+<span class="page-numbers current">1</span>
+<a href="https://stackexchange.com/?page=2" title="go to page 2"><span class="page-numbers">2</span></a>
+<a href="https://stackexchange.com/?page=3" title="go to page 3"><span class="page-numbers">3</span></a>
+<a href="https://stackexchange.com/?page=4" title="go to page 4"><span class="page-numbers">4</span></a>
+<a href="https://stackexchange.com/?page=2" title="go to page 2" rel="next"><span class="page-numbers next"> next</span></a>
+</div>
+
+    </div>
+</div>
+<div id="sideBar">
+        <div class="module featured-sidebar">
+    <div class="heading">Today's Featured Site</div>
+    <div class="featured-site" data-sid="rpg.stackexchange.com">
+        <div class="site-icon">
+            <a href="https://rpg.stackexchange.com/">
+                <img src="./index_files/apple-touch-icon.png" alt="Role-playing Games Stack Exchange" class="featured-site-icon"></a>
+        </div>
+        <div class="site-details">
+            <a href="https://rpg.stackexchange.com/" title="Role-playing Games Stack Exchange - Q&amp;A for gamemasters and players of tabletop, paper-and-pencil role-playing games">
+                Role-playing Games Stack Exchange
+            </a>
+            <br>
+            Q&amp;A for gamemasters and players of tabletop, paper-and-pencil role-playing games
+        </div>
+        <div class="site-stats">
+            <div class="stats-container">
+                <div class="stats" title="44,551 total questions">45k</div>
+                <div class="stats-label">questions</div>
+            </div>
+            <div class="stats-container">
+                <div class="stats" title="100,767 total answers">101k</div>
+                <div class="stats-label">answers</div>
+            </div>
+            <div class="stats-container">
+                <div class="stats">100%</div>
+                <div class="stats-label">answered</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+<div class="module users-sidebar">
+        <div class="heading">Top Network Askers</div>
+            <div class="userDetails">
+                <a href="https://academia.stackexchange.com/users/53935/rsc05"><img class="bar-sm" src="./index_files/2518d6a04eb7df5d9ec95142943a6d6f" alt="rsc05"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://academia.stackexchange.com/users/53935/rsc05">rsc05</a></span><br>
+                    <span title="Academia Stack Exchange" class="sb-siteName">Academia</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://skeptics.stackexchange.com/users/56721/pinegulf"><img class="bar-sm" src="./index_files/c3399b553cf9af21c66283a775c50c12" alt="pinegulf"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://skeptics.stackexchange.com/users/56721/pinegulf">pinegulf</a></span><br>
+                    <span title="Skeptics Stack Exchange" class="sb-siteName">Skeptics</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://codegolf.stackexchange.com/users/24877/flawr"><img class="bar-sm" src="./index_files/xGT7d.jpg" alt="flawr"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://codegolf.stackexchange.com/users/24877/flawr">flawr</a></span><br>
+                    <span title="Code Golf Stack Exchange" class="sb-siteName">Code Golf</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://scifi.stackexchange.com/users/134473/damar"><img class="bar-sm" src="./index_files/unnamed.jpg" alt="Damar"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://scifi.stackexchange.com/users/134473/damar">Damar</a></span><br>
+                    <span title="Science Fiction &amp; Fantasy Stack Exchange" class="sb-siteName">Science Fiction &amp; Fantasy</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://academia.stackexchange.com/users/139335/anders-gustafson"><img class="bar-sm" src="./index_files/691b2628839c36d471408fb656ac01cd" alt="Anders Gustafson"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://academia.stackexchange.com/users/139335/anders-gustafson">Anders Gustafson</a></span><br>
+                    <span title="Academia Stack Exchange" class="sb-siteName">Academia</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://politics.stackexchange.com/users/22967/allure"><img class="bar-sm" src="./index_files/3aea2b733f78d941764f41da169f19bc" alt="Allure"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://politics.stackexchange.com/users/22967/allure">Allure</a></span><br>
+                    <span title="Politics Stack Exchange" class="sb-siteName">Politics</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://rpg.stackexchange.com/users/51180/ayden-s"><img class="bar-sm" src="./index_files/7a82b5243bea13380356b03645e2ae12" alt="Ayden s"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://rpg.stackexchange.com/users/51180/ayden-s">Ayden s</a></span><br>
+                    <span title="Role-playing Games Stack Exchange" class="sb-siteName">Role-playing Games</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://electronics.stackexchange.com/users/297235/linus"><img class="bar-sm" src="./index_files/ff15d3e4e31c02d303342428fbc6fc05" alt="Linus"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://electronics.stackexchange.com/users/297235/linus">Linus</a></span><br>
+                    <span title="Electrical Engineering Stack Exchange" class="sb-siteName">Electrical Engineering</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://scifi.stackexchange.com/users/42282/thaimin"><img class="bar-sm" src="./index_files/OBkU2.png" alt="thaimin"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://scifi.stackexchange.com/users/42282/thaimin">thaimin</a></span><br>
+                    <span title="Science Fiction &amp; Fantasy Stack Exchange" class="sb-siteName">Science Fiction &amp; Fantasy</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://worldbuilding.stackexchange.com/users/52876/dt-cooper"><img class="bar-sm" src="./index_files/575f8bb19f32dd3c9bed54f32b04a54f" alt="DT Cooper"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://worldbuilding.stackexchange.com/users/52876/dt-cooper">DT Cooper</a></span><br>
+                    <span title="Worldbuilding Stack Exchange" class="sb-siteName">Worldbuilding</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://security.stackexchange.com/users/268102/alien"><img class="bar-sm" src="./index_files/05eca380b5adf7d54fd3f84246b13472" alt="Alien"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://security.stackexchange.com/users/268102/alien">Alien</a></span><br>
+                    <span title="Information Security Stack Exchange" class="sb-siteName">Information Security</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://linguistics.stackexchange.com/users/31190/theonlygusti"><img class="bar-sm" src="./index_files/BTb0z.jpg" alt="theonlygusti"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://linguistics.stackexchange.com/users/31190/theonlygusti">theonlygusti</a></span><br>
+                    <span title="Linguistics Stack Exchange" class="sb-siteName">Linguistics</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://codegolf.stackexchange.com/users/98355/nirvana"><img class="bar-sm" src="./index_files/nxcWv.png" alt="Nirvana"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://codegolf.stackexchange.com/users/98355/nirvana">Nirvana</a></span><br>
+                    <span title="Code Golf Stack Exchange" class="sb-siteName">Code Golf</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://worldbuilding.stackexchange.com/users/82267/cyrus-drake"><img class="bar-sm" src="./index_files/photo.jpg" alt="Cyrus Drake"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://worldbuilding.stackexchange.com/users/82267/cyrus-drake">Cyrus Drake</a></span><br>
+                    <span title="Worldbuilding Stack Exchange" class="sb-siteName">Worldbuilding</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://unix.stackexchange.com/users/454474/justinian482"><img class="bar-sm" src="./index_files/70297905da5778f5945e8dfe6b8abaf4" alt="justinian482"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://unix.stackexchange.com/users/454474/justinian482">justinian482</a></span><br>
+                    <span title="Unix &amp; Linux Stack Exchange" class="sb-siteName">Unix &amp; Linux</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://travel.stackexchange.com/users/123295/user123295"><img class="bar-sm" src="./index_files/26d4552d38bafcf6f2e81d48046e7479" alt="user123295"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://travel.stackexchange.com/users/123295/user123295">user123295</a></span><br>
+                    <span title="Travel Stack Exchange" class="sb-siteName">Travel</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://scifi.stackexchange.com/users/79438/kyle-v"><img class="bar-sm" src="./index_files/130f11be7701be85216b0ba83d6c2620" alt="Kyle V"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://scifi.stackexchange.com/users/79438/kyle-v">Kyle V</a></span><br>
+                    <span title="Science Fiction &amp; Fantasy Stack Exchange" class="sb-siteName">Science Fiction &amp; Fantasy</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://mathoverflow.net/users/4177/david-roberts"><img class="bar-sm" src="./index_files/cg3mI.jpg" alt="David Roberts"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://mathoverflow.net/users/4177/david-roberts">David Roberts</a></span><br>
+                    <span title="MathOverflow" class="sb-siteName">MathOverflow</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://tex.stackexchange.com/users/85416/nowox"><img class="bar-sm" src="./index_files/dpsjq.jpg" alt="nowox"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://tex.stackexchange.com/users/85416/nowox">nowox</a></span><br>
+                    <span title="TeX - LaTeX Stack Exchange" class="sb-siteName">TeX - LaTeX</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://puzzling.stackexchange.com/users/62537/dmitry-kamenetsky"><img class="bar-sm" src="./index_files/bf25ab14615e8804ee6220d3fa3d1446" alt="Dmitry Kamenetsky"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://puzzling.stackexchange.com/users/62537/dmitry-kamenetsky">Dmitry Kamenetsky</a></span><br>
+                    <span title="Puzzling Stack Exchange" class="sb-siteName">Puzzling</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://academia.stackexchange.com/users/147621/fles"><img class="bar-sm" src="./index_files/7ba65d2fa2fd360dca63c008f1db4148" alt="fles"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://academia.stackexchange.com/users/147621/fles">fles</a></span><br>
+                    <span title="Academia Stack Exchange" class="sb-siteName">Academia</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://travel.stackexchange.com/users/123341/sutton"><img class="bar-sm" src="./index_files/b3de68e4aafab9fecc7c74558cbb0061" alt="Sutton"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://travel.stackexchange.com/users/123341/sutton">Sutton</a></span><br>
+                    <span title="Travel Stack Exchange" class="sb-siteName">Travel</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://gaming.stackexchange.com/users/625/bonnici"><img class="bar-sm" src="./index_files/b7f782d9fd36057780e173e1f0eeda84.jpeg" alt="Bonnici"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://gaming.stackexchange.com/users/625/bonnici">Bonnici</a></span><br>
+                    <span title="Arqade" class="sb-siteName">Arqade</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://retrocomputing.stackexchange.com/users/15461/b-degnan"><img class="bar-sm" src="./index_files/RrcxN.png" alt="b degnan"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://retrocomputing.stackexchange.com/users/15461/b-degnan">b degnan</a></span><br>
+                    <span title="Retrocomputing Stack Exchange" class="sb-siteName">Retrocomputing</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://law.stackexchange.com/users/12089/robertspierre"><img class="bar-sm" src="./index_files/4101485031095085151db1f0b4a1f368" alt="robertspierre"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://law.stackexchange.com/users/12089/robertspierre">robertspierre</a></span><br>
+                    <span title="Law Stack Exchange" class="sb-siteName">Law</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://politics.stackexchange.com/users/10425/colmde"><img class="bar-sm" src="./index_files/b02c7924094c7e51d7fbb04630fb6cef" alt="colmde"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://politics.stackexchange.com/users/10425/colmde">colmde</a></span><br>
+                    <span title="Politics Stack Exchange" class="sb-siteName">Politics</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://stackoverflow.com/users/16759116/dont-talk-just-code"><img class="bar-sm" src="./index_files/DVgo7.png" alt="don&#39;t talk just code"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://stackoverflow.com/users/16759116/dont-talk-just-code">don't talk just code</a></span><br>
+                    <span title="Stack Overflow" class="sb-siteName">Stack Overflow</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://money.stackexchange.com/users/107568/jemmy"><img class="bar-sm" src="./index_files/83d7eff245effd04765e678792a11cdb" alt="Jemmy"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://money.stackexchange.com/users/107568/jemmy">Jemmy</a></span><br>
+                    <span title="Personal Finance &amp; Money Stack Exchange" class="sb-siteName">Personal Finance &amp; Money</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://rpg.stackexchange.com/users/44723/akixkisu"><img class="bar-sm" src="./index_files/e13o8.jpg" alt="Akixkisu"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://rpg.stackexchange.com/users/44723/akixkisu">Akixkisu</a></span><br>
+                    <span title="Role-playing Games Stack Exchange" class="sb-siteName">Role-playing Games</span>
+                </div>
+            </div>
+            <div class="userDetails">
+                <a href="https://codereview.stackexchange.com/users/250053/jeronimo-dcosta"><img class="bar-sm" src="./index_files/6d291f8138e749425f800a8280b15b80" alt="jeronimo dcosta"></a>
+                <div class="userLinks">
+                    <span class="sb-userName"><a href="https://codereview.stackexchange.com/users/250053/jeronimo-dcosta">jeronimo dcosta</a></span><br>
+                    <span title="Code Review Stack Exchange" class="sb-siteName">Code Review</span>
+                </div>
+            </div>
+</div>
+        
+<div class="module sites-sidebar">
+    <div class="heading">Top Network Sites</div>
+    <ul> 
+            <li>
+                <a href="https://stackoverflow.com/" title="Stack Overflow - Q&amp;A for professional and enthusiast programmers">
+                    <img class="favicon" src="./index_files/favicon.ico" title="Stack Overflow">
+                    Stack Overflow
+                </a>
+            </li>
+            <li>
+                <a href="https://math.stackexchange.com/" title="Mathematics Stack Exchange - Q&amp;A for people studying math at any level and professionals in related fields">
+                    <img class="favicon" src="./index_files/favicon(1).ico" title="Mathematics Stack Exchange">
+                    Mathematics
+                </a>
+            </li>
+            <li>
+                <a href="https://superuser.com/" title="Super User - Q&amp;A for computer enthusiasts and power users">
+                    <img class="favicon" src="./index_files/favicon(2).ico" title="Super User">
+                    Super User
+                </a>
+            </li>
+            <li>
+                <a href="https://askubuntu.com/" title="Ask Ubuntu - Q&amp;A for Ubuntu users and developers">
+                    <img class="favicon" src="./index_files/favicon(3).ico" title="Ask Ubuntu">
+                    Ask Ubuntu
+                </a>
+            </li>
+            <li>
+                <a href="https://serverfault.com/" title="Server Fault - Q&amp;A for system and network administrators">
+                    <img class="favicon" src="./index_files/favicon(4).ico" title="Server Fault">
+                    Server Fault
+                </a>
+            </li>
+            <li>
+                <a href="https://meta.stackexchange.com/" title="Meta Stack Exchange - Q&amp;A for meta-discussion of the Stack Exchange family of Q&amp;A websites">
+                    <img class="favicon" src="./index_files/favicon(5).ico" title="Meta Stack Exchange">
+                    Meta Stack Exchange
+                </a>
+            </li>
+            <li>
+                <a href="https://unix.stackexchange.com/" title="Unix &amp; Linux Stack Exchange - Q&amp;A for users of Linux, FreeBSD and other Un*x-like operating systems">
+                    <img class="favicon" src="./index_files/favicon(6).ico" title="Unix &amp; Linux Stack Exchange">
+                    Unix &amp; Linux
+                </a>
+            </li>
+            <li>
+                <a href="https://english.stackexchange.com/" title="English Language &amp; Usage Stack Exchange - Q&amp;A for linguists, etymologists, and serious English language enthusiasts">
+                    <img class="favicon" src="./index_files/favicon(7).ico" title="English Language &amp; Usage Stack Exchange">
+                    English Language &amp; Usage
+                </a>
+            </li>
+            <li>
+                <a href="https://ru.stackoverflow.com/" title="Stack Overflow на русском - Вопросы и ответы для программистов">
+                    <img class="favicon" src="./index_files/favicon(8).ico" title="Stack Overflow на русском">
+                    Stack Overflow на русском
+                </a>
+            </li>
+            <li>
+                <a href="https://apple.stackexchange.com/" title="Ask Different - Q&amp;A for power users of Apple hardware and software">
+                    <img class="favicon" src="./index_files/favicon(9).ico" title="Ask Different">
+                    Ask Different
+                </a>
+            </li>
+    </ul>
+        
+    <p class="footer">
+        <a href="https://stackexchange.com/sites"><b>view all 177 sites »</b></a>
+    </p>
+</div>
+</div>
+<div id="feed-link">
+    <a href="https://stackexchange.com/feeds/questions" title="the 30 most recent hot questions"><span class="feed-icon"></span> hot questions feed</a>
+</div>
+<br class="cbo">
+            </div>
+        </section>
+
+        <script>
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-5620270-24']);
+            _gaq.push(['_setDomainName', '.stackexchange.com']);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = 'https://ssl.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+            _qoptions = { qacct: "p-c1rF4kxgLUzNc" };
+        </script>
+
+    </div> 
+
+    <footer id="footer" class="site-footer js-footer" role="contentinfo">
+        <div class="site-footer--container">
+                <div class="site-footer--logo">
+                    
+                    <a href="https://stackexchange.com/"><svg aria-hidden="true" class="native svg-icon iconLogoSEGlyphMd" width="32" height="37" viewBox="0 0 32 37"><path d="M31 7H1V6c0-2.61 2.42-5 5-5h20c2.58 0 5 2.39 5 5v1Z" fill="#8FD8F7"></path><path d="M1 25v1c0 2.61 2.42 5 5 5h13v6l6-6h1c2.58 0 5-2.39 5-5v-1H1Z" fill="#155397"></path><path d="M1 17v6h30v-6H1Z" fill="#2D6DB5"></path><path d="M1 9v6h30V9H1Z" fill="#46A2D9"></path></svg></a>
+                </div>
+            <nav class="site-footer--nav">
+                    <div class="site-footer--col site-footer--col__visible js-footer-col" data-name="default">
+                        <h5 class="-title"><a href="https://stackexchange.com/">Stack Exchange</a></h5>
+                        <ul class="-list js-primary-footer-links">
+                                <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link: 1 })" href="https://stackexchange.com/about">About</a></li>
+                            <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link: 13 })" href="https://stackexchange.com/about/contact">Contact</a></li>
+                                <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link: 14 })" href="https://meta.stackexchange.com/">Feedback</a></li>
+                        </ul>
+                    </div>
+                <div class="site-footer--col site-footer--col__visible js-footer-col" data-name="default">
+                    <h5 class="-title"><a class="js-gps-track" data-gps-track="footer.click({ location: 0, link: 1 })" href="https://stackoverflow.com/company">Company</a></h5>
+                    <ul class="-list">
+                            <li class="-item"><a href="https://stackoverflow.com/" class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link: 15})">Stack Overflow</a></li>
+                            <li class="-item"><a href="https://stackoverflow.com/teams" class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link: 29 })">For Teams</a></li>
+                            <li class="-item"><a href="https://stackoverflow.com/advertising" class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link: 21 })">Advertise With Us</a></li>
+                            <li class="-item"><a href="https://stackoverflow.com/talent" class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link: 20 })">Hire a Developer</a></li>
+                            <li class="-item"><a href="https://stackoverflow.com/jobs" class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link: 17})">Developer Jobs</a></li>
+                        <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link: 27 })" href="https://stackoverflow.com/company/press">Press</a></li>
+                        <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link: 7 })" href="https://stackoverflow.com/legal">Legal</a></li>
+                        <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link: 8 })" href="https://stackoverflow.com/legal/privacy-policy">Privacy Policy</a></li>
+                        <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link: 37 })" href="https://stackoverflow.com/legal/terms-of-service">Terms of Service</a></li>
+                            <li class="-item" id="consent-footer-link"><a class="js-gps-track -link js-cookie-settings" data-gps-track="footer.click({ location: 0, link: 38 })" href="https://stackexchange.com/#" data-consent-popup-loader="footer">Cookie Settings</a></li>
+                        <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link: 39 })" href="https://stackoverflow.com/legal/cookie-policy">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer--col site-footer--categories-nav site-footer--col__visible">
+                    <a href="https://stackexchange.com/#" class="site-footer--back js-footer-back"><svg aria-hidden="true" class="svg-icon iconArrowLeftAlt" width="18" height="18" viewBox="0 0 18 18"><path d="M10.58 16 12 14.59 6.4 9 12 3.41 10.57 2l-7 7 7 7Z"></path></svg></a>
+                    <div>
+                        <h5 class="-title"><a href="https://stackexchange.com/" data-gps-track="footer.click({ location: 0, link: 30 })">Stack Exchange<br> Network</a></h5>
+                        <ul class="-list">
+                            <li class="-item"><a href="https://stackexchange.com/#" class="-link _expandable js-footer-category-trigger js-gps-track" data-gps-track="footer.click({ location: 0, link: 24 })" data-target="Technology">Technology</a></li>
+                            <li class="-item"><a href="https://stackexchange.com/#" class="-link _expandable js-footer-category-trigger js-gps-track" data-gps-track="footer.click({ location: 0, link: 24 })" data-target="Life / Arts">Life / Arts</a></li>
+                            <li class="-item"><a href="https://stackexchange.com/#" class="-link _expandable js-footer-category-trigger js-gps-track" data-gps-track="footer.click({ location: 0, link: 24 })" data-target="Culture / Recreation">Culture / Recreation</a></li>
+                            <li class="-item"><a href="https://stackexchange.com/#" class="-link _expandable js-footer-category-trigger js-gps-track" data-gps-track="footer.click({ location: 0, link: 24 })" data-target="Science">Science</a></li>
+                            <li class="-item"><a href="https://stackexchange.com/#" class="-link _expandable js-footer-category-trigger js-gps-track" data-gps-track="footer.click({ location: 0, link: 24 })" data-target="Other">Other</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="site-footer--categories">
+                        <div class="site-footer--col site-footer--category js-footer-col" data-name="Technology">
+        <ul class="-list">
+                <li class="-item"><a href="https://stackoverflow.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                <li class="-item"><a href="https://serverfault.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="system and network administrators">Server Fault</a></li>
+                <li class="-item"><a href="https://superuser.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="computer enthusiasts and power users">Super User</a></li>
+                <li class="-item"><a href="https://webapps.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="power users of web applications">Web Applications</a></li>
+                <li class="-item"><a href="https://askubuntu.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                <li class="-item"><a href="https://webmasters.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="pro webmasters">Webmasters</a></li>
+                <li class="-item"><a href="https://gamedev.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="professional and independent game developers">Game Development</a></li>
+                    </ul></div><div class="site-footer--col site-footer--category js-footer-col" data-name="Technology"><ul class="-list">
+                <li class="-item"><a href="https://tex.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                <li class="-item"><a href="https://softwareengineering.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="professionals, academics, and students working within the systems development life cycle">Software Engineering</a></li>
+                <li class="-item"><a href="https://unix.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="users of Linux, FreeBSD and other Un*x-like operating systems">Unix &amp; Linux</a></li>
+                <li class="-item"><a href="https://apple.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                <li class="-item"><a href="https://wordpress.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="WordPress developers and administrators">WordPress Development</a></li>
+                <li class="-item"><a href="https://gis.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                <li class="-item"><a href="https://electronics.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                    </ul></div><div class="site-footer--col site-footer--category js-footer-col" data-name="Technology"><ul class="-list">
+                <li class="-item"><a href="https://android.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                <li class="-item"><a href="https://security.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="information security professionals">Information Security</a></li>
+                <li class="-item"><a href="https://dba.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                <li class="-item"><a href="https://drupal.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="Drupal developers and administrators">Drupal Answers</a></li>
+                <li class="-item"><a href="https://sharepoint.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="SharePoint enthusiasts">SharePoint</a></li>
+                <li class="-item"><a href="https://ux.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="user experience researchers and experts">User Experience</a></li>
+                <li class="-item"><a href="https://mathematica.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="users of Wolfram Mathematica">Mathematica</a></li>
+                    </ul></div><div class="site-footer--col site-footer--category js-footer-col" data-name="Technology"><ul class="-list">
+                <li class="-item"><a href="https://salesforce.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="Salesforce administrators, implementation experts, developers and anybody in-between">Salesforce</a></li>
+                <li class="-item"><a href="https://expressionengine.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="administrators, end users, developers and designers for ExpressionEngine® CMS">ExpressionEngine® Answers</a></li>
+                <li class="-item"><a href="https://pt.stackoverflow.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="programadores profissionais e entusiastas">Stack Overflow em Português</a></li>
+                <li class="-item"><a href="https://blender.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="people who use Blender to create 3D graphics, animations, or games">Blender</a></li>
+                <li class="-item"><a href="https://networkengineering.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="network engineers">Network Engineering</a></li>
+                <li class="-item"><a href="https://crypto.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="software developers, mathematicians and others interested in cryptography">Cryptography</a></li>
+                <li class="-item"><a href="https://codereview.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="peer programmer code reviews">Code Review</a></li>
+                    </ul></div><div class="site-footer--col site-footer--category js-footer-col" data-name="Technology"><ul class="-list">
+                <li class="-item"><a href="https://magento.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="users of the Magento e-Commerce platform">Magento</a></li>
+                <li class="-item"><a href="https://softwarerecs.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="people seeking specific software recommendations">Software Recommendations</a></li>
+                <li class="-item"><a href="https://dsp.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="practitioners of the art and science of signal, image and video processing">Signal Processing</a></li>
+                <li class="-item"><a href="https://emacs.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="those using, extending or developing Emacs">Emacs</a></li>
+                <li class="-item"><a href="https://raspberrypi.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="users and developers of hardware and software for Raspberry Pi">Raspberry Pi</a></li>
+                <li class="-item"><a href="https://ru.stackoverflow.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="программистов">Stack Overflow на русском</a></li>
+                <li class="-item"><a href="https://codegolf.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="programming puzzle enthusiasts and code golfers">Code Golf</a></li>
+                    </ul></div><div class="site-footer--col site-footer--category js-footer-col" data-name="Technology"><ul class="-list">
+                <li class="-item"><a href="https://es.stackoverflow.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="programadores y profesionales de la informática">Stack Overflow en español</a></li>
+                <li class="-item"><a href="https://ethereum.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="users of Ethereum, the decentralized application platform and smart contract enabled blockchain">Ethereum</a></li>
+                <li class="-item"><a href="https://datascience.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="Data science professionals, Machine Learning specialists, and those interested in learning more about the field">Data Science</a></li>
+                <li class="-item"><a href="https://arduino.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="developers of open-source hardware and software that is compatible with Arduino">Arduino</a></li>
+                <li class="-item"><a href="https://bitcoin.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="Bitcoin crypto-currency enthusiasts">Bitcoin</a></li>
+                <li class="-item"><a href="https://sqa.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="software quality control experts, automation engineers, and software testers">Software Quality Assurance &amp; Testing</a></li>
+                <li class="-item"><a href="https://sound.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="sound engineers, producers, editors, and enthusiasts">Sound Design</a></li>
+                    </ul></div><div class="site-footer--col site-footer--category js-footer-col" data-name="Technology"><ul class="-list">
+                <li class="-item"><a href="https://windowsphone.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="enthusiasts and power users of Windows Phone OS">Windows Phone</a></li>
+                <li class="-item">
+                    <a href="https://stackexchange.com/sites#technology" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 26 })">
+                        <strong>
+                            more (29)
+                        </strong>
+                    </a>
+                </li>
+        </ul>
+    </div>
+    <div class="site-footer--col site-footer--category js-footer-col" data-name="Life / Arts">
+        <ul class="-list">
+                <li class="-item"><a href="https://photo.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                <li class="-item"><a href="https://scifi.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                <li class="-item"><a href="https://graphicdesign.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="Graphic Design professionals, students, and enthusiasts">Graphic Design</a></li>
+                <li class="-item"><a href="https://movies.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="movie and TV enthusiasts">Movies &amp; TV</a></li>
+                <li class="-item"><a href="https://music.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="musicians, students, and enthusiasts">Music: Practice &amp; Theory</a></li>
+                <li class="-item"><a href="https://worldbuilding.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="writers/artists using science, geography and culture to construct imaginary worlds and settings">Worldbuilding</a></li>
+                <li class="-item"><a href="https://video.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="engineers, producers, editors, and enthusiasts spanning the fields of video, and media creation">Video Production</a></li>
+                    </ul></div><div class="site-footer--col site-footer--category js-footer-col" data-name="Life / Arts"><ul class="-list">
+                <li class="-item"><a href="https://cooking.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                <li class="-item"><a href="https://diy.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="contractors and serious DIYers">Home Improvement</a></li>
+                <li class="-item"><a href="https://money.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="people who want to be financially literate">Personal Finance &amp; Money</a></li>
+                <li class="-item"><a href="https://academia.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="academics and those enrolled in higher education">Academia</a></li>
+                <li class="-item"><a href="https://law.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="legal professionals, students, and others with experience or interest in law">Law</a></li>
+                <li class="-item"><a href="https://fitness.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="physical fitness professionals, athletes, trainers, and those providing health-related needs">Physical Fitness</a></li>
+                <li class="-item"><a href="https://gardening.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="gardeners and landscapers">Gardening &amp; Landscaping</a></li>
+                    </ul></div><div class="site-footer--col site-footer--category js-footer-col" data-name="Life / Arts"><ul class="-list">
+                <li class="-item"><a href="https://parenting.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="parents, grandparents, nannies and others with a parenting role">Parenting</a></li>
+                <li class="-item">
+                    <a href="https://stackexchange.com/sites#lifearts" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 26 })">
+                        <strong>
+                            more (10)
+                        </strong>
+                    </a>
+                </li>
+        </ul>
+    </div>
+    <div class="site-footer--col site-footer--category js-footer-col" data-name="Culture / Recreation">
+        <ul class="-list">
+                <li class="-item"><a href="https://english.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                <li class="-item"><a href="https://skeptics.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="scientific skepticism">Skeptics</a></li>
+                <li class="-item"><a href="https://judaism.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                <li class="-item"><a href="https://travel.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="road warriors and seasoned travelers">Travel</a></li>
+                <li class="-item"><a href="https://christianity.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                <li class="-item"><a href="https://ell.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="speakers of other languages learning English">English Language Learners</a></li>
+                <li class="-item"><a href="https://japanese.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="students, teachers, and linguists wanting to discuss the finer points of the Japanese language">Japanese Language</a></li>
+                    </ul></div><div class="site-footer--col site-footer--category js-footer-col" data-name="Culture / Recreation"><ul class="-list">
+                <li class="-item"><a href="https://chinese.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="students, teachers, and linguists wanting to discuss the finer points of the Chinese language">Chinese Language</a></li>
+                <li class="-item"><a href="https://french.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="students, teachers, and linguists wanting to discuss the finer points of the French language">French Language</a></li>
+                <li class="-item"><a href="https://german.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="speakers of German wanting to discuss the finer points of the language and translation">German Language</a></li>
+                <li class="-item"><a href="https://hermeneutics.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="professors, theologians, and those interested in exegetical analysis of biblical texts">Biblical Hermeneutics</a></li>
+                <li class="-item"><a href="https://history.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="historians and history buffs">History</a></li>
+                <li class="-item"><a href="https://spanish.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="linguists, teachers, students and Spanish language enthusiasts in general wanting to discuss the finer points of the language">Spanish Language</a></li>
+                <li class="-item"><a href="https://islam.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="Muslims, experts in Islam, and those interested in learning more about Islam">Islam</a></li>
+                    </ul></div><div class="site-footer--col site-footer--category js-footer-col" data-name="Culture / Recreation"><ul class="-list">
+                <li class="-item"><a href="https://rus.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="лингвистов и энтузиастов русского языка">Русский язык</a></li>
+                <li class="-item"><a href="https://russian.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="students, teachers, and linguists wanting to discuss the finer points of the Russian language">Russian Language</a></li>
+                <li class="-item"><a href="https://gaming.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                <li class="-item"><a href="https://bicycles.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                <li class="-item"><a href="https://rpg.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                <li class="-item"><a href="https://anime.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="anime and manga fans">Anime &amp; Manga</a></li>
+                <li class="-item"><a href="https://puzzling.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="those who create, solve, and study puzzles">Puzzling</a></li>
+                    </ul></div><div class="site-footer--col site-footer--category js-footer-col" data-name="Culture / Recreation"><ul class="-list">
+                <li class="-item"><a href="https://mechanics.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="mechanics and DIY enthusiast owners of cars, trucks, and motorcycles">Motor Vehicle Maintenance &amp; Repair</a></li>
+                <li class="-item"><a href="https://boardgames.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="people who like playing board games, designing board games or modifying the rules of existing board games">Board &amp; Card Games</a></li>
+                <li class="-item"><a href="https://bricks.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="LEGO® and building block enthusiasts">Bricks</a></li>
+                <li class="-item"><a href="https://homebrew.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="dedicated home brewers and serious enthusiasts">Homebrewing</a></li>
+                <li class="-item"><a href="https://martialarts.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="students and teachers of all martial arts">Martial Arts</a></li>
+                <li class="-item"><a href="https://outdoors.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="people who love being outdoors enjoying nature and wilderness, and learning about the required skills and equipment">The Great Outdoors</a></li>
+                <li class="-item"><a href="https://poker.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="serious players and enthusiasts of poker">Poker</a></li>
+                    </ul></div><div class="site-footer--col site-footer--category js-footer-col" data-name="Culture / Recreation"><ul class="-list">
+                <li class="-item"><a href="https://chess.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="serious players and enthusiasts of chess">Chess</a></li>
+                <li class="-item"><a href="https://sports.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="participants in team and individual sport activities">Sports</a></li>
+                <li class="-item">
+                    <a href="https://stackexchange.com/sites#culturerecreation" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 26 })">
+                        <strong>
+                            more (16)
+                        </strong>
+                    </a>
+                </li>
+        </ul>
+    </div>
+    <div class="site-footer--col site-footer--category js-footer-col" data-name="Science">
+        <ul class="-list">
+                <li class="-item"><a href="https://mathoverflow.net/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="professional mathematicians">MathOverflow</a></li>
+                <li class="-item"><a href="https://math.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                <li class="-item"><a href="https://stats.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="people interested in statistics, machine learning, data analysis, data mining, and data visualization">Cross Validated (stats)</a></li>
+                <li class="-item"><a href="https://cstheory.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                <li class="-item"><a href="https://physics.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="active researchers, academics and students of physics">Physics</a></li>
+                <li class="-item"><a href="https://chemistry.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="scientists, academics, teachers, and students in the field of chemistry">Chemistry</a></li>
+                <li class="-item"><a href="https://biology.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="biology researchers, academics, and students">Biology</a></li>
+                    </ul></div><div class="site-footer--col site-footer--category js-footer-col" data-name="Science"><ul class="-list">
+                <li class="-item"><a href="https://cs.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="students, researchers and practitioners of computer science">Computer Science</a></li>
+                <li class="-item"><a href="https://philosophy.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="those interested in the study of the fundamental nature of knowledge, reality, and existence">Philosophy</a></li>
+                <li class="-item"><a href="https://linguistics.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="professional linguists and others with an interest in linguistic research and theory">Linguistics</a></li>
+                <li class="-item"><a href="https://psychology.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="practitioners, researchers, and students in cognitive science, psychology, neuroscience, and psychiatry">Psychology &amp; Neuroscience</a></li>
+                <li class="-item"><a href="https://scicomp.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="scientists using computers to solve scientific problems">Computational Science</a></li>
+                <li class="-item">
+                    <a href="https://stackexchange.com/sites#science" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 26 })">
+                        <strong>
+                            more (10)
+                        </strong>
+                    </a>
+                </li>
+        </ul>
+    </div>
+    <div class="site-footer--col site-footer--category js-footer-col" data-name="Other">
+        <ul class="-list">
+                <li class="-item"><a href="https://meta.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Exchange</a></li>
+                <li class="-item"><a href="https://stackapps.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                <li class="-item"><a href="https://api.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="programmatic interaction with Stack Exchange sites">API</a></li>
+                <li class="-item"><a href="https://data.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="querying Stack Exchange data using SQL">Data</a></li>
+        </ul>
+    </div>
+
+                </div>
+            </nav>
+            <div class="site-footer--copyright fs-fine">
+                <ul class="-list">
+                    <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link:4 })" href="https://stackoverflow.blog/?blb=1">Blog</a></li>
+                    <li class="-item"><a href="https://www.facebook.com/officialstackoverflow/" class="-link js-gps-track" data-gps-track="footer.click({ location: 0, link: 31 })">Facebook</a></li>
+                    <li class="-item"><a href="https://twitter.com/stackoverflow" class="-link js-gps-track" data-gps-track="footer.click({ location: 0, link: 32 })">Twitter</a></li>
+                    <li class="-item"><a href="https://linkedin.com/company/stack-overflow" class="-link js-gps-track" data-gps-track="footer.click({ location: 0, link: 33 })">LinkedIn</a></li>
+                    <li class="-item"><a href="https://www.instagram.com/thestackoverflow" class="-link js-gps-track" data-gps-track="footer.click({ location: 0, link: 36 })">Instagram</a></li>
+                </ul>
+
+                <p class="mt-auto mb24">
+site design / logo © 2021 Stack Exchange Inc; user contributions licensed under <a href="https://stackoverflow.com/help/licensing">cc by-sa</a>.                    <span id="svnrev">rev&nbsp;2021.10.5.40381</span>
+                </p>
+            </div>
+        </div>
+
+    </footer>
+        <script>
+            var $trigger = $('.js-footer-category-trigger'), $footer = $('.js-footer'), $back = $('.js-footer-back'), $cols = $('.js-footer-col');
+
+            function setCategory(target) {
+                var $picked = $cols.filter('[data-name="' + target + '"]');
+                $cols.removeClass('site-footer--col__visible');
+                $picked.addClass('site-footer--col__visible');
+            }
+
+            $trigger.on('click', function (e) {
+                e.preventDefault();
+
+                var target = $(this).data('target');
+
+                $trigger.removeClass('_active');
+                $(this).addClass('_active');
+
+                $footer.addClass('site-footer__open');
+                setCategory(target);
+            });
+
+            $back.on('click', function (e) {
+                e.preventDefault();
+
+                $trigger.removeClass('_active');
+                $footer.removeClass('site-footer__open');
+
+                setCategory('default');
+            });
+        </script>
+    
+    
+    <noscript>
+        <div id="noscript-warning">Stack Exchange works best with JavaScript enabled</div>
+    </noscript>
+    <script>
+        var settings = {
+            fkey: 'f4101bc3e3f96bfd1408a22c9e6a8d17bf381269d58f1c63ee0803c2d9256049',
+            contentPath: "https://cdn.sstatic.net/stackexchange"
+        };
+        $(function() {
+            StackExchange.init({"serverTime":1633467529});
+            StackExchange.topbar.init();
+        });
+    </script>
+    
+
+
+<div id="b54ff682-0fd5-4a64-a3fa-c97b0609df07-bottom"></div><div id="5b1d6bb1-189a-4416-a88f-8aff9cc8886b-loading-animation"><div data-testid="wrapper" class="_loading_overlay_wrapper css-79elbk workflow-extension-loading-overlay inactive"></div></div></body></html>

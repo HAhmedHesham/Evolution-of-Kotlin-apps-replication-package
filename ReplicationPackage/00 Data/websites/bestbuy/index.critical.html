@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html class="no-js" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script src="/node_modules/perfume.js/dist/perfume.umd.min.js"></script>
+  <script>
+      perfumeResults = [];
+      loadtimeResult = [];
+      function xml_http_post(url, data, callback) {var req = new XMLHttpRequest(); req.open("POST", url, true); 
+      req.send(data);} 
+      const perfume = new Perfume({  analyticsTracker: (options) => {    const { metricName, data, eventProperties, navigatorInformation } = options; 
+      perfumeResults.push(options); } });
+      function load_log() {
+      // calculate loadTime based on diff between when DOM is loaded and navigation was started
+      var loadTime = window.performance.timing.domContentLoadedEventEnd- window.performance.timing.navigationStart;
+      loadtimeResult.push({'loadTime': loadTime})
+      setTimeout(function(){ objectToSend = "{'perfumeResults':"+JSON.stringify(perfumeResults)+JSON.stringify(loadtimeResult)+"}"; 
+      xml_http_post("http://192.168.0.243:8080/",objectToSend,null); },5000); };
+      window.addEventListener ?window.addEventListener("load",load_log, true) : window.attachEvent && window.attachEvent("onload", load_log);
+  </script>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html">
+  <meta name="keywords" content=" best buy international, best buy countries">
+  <meta name="description" content="Shop online at Best Buy in your country and language of choice. Best Buy provides online shopping in a number of countries and languages.">
+  <link rel="icon" href="https://www.bestbuy.com/~assets/bby/_com/header-footer/images/favicon-32.png" sizes="32x32">
+  <title>Best Buy International: Select your Country - Best Buy</title>
+  <style>html{line-height:1.15;-webkit-text-size-adjust:100%}h1{font-size:2em;margin:.67em 0}a{background-color:transparent}img{border-style:none}button{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button{overflow:visible}button{text-transform:none}button{-webkit-appearance:button}button::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring{outline:1px dotted ButtonText}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}@font-face{font-family:Human BBY Web;src:url(https://www.bestbuy.com/~assets/bby/_com/sc-pattern-library/dist/e4ad7a6cc30f9153dc15124aa8ec616c.woff2) format("woff2"),url(https://www.bestbuy.com/~assets/bby/_com/sc-pattern-library/dist/81cb0c1eda4258acc6f1dbd26e6d2e1f.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:Human BBY Web;src:url(https://www.bestbuy.com/~assets/bby/_com/sc-pattern-library/dist/5562484cf98053a028aea627e45d4b7c.woff2) format("woff2"),url(https://www.bestbuy.com/~assets/bby/_com/sc-pattern-library/94d9146bb2b173b0ea54262a42b25db9.woff) format("woff");font-weight:500;font-style:normal;font-display:swap}@font-face{font-family:Human BBY Web;src:url(https://www.bestbuy.com/~assets/bby/_com/sc-pattern-library/dist/9b64d8057a58697c89b7d537d4f5f809.woff2) format("woff2"),url(https://www.bestbuy.com/~assets/bby/_com/sc-pattern-library/88bf8b3ae67a01b29ca0383076e21c10.woff) format("woff");font-weight:700;font-style:normal;font-display:swap}body,html{height:100%}body{font-family:Human BBY Web,Roboto,Arial,sans-serif;margin:0}.page-container{position:relative;height:100%}.background-container{padding:38px 12px 12px;background:#101f61;background:linear-gradient(45deg,#101f61,#2b4cb6 40%,#4171fc 59%,#7fd8ff 85%,#a6e4ff);min-height:100%;-webkit-box-sizing:border-box;box-sizing:border-box}.container{max-width:558px;margin:0 auto}.logo{margin-bottom:16px;display:block}h1{margin-bottom:32px}a{text-decoration:none}p{line-height:1.5}p.info{margin-top:8px}p.info .more-details{display:inline-block}.horizontal-rule{width:100%;height:1px;margin:24px 0;background:#4976e6}.heading,h1{font-size:32px;font-weight:700;margin:0}a,h1,h3,p{color:#fff}p{font-size:16px;margin-bottom:0}.language-menu{position:absolute;top:0;width:100%;z-index:10;background-color:#000;margin:0;list-style:none;text-align:right;padding:4px 0;height:18px}.language-menu ul{padding:0 16px;list-style:none;display:block}.language-menu li{display:inline-block;margin-right:16px;font-size:12px}.language-menu li:last-child{margin-right:0}.language-menu button{border:0;background:0 0;color:#fff;padding:0}.heading{color:#fff;margin-bottom:0}.international-header{margin-top:16px;font-size:16px;margin-bottom:0;font-weight:600}.country-selection{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;margin-top:24px;text-align:center}.country-selection h4{margin:12px 0 0;font-weight:600}.country-selection img{display:block;width:100%}.country-selection a:first-child{max-width:31.5%}.country-selection a:last-child{max-width:28%}.country-selection a{display:block;font-weight:700;text-decoration:none;max-width:30%}.more-details{font-size:14px;font-weight:500}.hidden{display:none}</style>
+  <link rel="stylesheet" href="./index_files/app.css" media="print" onload="this.media='all'">
+</head>
+<body>
+  <div class="language-menu">
+    <ul class="container">
+      <li>
+        <button lang="en" class="is-active">English</button>
+      </li>
+      <li>
+        <button lang="fr" class="">Français</button>
+      </li>
+      <li>
+        <button lang="es" class="">Español</button>
+      </li>
+    </ul>
+  </div>
+  <div class="page-container">
+    <div class="background-container">
+      <div class="container">
+        <div class="content">
+          <div lang="en" class="">
+            <img src="./index_files/bby_logo-a7e90594729ed2e119331378def6c97e.png" class="logo" width="80" alt="Best Buy Logo">
+            <div class="heading">Hello!</div>
+            <h1>Choose a country.</h1>
+            <div class="country-selection">
+              <a href="https://www.bestbuy.com/#" class="canada-link">
+                <img src="./index_files/canada.svg" alt="Canada">
+                <h4>Canada</h4>
+              </a>
+              <a href="https://www.bestbuy.com/?intl=nosplash" class="us-link">
+                <img src="./index_files/usa.svg" alt="United States">
+                <h4>United States</h4>
+              </a>
+              <a href="https://www.bestbuy.com.mx/">
+                <img src="./index_files/mexico.svg" alt="Mexico">
+                <h4>Mexico</h4>
+              </a>
+            </div>
+            <div class="horizontal-rule"></div>
+            <h3 class="international-header">Shopping in the U.S.?</h3>
+            <p class="info">
+              International customers can shop on www.bestbuy.com and have orders shipped to any U.S. address or U.S. store.&nbsp;
+              <a href="https://www.bestbuy.com/site/help-topics/international-orders/pcmcat204400050019.c?id=pcmcat204400050019&amp;intl=nosplash" class="more-details">See More Details
+                <img src="./index_files/arrow.svg">
+              </a>
+            </p>
+          </div>
+
+          <div lang="fr" class="hidden">
+            <img src="./index_files/bby_logo-a7e90594729ed2e119331378def6c97e.png" class="logo" width="80" alt="Best Buy Logo">
+            <div class="heading">Bonjour!</div>
+            <h1>Choisir un pays :</h1>
+            <div class="country-selection">
+              <a href="https://www.bestbuy.com/#" class="canada-link">
+                <img src="./index_files/canada.svg" alt="Canada">
+                <h4>Canada</h4>
+              </a>
+              <a href="https://www.bestbuy.com/?intl=nosplash" class="us-link">
+                <img src="./index_files/usa.svg" alt="United States">
+                <h4>United States</h4>
+              </a>
+              <a href="https://www.bestbuy.com.mx/">
+                <img src="./index_files/mexico.svg" alt="Mexico">
+                <h4>Mexico</h4>
+              </a>
+            </div>
+            <div class="horizontal-rule"></div>
+            <h3 class="international-header">Vous magasinez aux É.-U.?</h3>
+            <p class="info">
+              Les clients internationaux peuvent magasiner au www.bestbuy.com et faire livrer leurs commandes à n’importe quelle adresse ou n’importe quel magasin aux États-Unis.&nbsp;
+              <a href="https://www.bestbuy.com/site/help-topics/international-orders/pcmcat204400050019.c?id=pcmcat204400050019&amp;intl=nosplash" class="more-details">Voir les détails
+                <img src="./index_files/arrow.svg">
+              </a>
+            </p>
+          </div>
+          <div lang="es" class="hidden">
+            <img src="./index_files/bby_logo-a7e90594729ed2e119331378def6c97e.png" class="logo" width="80" alt="Best Buy Logo">
+            <div class="heading">¡Hola!</div>
+            <h1>Seleciona un país.</h1>
+            <div class="country-selection">
+              <a href="https://www.bestbuy.com/#" class="canada-link">
+                <img src="./index_files/canada.svg" alt="Canada">
+                <h4>Canada</h4>
+              </a>
+              <a href="https://www.bestbuy.com/?intl=nosplash" class="us-link">
+                <img src="./index_files/usa.svg" alt="Estados Unidos">
+                <h4>Estados Unidos</h4>
+              </a>
+              <a href="https://www.bestbuy.com.mx/">
+                <img src="./index_files/mexico.svg" alt="Mexico">
+                <h4>México</h4>
+              </a>
+            </div>
+            <div class="horizontal-rule"></div>
+            <h3 class="international-header">¿COMPRANDO EN EE. UU.?</h3>
+            <p class="info">
+              Clientes internacionales pueden comparer en www.bestbuy.com y enviar sus pedidos a cualquier domicilio o tienda en EE. UU.&nbsp;
+              <a href="https://www.bestbuy.com/site/help-topics/international-orders/pcmcat204400050019.c?id=pcmcat204400050019&amp;intl=nosplash" class="more-details">Ver más detalles
+                <img src="./index_files/arrow.svg">
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./index_files/zepto.min.js.download"></script>
+  <script src="./index_files/app.min.js.download"></script>
+  <script type="text/javascript">
+    window.track = { pageType:'International', templateName:'International', page:'International Page', section:'International' };
+    window.dioFramework = true;
+  </script>
+  <script src="./index_files/cacheable-gvp-66138ea0147dd17ecdc9dc0ac1b86344.min.js.download"></script>
+  <script src="./index_files/legacy-66138ea0147dd17ecdc9dc0ac1b86344.min.js.download"></script>
+<script type="text/javascript" src="./index_files/NgsC"></script>
+
+
+<noscript><link rel="stylesheet" href="./index_files/app.css"></noscript>
+
+</body></html>

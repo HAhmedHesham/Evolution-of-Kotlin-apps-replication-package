@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){new Blazy({breakpoints:[{width:480,src:"data-src-mouse"},{width:768,src:"data-src-dog"}],success:function(e){setTimeout(function(){e.parentElement.classList.remove("blazy-container")},200)},error:function(e,t){}})});

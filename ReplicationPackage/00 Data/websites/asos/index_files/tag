@@ -1,0 +1,6 @@
+BrightTag.site('dhhX6Vk',function(s){
+s.store([{name:'btpdb.dhhX6Vk.dGZjLjc0ODA4MzE',value:'U0VTU0lPTg'}]);
+s.domready(function(){
+s.tag('\x3cscript\x3e\nvar is_student \x3d \x22'+s.data('amplify_studentstatus')+'\x22.toString().trim();\nif(typeof is_student \x3d\x3d \x27undefined\x27 || !is_student || is_student.length \x3d\x3d\x3d 0 || is_student \x3d\x3d\x3d \x22\x22  ){\n is_student \x3d \x22NOTSTUDENT\x22;   \n}\nvar date \x3d new Date();\ndate.setTime(date.getTime() + (30 * 24 * 60 * 60 * 1000));\nwindow.asos.signal.cookies.setCookie(\x22bt_stdstatus\x22, is_student, {expires: date, domain: window.asos.signal.data.initialData.rootDomain, path: \x22/\x22, secure: true});\n\x3c/script\x3e',{tagId:7480831});
+});
+});

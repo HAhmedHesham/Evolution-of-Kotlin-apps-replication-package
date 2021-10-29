@@ -1,0 +1,17 @@
+<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <filter id="prefix__b" filterUnits="objectBoundingBox" height="103.8%" width="108.9%" y="-1.4%" x="-4.4%">
+            <feGaussianBlur stdDeviation="2" />
+        </filter>
+        <path d="M0 0h158v366H0V0z" id="prefix__a" />
+    </defs>
+    <path fill="none" d="M-1-1h18v18H-1z" />
+    <g>
+        <g fill-rule="evenodd" fill="none">
+            <path fill="#A3DE45"
+                d="M15.756 4.504L13.551.843A1.764 1.764 0 0012.039 0H3.96a1.77 1.77 0 00-1.51.843L.244 4.504a1.676 1.676 0 00.195 2.001l6.249 6.917a1.784 1.784 0 002.627 0l6.246-6.917a1.676 1.676 0 00.195-2v-.001z" />
+            <path fill="#A3DE45"
+                d="M15.756 5.505l-2.205-3.661A1.764 1.764 0 0012.039 1H3.96a1.77 1.77 0 00-1.51.843L.244 5.504a1.676 1.676 0 00.195 2.002l6.249 6.917a1.784 1.784 0 002.627 0l6.246-6.917a1.676 1.676 0 00.195-2v-.001z" />
+        </g>
+    </g>
+</svg>

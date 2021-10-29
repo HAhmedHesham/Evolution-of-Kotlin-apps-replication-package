@@ -1,8 +1,5 @@
 rm(list=ls())
-library(plyr)
-library(pastecs)
 library(ggplot2)
-library(tidyverse)
 
 # loading data
 data = read.table("final_data.txt", header = TRUE, sep = ",", dec = ".")
@@ -180,3 +177,4 @@ legend("topright",
        fill=c("red","blue"),
        cex=1.5
 )
+
