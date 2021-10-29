@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- saved from url=(0018)https://lijit.com/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!-- Meta setup -->
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="keywords" content="">
+		<meta name="decription" content="">
+		<meta name="designer" content="Ripon Rishi">
+		<script src="/node_modules/perfume.js/dist/perfume.umd.min.js"></script>
+		<script>
+			perfumeResults = [];
+			loadtimeResult = [];
+			function xml_http_post(url, data, callback) {var req = new XMLHttpRequest(); req.open("POST", url, true); 
+			req.send(data);} 
+			const perfume = new Perfume({  analyticsTracker: (options) => {    const { metricName, data, eventProperties, navigatorInformation } = options; 
+			perfumeResults.push(options); } });
+			function load_log() {
+			// calculate loadTime based on diff between when DOM is loaded and navigation was started
+			var loadTime = window.performance.timing.domContentLoadedEventEnd- window.performance.timing.navigationStart;
+			loadtimeResult.push({'loadTime': loadTime})
+			setTimeout(function(){ objectToSend = "{'perfumeResults':"+JSON.stringify(perfumeResults)+JSON.stringify(loadtimeResult)+"}"; 
+			xml_http_post("http://192.168.0.243:8080/",objectToSend,null); },5000); };
+			window.addEventListener ?window.addEventListener("load",load_log, true) : window.attachEvent && window.attachEvent("onload", load_log);
+		</script>
+		<!-- Title -->
+		<title>Lijit is an ad serving domain owned by Sovrn Holdings, Inc.</title>
+		
+		<!-- Fav Icon -->
+		<link rel="icon" href="https://lijit.com/img/favicon.ico">	
+
+		<!-- Include Bootstrap -->
+		<style>:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange:#fd7e14;--yellow:#ffc107;--green:#28a745;--teal:#20c997;--cyan:#17a2b8;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#007bff;--secondary:#6c757d;--success:#28a745;--info:#17a2b8;--warning:#ffc107;--danger:#dc3545;--light:#f8f9fa;--dark:#343a40;--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px;--font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}*,::after,::before{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}h2{margin-top:0;margin-bottom:.5rem}p{margin-top:0;margin-bottom:1rem}ul{margin-top:0;margin-bottom:1rem}a{color:#007bff;text-decoration:none;background-color:transparent}img{vertical-align:middle;border-style:none}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}h2{margin-bottom:.5rem;font-weight:500;line-height:1.2}h2{font-size:2rem}.list-unstyled{padding-left:0;list-style:none}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col-lg-12,.col-lg-6,.col-md-6{position:relative;width:100%;padding-right:15px;padding-left:15px}.ml-auto{margin-left:auto!important}*{margin:0;padding:0}body{font-family:'Fira Sans',sans-serif;font-size:16px;font-weight:400;background:#fff;color:#333}ul{list-style-type:none;padding:0;margin:0}::-webkit-selection{color:#fff;background:orange}@font-face{font-family:"LL Circular Bold Web";src:url("index_files/fonts/lineto-circular-bold.eot");src:url("index_files/fonts/lineto-circular-bold.eot?#iefix") format("embedded-opentype"),url("index_files/fonts/lineto-circular-bold.woff2") format("woff2"),url("index_files/fonts/lineto-circular-bold.woff") format("woff");font-weight:400;font-style:normal}.scrolltotop{width:40px;height:40px;border-radius:20px 20px 0 0;background:rgba(0,0,0,.5);text-align:center;padding-top:8px;font-size:22px;color:#fff;position:fixed;right:5px;bottom:5px;display:none}.header{background-color:#fff}.head{padding:32px 0 58px;border-bottom:3px solid #5f5f5f}.header img{max-width:136px;height:29px;margin-top:10px;display:block}.logo{float:left}@font-face{font-family:"LL Circular Book Web";src:url("index_files/fonts/lineto-circular-book.eot");src:url("index_files/fonts/lineto-circular-book.eot?#iefix") format("embedded-opentype"),url("index_files/fonts/lineto-circular-book.woff2") format("woff2"),url("index_files/fonts/lineto-circular-book.woff") format("woff");font-weight:400;font-style:normal}.visit-btn{float:right;height:40px;display:inline-block;white-space:normal}.visit-btn a{font-family:"LL Circular Book Web",Helvetica,Arial,sans-serif!important;font-size:14px;text-align:center;display:inline-block;letter-spacing:1.25px;text-transform:uppercase;background-color:#3c4cfc!important;line-height:16px!important;color:#fff!important;border-radius:5px;padding:16px;box-shadow:0 2px 4px 0 rgba(0,0,0,.35)}.mid{padding:40px 15px 90px}.middle h2{font-family:"LL Circular Bold Web",Helvetica,Arial,sans-serif!important;font-size:37px;letter-spacing:0;line-height:48px!important;margin-top:62px}.middle span{display:block;background:#ffd300;height:3px;width:96px;margin:40px 0 35px}.middle p{font-family:"LL Circular Book Web",Helvetica,Arial,sans-serif!important;font-size:20px;letter-spacing:0;margin-bottom:30px}.middle a{font-family:"LL Circular Book Web",Helvetica,Arial,sans-serif!important;font-size:20px;color:#3c4dff;text-decoration:underline}.ds-none{display:none}.m-none img{max-width:450px!important}.footer{background:#fff;padding:15px 15px 60px;border-top:3px solid #5f5f5f}.footer ul li{display:inline}.footer ul li a{font-family:"LL Circular Bold Web",Helvetica,Arial,sans-serif!important;color:#000;font-size:16px;text-decoration:none;margin-left:-15px}.footer ul li:last-child{color:#000;font-size:16px;float:right;text-decoration:none}.footer ul li a img{width:20px;margin-right:-14px;float:right;margin-top:1px}@media screen and (max-width:575px){.head{padding:32px 15px 53px}.header img{padding:4px;margin-left:-20px}.visit-btn a{font-family:"LL Circular Book Web",Helvetica,Arial,sans-serif!important;font-size:10px;line-height:5px!important;margin-top:4px;margin-right:-15px}.mid{padding:25px 15px 30px}.middle h2{font-family:"LL Circular Bold Web",Helvetica,Arial,sans-serif!important;font-size:21px;letter-spacing:0;line-height:31px!important;margin-top:0;padding-bottom:18px}.m-none{display:none}.ds-none{display:block}.ds-none img{width:100%}.middle p{font-family:"LL Circular Book Web",Helvetica,Arial,sans-serif!important;font-size:15px}.middle a{font-family:"LL Circular Book Web",Helvetica,Arial,sans-serif!important;font-size:15px}.footer ul li a{font-family:"LL Circular Bold Web",Helvetica,Arial,sans-serif!important;color:#000;font-size:14px;margin-left:-15px}.footer ul li a img{width:18px;float:right;margin-right:-15px;margin-top:5px}}</style>
+		<link rel="stylesheet" href="./index_files/bootstrap.css" media="print" onload="this.media='all'">
+		
+		<!-- Main StyleSheet -->
+		<link rel="stylesheet" href="./index_files/style.css" media="print" onload="this.media='all'">	
+		
+		<!-- Responsive CSS -->
+		<link rel="stylesheet" href="./index_files/responsive.css" media="print" onload="this.media='all'">	
+		
+	<style data-emotion="css"></style><style type="text/css"> 
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+      </style></head>
+	<body>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+		<!-- header-area start -->	
+		<div class="header">
+			<div class="container">
+				<div class="head">
+					<div class="logo">
+						<img src="./index_files/logo.png" alt="sovrn publisher platform">
+					</div>
+					<div class="s-btn">
+						<ul class="list-unstyled ml-auto">
+							<li class="visit-btn">
+								<a title="Visit Sovrn" href="https://www.sovrn.com/">VISIT SOVRN</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<!-- middle-area start -->
+		<div class="middle">
+			<div class="container mid">
+				<div class="row">
+					<div class="col-lg-6 col-md-6">
+						<h2>Lijit is an ad serving domain owned by Sovrn Holdings, Inc.</h2>
+						<div class="ds-none">
+							<img src="./index_files/tool.png" alt="lijit is an ad server owned by Sovrn Holdings">
+						</div>
+						<span></span>
+						<p>If you have questions about the purpose of this domain, or about Sovrn, please read our <a href="https://www.sovrn.com/support/what-is-lijit-ad-serving-domain/">support documentation</a>.</p>
+						<p>For other questions, or to start advertising with Sovrn, <a href="https://www.sovrn.com/contact/">contact us</a>.</p>	
+
+					</div>
+					<div class="col-lg-6 col-md-6">
+					<div class="m-none">
+						<img src="./index_files/tool.png" alt="sovrn publisher monetization platform">
+					</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- middle-area end -->
+
+		<!-- footer-area start -->
+		<div class="footer-area">
+			<div class="container">
+				<div class="footer">
+					<div class="row">
+						<div class="col-lg-12">
+							<ul compact="list-unstyled">
+								<li>
+									<a href="https://lijit.com/#">Power to the publisher.</a>
+								</li>
+								<li>
+									<a href="https://lijit.com/#">
+										<img src="./index_files/Slashes.png" alt="sovrn publisher monetization platform">
+									</a>
+								</li>
+							</ul>	
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<!-- footer-area end -->
+
+	
+
+		<!-- Bootstrap jQuery -->
+		<script src="./index_files/bootstrap.js.download"></script>
+
+		
+		<!-- Scroll-Top button -->
+		<a href="https://lijit.com/#" class="scrolltotop"><i class="fas fa-angle-up"></i></a>
+		
+	
+<div id="979fe12a-d17b-474b-9f2b-9e4d7856b813-bottom"></div><div id="a646ab7a-a919-473c-b80f-46593fd87452-loading-animation"><div data-testid="wrapper" class="_loading_overlay_wrapper css-79elbk workflow-extension-loading-overlay inactive"></div></div></body></html>

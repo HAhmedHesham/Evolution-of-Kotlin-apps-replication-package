@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script src="/node_modules/perfume.js/dist/perfume.umd.min.js"></script>
+    <script>
+        perfumeResults = [];
+        loadtimeResult = [];
+        function xml_http_post(url, data, callback) {var req = new XMLHttpRequest(); req.open("POST", url, true); 
+        req.send(data);} 
+        const perfume = new Perfume({  analyticsTracker: (options) => {    const { metricName, data, eventProperties, navigatorInformation } = options; 
+        perfumeResults.push(options); } });
+        function load_log() {
+        // calculate loadTime based on diff between when DOM is loaded and navigation was started
+        var loadTime = window.performance.timing.domContentLoadedEventEnd- window.performance.timing.navigationStart;
+        loadtimeResult.push({'loadTime': loadTime})
+        setTimeout(function(){ objectToSend = "{'perfumeResults':"+JSON.stringify(perfumeResults)+JSON.stringify(loadtimeResult)+"}"; 
+        xml_http_post("http://192.168.0.243:8080/",objectToSend,null); },5000); };
+        window.addEventListener ?window.addEventListener("load",load_log, true) : window.attachEvent && window.attachEvent("onload", load_log);
+    </script>
+				    <title>Web Analytics Made Easy - Statcounter</title>
+				    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+				    
+				    <meta name="Author" content="Statcounter">
+				    <meta name="Keywords" content="web analytics, website stats, web stats, counter, hit counter, hit counters, free hit counter, free web counter, web counter, tracker, web tracker, visitor tracker">
+				    <meta name="Description" content="StatCounter is a simple but powerful real-time web analytics service that helps you track, analyse and understand your visitors so you can make good decisions to become more successful online.">
+				    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+				    <meta name="referrer" content="origin-when-cross-origin">
+				    <meta property="og:image" content="https://www.statcounter.com/images/og_image.png">
+				<meta property="og:locale" content="en_IE">
+				<meta property="og:type" content="website">
+				<meta property="og:title" content="Statcounter - Web Analytics Made Easy">
+				<meta property="og:description" content="A free yet reliable invisible web tracker, highly configurable hit counter and real-time detailed web stats.">
+				<meta property="og:url" content="http://statcounter.com/">
+				<meta property="og:site_name" content="Statcounter">
+				    <link rel="preconnect" href="https://ajax.aspnetcdn.com/">
+				    <style>@font-face{font-family:open_sanslight;src:url('/fonts/OpenSans-Light-webfont.eot');src:url('/fonts/OpenSans-Light-webfont.eot?#iefix') format("embedded-opentype"),url('/fonts/OpenSans-Light-webfont.woff') format("woff"),url('/fonts/OpenSans-Light-webfont.ttf') format("truetype"),url('/fonts/OpenSans-Light-webfont.svg#open_sanslight') format("svg")}@font-face{font-family:open_sansregular;src:url('/fonts/OpenSans-Regular-webfont.eot');src:url('/fonts/OpenSans-Regular-webfont.eot?#iefix') format("embedded-opentype"),url('/fonts/OpenSans-Regular-webfont.woff') format("woff"),url('/fonts/OpenSans-Regular-webfont.ttf') format("truetype"),url('/fonts/OpenSans-Regular-webfont.svg#open_sansregular') format("svg")}@font-face{font-family:open_sanssemibold;src:url('/fonts/OpenSans-Semibold-webfont.eot');src:url('/fonts/OpenSans-Semibold-webfont.eot?#iefix') format("embedded-opentype"),url('/fonts/OpenSans-Semibold-webfont.woff') format("woff"),url('/fonts/OpenSans-Semibold-webfont.ttf') format("truetype"),url('/fonts/OpenSans-Semibold-webfont.svg#open_sanssemibold') format("svg")}@font-face{font-family:open_sansbold;src:url('/fonts/OpenSans-Bold-webfont.eot');src:url('/fonts/OpenSans-Bold-webfont.eot?#iefix') format("embedded-opentype"),url('/fonts/OpenSans-Bold-webfont.woff') format("woff"),url('/fonts/OpenSans-Bold-webfont.ttf') format("truetype"),url('/fonts/OpenSans-Bold-webfont.svg#open_sansbold') format("svg")}*{padding:0;margin:0}html{overflow-y:scroll;min-width:330px;overflow-x:hidden}body{color:#000;font-family:open_sanslight,Arial,"Helvetica Neue",Helvetica,sans-serif}h1,h2,h3{font-weight:400}img{border:0}.row{max-width:1200px;margin:0 auto;padding:0 5%}.col{float:left;margin:0 1.25%}.col-span-3{width:22.5%}.col-span-9{width:72.5%}.col-span-12{width:97.5%}.clearfix:after{content:"";display:table;clear:both}header{background-image:url("/images/header_home_3000_new-3ab0bf1d0d.svg");background-repeat:no-repeat;background-position:center bottom;padding-top:40px;border-top:1px solid #6b9cce;position:relative}body.understandVisitorsEasySessionReplay2021{background-color:#e3f0fc}.understandVisitorsEasySessionReplay2021 header{background:#fff;background:-moz-linear-gradient(top,#fff 0,#fff 84%,#e3f0fc 84.01%,#e3f0fc 100%);background:-webkit-linear-gradient(top,#fff 0,#fff 84%,#e3f0fc 84.01%,#e3f0fc 100%);background:linear-gradient(to bottom,#fff 0,#fff 84%,#e3f0fc 84.01%,#e3f0fc 100%);padding-top:40px;border-top:1px solid #6b9cce;position:relative;text-align:left}.understandVisitorsEasySessionReplay2021 #nav-main a{color:#064685}.understandVisitorsEasySessionReplay2021 #nav-main li#nav-sign-up a{color:#fff}.understandVisitorsEasySessionReplay2021 header a.btn.sign-up{font-size:17px;line-height:1.35em;margin:40px 0 0;padding:15px 10px;width:260px}.trustedSubButtonText{font-family:open_sansregular,Arial,"Helvetica Neue",Helvetica,sans-serif;font-size:13px}.understandVisitorsEasySessionReplay2021 header .review-stars{width:90%;display:grid;grid-template-columns:29.34% 33.74% 27.14%;grid-column-gap:5%}.understandVisitorsEasySessionReplay2021 header .review-stars img{margin:40px 0 120px 0;max-width:100%}.understandVisitorsEasySessionReplay2021 header .col.col-span-12{display:flex}.understandVisitorsEasySessionReplay2021 header .header-content{display:flex}.understandVisitorsEasySessionReplay2021 header .text-container{flex:0 0 565px}.understandVisitorsEasySessionReplay2021 header .image-container{width:100%;min-height:100px;max-width:770px;margin:0 auto;margin-top:0;flex-shrink:1}.understandVisitorsEasySessionReplay2021 header .image-container img{max-width:100%}.understandVisitorsEasySessionReplay2021 header h1{color:#fff;font-family:open_sansbold,Arial,"Helvetica Neue",Helvetica,sans-serif;font-size:70px;text-align:left;padding:35px 0 20px;line-height:1.1em;letter-spacing:-.03em}.understandVisitorsEasySessionReplay2021 header h1{color:#064685;font-family:open_sanslight,Arial,"Helvetica Neue",Helvetica,sans-serif;font-size:55px;line-height:1.2em;padding:85px 0 20px}.understandVisitorsEasySessionReplay2021 header h1 strong{font-family:open_sansbold,Arial,"Helvetica Neue",Helvetica,sans-serif;font-weight:400}header .header-content{background-repeat:no-repeat;background-position:bottom right}@media all and (max-width:1300px){.understandVisitorsEasySessionReplay2021 header .review-stars img{margin:40px 0 100px 0}}@media all and (max-width:1250px){.understandVisitorsEasySessionReplay2021 header h1{font-size:52px;padding:35px 20px 20px 0}.understandVisitorsEasySessionReplay2021 header .text-container{flex:0 0 37%}.understandVisitorsEasySessionReplay2021 header .review-stars img{margin:40px 0 35px 0}.understandVisitorsEasySessionReplay2021 header .image-container{width:auto}}@media all and (max-width:1220px){.understandVisitorsEasySessionReplay2021 header h1{font-size:52px}.understandVisitorsEasySessionReplay2021 header .text-container{flex:0 0 320px}header{background-image:url("/images/header_home_1220_new-f2d65d4ba2.svg")}}@media all and (max-width:1160px){.understandVisitorsEasySessionReplay2021 header h1{font-size:calc(3.5vw + 10px);padding:35px 20px 20px 0}}@media all and (max-width:1040px){.understandVisitorsEasySessionReplay2021 header .image-container{padding-left:5%}}@media all and (max-width:1015px){.understandVisitorsEasySessionReplay2021 header h1{font-size:50px}.understandVisitorsEasySessionReplay2021 header .text-container{flex:0 0 270px}}@media all and (max-width:940px){header{background-image:url("/images/header_home_940_new-198084c196.svg")}}@media all and (max-width:900px){.understandVisitorsEasySessionReplay2021 header .col.col-span-12{display:block}.understandVisitorsEasySessionReplay2021 header .header-content{display:block}.understandVisitorsEasySessionReplay2021 header .text-container,.understandVisitorsEasySessionReplay2021 header .text-container .signup-container{text-align:center}.understandVisitorsEasySessionReplay2021 header .text-container h1{text-align:center;padding-right:0;max-width:700px}.understandVisitorsEasySessionReplay2021 header .text-container .signup-container .btn.btn-green,.understandVisitorsEasySessionReplay2021 header .text-container h1{margin-left:auto;margin-right:auto}.understandVisitorsEasySessionReplay2021 header .review-stars{margin:0 auto;display:flex;justify-content:space-around}.understandVisitorsEasySessionReplay2021 header .review-stars img{max-width:32%}.understandVisitorsEasySessionReplay2021 header .image-container{padding-bottom:2em;text-align:center}}@media all and (max-width:570px){header{background-image:url("/images/header_home_570_new-4423e6d27d.svg")}}.col-nav{float:right;position:relative;z-index:99999}.col-logo{float:left;position:relative;z-index:99999}#logo-statcounter-2017-blue a{display:block;background-image:url("/images/logo-statcounter-arc-f754bcae4c.svg");background-repeat:no-repeat;background-size:contain;width:279px;height:88px;text-indent:-999em;margin-top:-20px}#logo-statcounter-2017-blue a{background-image:url(/images/logo-statcounter-arc-blue-9e7352a20d.svg)}@media screen and (max-width:850px){#logo-statcounter-2017-blue a{background-size:contain;height:62px;width:210px;margin-top:-5px;margin-bottom:10px}}header h3{font-family:open_sanslight,Arial,"Helvetica Neue",Helvetica,sans-serif;font-size:30px;color:#fff;text-align:center;padding:0 0 80px 0}header .btn{margin-bottom:60px}a{text-decoration:none;color:#064685;font-family:open_sansbold,Arial,"Helvetica Neue",Helvetica,sans-serif}#nav-main ul{float:right;padding-top:10px}#nav-main li{float:left;list-style-type:none;margin-left:20px}#nav-main a{font-family:open_sanssemibold,Arial,"Helvetica Neue",Helvetica,sans-serif;font-size:15px;display:block;color:#fff}#navicon{display:none;position:absolute;top:30px;right:0;overflow:hidden;margin:0;padding:0;width:42px;height:42px;font-size:0;text-indent:-9999px;background-image:url("/images/navicon-51d8df8768.svg");background-repeat:no-repeat;background-position:10px 10px}.understandVisitorsEasySessionReplay2021 #navicon{padding:3px 3px 3px;height:32px;background-image:url("/images/navicon_blue-4acc37e738.svg")}#mobile-menu{overflow:hidden;max-height:0}#mobile-menu a#login{background-image:url("/images/icon_lock-06430d6b46.svg");background-repeat:no-repeat;background-position:right center;display:block;background-color:#062148;color:#fff;font-weight:400;font-family:open_sanssemibold,Arial,"Helvetica Neue",Helvetica,sans-serif;font-size:15px;padding:10px 20px;outline:0;border-bottom:1px solid #104785}#mobile-menu h3{position:relative;background-color:#064685;color:#fff;font-family:open_sanssemibold,Arial,"Helvetica Neue",Helvetica,sans-serif;font-size:15px;padding:10px 20px;outline:0}#mobile-menu li{list-style-type:none;font-family:open_sansregular,Arial,"Helvetica Neue",Helvetica,sans-serif;font-size:14px}#mobile-menu li a{padding:7px 20px;background-color:#062148;color:#fff;display:block}#mobile-menu li:first-child a{padding:12px 20px 7px}#mobile-menu li:last-child a{padding:7px 20px 12px}#mobile-menu h3 span,.mobile-sub-menu a span{background-image:url("/images/mobile_menu_arrow-99914f5661.svg");background-repeat:no-repeat;display:block;width:10px;height:6px;position:absolute;right:20px;top:16px}.mobile-sub-menu a{position:relative;outline:0}.mobile-sub-menu ul li a{background-image:none;font-family:open_sanslight,Arial,"Helvetica Neue",Helvetica,sans-serif;text-indent:20px}.btn{display:block;font-family:open_sanssemibold,Arial,"Helvetica Neue",Helvetica,sans-serif;font-size:15px;background-color:#064685;color:#fff;border-radius:4px;width:200px;padding:10px 0;text-align:center;margin:0 auto;border:1px solid #064685}.btn.btn-green{background-color:#76c349;color:#fff;border:1px solid #76c349}footer a{font-family:open_sanslight,Arial,"Helvetica Neue",Helvetica,sans-serif;color:#fff}footer h3{font-family:open_sansbold,Arial,"Helvetica Neue",Helvetica,sans-serif;font-size:18px;margin-bottom:5px;padding-top:5px}footer ul{margin-bottom:15px}footer li{list-style-type:none;font-size:13px;line-height:1.8em}.understandVisitorsEasySessionReplay2021 .section .row h2{color:#064685;font-family:open_sansbold,Arial,"Helvetica Neue",Helvetica,sans-serif;font-size:40px;font-size:calc(20px + 2vmin);padding-bottom:15px;letter-spacing:-.03em}.understandVisitorsEasySessionReplay2021 .section .row h2{text-align:center}.home-crucial-insights-cards .card .main-image-container{max-width:100%;padding:0 0 10%;margin-top:-20%;display:block;justify-content:center}.home-crucial-insights-cards .card img{max-width:90%}::-webkit-input-placeholder{color:#36699d}:-moz-placeholder{color:#36699d}::-moz-placeholder{color:#36699d}:-ms-input-placeholder{color:#36699d}@media all and (max-width:770px){header{padding-top:30px}#navicon{display:block;margin-right:6%}#nav-main{display:none}footer .col-span-3{width:97.5%;float:none;text-align:center}footer .col-span-3:nth-child(n+2){display:none}footer #product-menu,footer #product-title{display:none}}@media all and (max-width:570px){header h3{font-size:20px;padding:0 0 30px 0}header .btn{margin-bottom:40px}}#nav-main li a{padding-top:8px;padding-bottom:8px}#nav-sign-up a{background:#76c349;border-radius:4px;padding-left:15px;padding-right:15px}*{outline:0}.sc-perf{display:none}@media screen and (max-width:770px){body.sticky-nav.understandVisitorsEasySessionReplay2021 header{padding-top:0;border-top:none}body.sticky-nav #logo-statcounter-2017-blue a{margin-top:10px}body.sticky-nav #navicon{display:block;margin-right:6%;float:right;position:relative;top:22px}body.sticky-nav #mobile-menu{border-bottom:1px solid #6b9cce}body.sticky-nav #mobile-menu #mobile-menu-accordion h3{text-align:left}body.sticky-nav header .mobile-menu-signup{background:#064685;padding:10px;text-align:center}body.sticky-nav header .mobile-menu-signup .btn{display:inline-block;padding:10px 5px;margin:0}}</style>
+				    <link rel="preload" href="./index_files/statcounter-0e881ec61b.css" as="style">
+									<link rel="preload" href="./index_files/sticky-nav.css" as="style"><!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="text/javascript" async="" src="./index_files/analytics.js.download"></script><script async="" src="./index_files/js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-155370589-1');</script><link rel="shortcut icon" href="https://www.statcounter.com/images/favicon.png?v=1" type="image/x-icon"><link rel="apple-touch-icon-precomposed" href="https://www.statcounter.com/images/apple-touch-icon-144x144-precomposed.png?v=1">
+				    <link rel="alternate" type="application/rss+xml" title="Statcounter Blog RSS Feed" href="https://blog.statcounter.com/feed/">
+<link rel="alternate" href="https://statcounter.com/" hreflang="en">
+<link rel="alternate" href="https://zh_cn.statcounter.com/" hreflang="zh-CN">
+<link rel="alternate" href="https://zh_tw.statcounter.com/" hreflang="zh-TW">
+<link rel="alternate" href="https://ca.statcounter.com/" hreflang="ca">
+<link rel="alternate" href="https://hu.statcounter.com/" hreflang="hu">
+<link rel="alternate" href="https://nl.statcounter.com/" hreflang="nl">
+<link rel="alternate" href="https://fr.statcounter.com/" hreflang="fr">
+<link rel="alternate" href="https://fi.statcounter.com/" hreflang="fi">
+<link rel="alternate" href="https://pl.statcounter.com/" hreflang="pl">
+<link rel="alternate" href="https://nb.statcounter.com/" hreflang="nb">
+<link rel="alternate" href="https://ro.statcounter.com/" hreflang="ro">
+<link rel="alternate" href="https://es.statcounter.com/" hreflang="es">
+<link rel="alternate" href="https://sr.statcounter.com/" hreflang="sr">
+<link rel="alternate" href="https://pt.statcounter.com/" hreflang="pt">
+<link rel="alternate" href="https://pt_br.statcounter.com/" hreflang="pt-BR">
+<link rel="alternate" href="https://tl.statcounter.com/" hreflang="tl">
+<link rel="alternate" href="https://af.statcounter.com/" hreflang="af">
+<link rel="alternate" href="https://tr.statcounter.com/" hreflang="tr">
+<link rel="alternate" href="https://ml.statcounter.com/" hreflang="ml">
+<link rel="alternate" href="https://ru.statcounter.com/" hreflang="ru">
+<link rel="alternate" href="https://cs.statcounter.com/" hreflang="cs">
+<link rel="alternate" href="https://th.statcounter.com/" hreflang="th">
+<link rel="alternate" href="https://it.statcounter.com/" hreflang="it">
+<link rel="alternate" href="https://de.statcounter.com/" hreflang="de">
+<link rel="alternate" href="https://gl.statcounter.com/" hreflang="gl">
+<link rel="alternate" href="https://az.statcounter.com/" hreflang="az">
+<link rel="alternate" href="https://hi.statcounter.com/" hreflang="hi">
+<link rel="alternate" href="https://fa.statcounter.com/" hreflang="fa">
+<link rel="stylesheet" href="./index_files/statcounter-0e881ec61b.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="./index_files/sticky-nav.css" media="print" onload="this.media='all'">
+
+				</head>
+
+				<body id="section-home" class="understandVisitorsEasySessionReplay2021 sticky-nav"><header><div id="sticky-nav"><div id="mobile-menu"><a href="https://statcounter.com/login/" id="login">Log In</a><div id="mobile-menu-accordion" class="ui-accordion ui-widget ui-helper-reset" role="tablist"><h3 class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Product</h3>
+				            <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="true" style="display: none;">
+				                <ul>
+				                    <li><a href="https://statcounter.com/features/">Features</a></li>
+									<li><a href="https://statcounter.com/pricing/">Pricing</a></li>
+				                    <li id="how-it-works-accordion" class="mobile-sub-menu ui-accordion ui-widget ui-helper-reset" role="tablist"><a href="https://statcounter.com/how-it-works/" class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-11" aria-controls="ui-id-12" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>How It Works</a>
+										<ul class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-12" aria-labelledby="ui-id-11" role="tabpanel" aria-hidden="true" style="display: none;">
+											<li><a href="https://statcounter.com/how-it-works/">How does Statcounter work?</a></li>
+											<li><a href="https://statcounter.com/free-invisible-web-tracker/">Reliable web tracker</a></li>
+											<li><a href="https://statcounter.com/free-hit-counter/">Fast hit counter</a></li>
+											<li><a href="https://statcounter.com/free-web-stats/">Free web stats</a></li>
+											<li><a href="https://statcounter.com/statcounter-vs-google-analytics/">Statcounter vs Google Analytics</a></li>
+											<li><a href="https://statcounter.com/ip-address-tracker/">IP Address Tracker</a></li>
+										</ul>
+									</li>
+				                    <li><a href="https://statcounter.com/about/recommendations/">Our Customers</a></li><li><a href="https://statcounter.com/success-stories/">Success Stories</a></li><li><a href="https://statcounter.com/demo/summary/">Demo</a></li>
+								</ul>
+				            </div>
+				            <h3 class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-3" aria-controls="ui-id-4" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Company</h3>
+				            <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-4" aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="true" style="display: none;">
+				                <ul>
+				                    <li><a href="https://statcounter.com/about/mission/">Mission</a></li>
+				                    <li><a href="https://statcounter.com/press-release/">Press Releases</a></li>
+				                    <li><a href="https://statcounter.com/careers/">Careers</a></li>
+				                    <li><a href="https://statcounter.com/about/legal/">Legal</a></li>
+				                    <li><a href="https://statcounter.com/about/link-to-us">Link To Us</a></li>
+									<li><a href="http://gs.statcounter.com/" target="_blank">Global Stats</a></li>
+				                </ul>
+				            </div>
+				            <h3 class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-5" aria-controls="ui-id-6" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Support</h3>
+				            <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-6" aria-labelledby="ui-id-5" role="tabpanel" aria-hidden="true" style="display: none;">
+				                <ul>
+				                    <li class="mobile-sub-menu accordion ui-accordion ui-widget ui-helper-reset" role="tablist"><a class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-13" aria-controls="ui-id-14" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Installation</a>
+										<ul class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-14" aria-labelledby="ui-id-13" role="tabpanel" aria-hidden="true" style="display: none;">
+											<li><a href="https://statcounter.com/default/">Default Installation Guide</a></li>
+											<li><a href="https://statcounter.com/install-guides/">Platform Installation Guides</a></li>
+										</ul>
+									</li>
+
+									<li class="mobile-sub-menu accordion ui-accordion ui-widget ui-helper-reset" role="tablist"><a class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-15" aria-controls="ui-id-16" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Using Statcounter</a>
+										<ul class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-16" aria-labelledby="ui-id-15" role="tabpanel" aria-hidden="true" style="display: none;"><li><a href="https://statcounter.com/support/using-statcounter/">Using Statcounter</a></li><li><a href="https://statcounter.com/support/analyze-your-first-visitors/">Analyze Your First Visitors</a></li><li><a href="https://statcounter.com/support/install-the-mobile-app/">Install the Mobile App</a></li><li><a href="https://statcounter.com/support/ignore-your-own-visits/">Ignore your own visits</a></li><li><a href="https://statcounter.com/support/explore-visitor-paths/">Explore Visitor Paths</a></li><li><a href="https://statcounter.com/support/configure-your-email-reports/">Configure your email reports</a></li><li><a href="https://statcounter.com/support/filter-your-reports/">Filter Your Reports</a></li><li><a href="https://statcounter.com/support/add-visitor-labels-and-alerts/">Add Visitor Labels &amp; Alerts</a></li><li><a href="https://statcounter.com/support/add-another-project/">Add Another Project</a></li><li><a href="https://statcounter.com/support/sync-your-google-keyword-data/">Sync Your Google Keyword Data</a></li><li><a href="https://statcounter.com/support/set-up-multiple-users/">Set Up Multiple Users </a></li><li><a href="https://statcounter.com/support/view-google-ads-keywords-in-statcounter/">View Google Ads Keywords in Statcounter</a></li><li><a href="https://statcounter.com/support/analyze-landing-pages/">Analyze Your Landing Pages</a></li><li><a href="https://statcounter.com/support/live-update/">Watch a live update of your visitors</a></li><li><a href="https://statcounter.com/support/track-conversion-rate/">Track Your Conversion Rate</a></li><li><a href="https://statcounter.com/support/detect-click-fraud/">Detect Click Fraud</a></li><li><a href="https://statcounter.com/support/session-replay/">Session Replay Guide</a></li></ul>
+									</li>
+				                    <li id="knowledge-base-accordion" class="mobile-sub-menu accordion ui-accordion ui-widget ui-helper-reset" role="tablist"><a href="https://statcounter.com/support/faq/" class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-17" aria-controls="ui-id-18" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>FAQ</a>
+										<ul class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-18" aria-labelledby="ui-id-17" role="tabpanel" aria-hidden="true" style="display: none;">
+											<li><a href="https://statcounter.com/support/faq/">General</a></li>
+											<li><a href="https://statcounter.com/support/faq/?filter=Installation">Installation</a></li>
+											<li><a href="https://statcounter.com/support/faq/?filter=Configuration">Configuration</a></li>
+											<li><a href="https://statcounter.com/support/faq/?filter=Upgrade">Upgrade</a></li>
+											<li><a href="https://statcounter.com/support/faq/?filter=Bugs">Bugs</a></li>
+											<li><a href="https://statcounter.com/support/faq/?filter=Statistics">Statistics</a></li>
+											<li><a href="https://statcounter.com/support/faq/?filter=Billing">Billing</a></li>
+											<li><a href="https://statcounter.com/support/faq/?filter=Forum">Forum</a></li>
+											<li><a href="https://statcounter.com/support/faq/?filter=Definitions">Definitions</a></li>
+											<li><a href="https://statcounter.com/support/faq/?filter=Advertising">Advertising</a></li>
+										</ul>
+									</li>
+				                    <li><a href="https://forum.statcounter.com/" target="_blank">User Forum</a></li>
+									<li><a href="https://api.statcounter.com/" target="_blank">API</a></li>
+									<li><a href="https://statcounter.com/support/contact/">Contact Us</a></li>
+
+				                </ul>
+				            </div><h3 class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-7" aria-controls="ui-id-8" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Learning Center</h3>
+				            <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-8" aria-labelledby="ui-id-7" role="tabpanel" aria-hidden="true" style="display: none;">
+								<ul><li id="learning-center-accordion" class="mobile-sub-menu accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
+														<a href="https://statcounter.com/learning-center/seo" class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-19" aria-controls="ui-id-20" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Search Engine Optimization</a>
+														<ul class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-20" aria-labelledby="ui-id-19" role="tabpanel" aria-hidden="true" style="display: none;"><li>
+														<a href="https://statcounter.com/learning-center/seo/off-page-optimization">Off-Page Optimization - Best Practices for 2020</a>
+													</li><li>
+														<a href="https://statcounter.com/learning-center/seo/xml-sitemap">Help search engines to better understand your website with an XML sitemap</a>
+													</li><li>
+														<a href="https://statcounter.com/learning-center/seo/serp-features">SEO is getting harder. What you can do about it?</a>
+													</li><li>
+														<a href="https://statcounter.com/learning-center/seo/on-page-optimization">On-page optimization - best practices for 2020</a>
+													</li><li>
+														<a href="https://statcounter.com/learning-center/seo/search-intent">Why You Need to Optimize Your Content for Search Intent</a>
+													</li><li>
+														<a href="https://statcounter.com/learning-center/seo/keyword-research">How to use keyword research to attract the most qualified visitors</a>
+													</li><li>
+														<a href="https://statcounter.com/learning-center/seo/backlinks">How quality backlinks can dramatically improve your organic rankings</a>
+													</li><li>
+														<a href="https://statcounter.com/learning-center/seo/page-speed">Boost your rankings and conversions by increasing your page speed</a>
+													</li><li>
+														<a href="https://statcounter.com/learning-center/seo/local-seo">Increase your online visibility with these Local SEO strategies</a>
+													</li></ul>
+											</li><li id="learning-center-accordion" class="mobile-sub-menu accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
+														<a href="https://statcounter.com/learning-center/cro" class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-21" aria-controls="ui-id-22" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Conversion Rate Optimization</a>
+														<ul class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-22" aria-labelledby="ui-id-21" role="tabpanel" aria-hidden="true" style="display: none;"><li>
+														<a href="https://statcounter.com/learning-center/cro/conversion-rate-tracking">Conversion Rate Tracking — an Introduction</a>
+													</li><li>
+														<a href="https://statcounter.com/learning-center/cro/convert-more-visitors">Convert more visitors with less effort</a>
+													</li></ul>
+											</li></ul>
+				            </div><h3 class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-9" aria-controls="ui-id-10" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Blog</h3>
+							<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-10" aria-labelledby="ui-id-9" role="tabpanel" aria-hidden="true" style="display: none;">
+								<ul>
+									<li><a href="https://blog.statcounter.com/" target="_blank">Blog Home</a></li>
+									<li><a href="https://blog.statcounter.com/category/news/" target="_blank">News</a></li>
+									<li><a href="https://blog.statcounter.com/category/seo/" target="_blank">SEO</a></li>
+									<li><a href="https://blog.statcounter.com/category/awards/" target="_blank">Awards</a></li>
+									<li><a href="https://blog.statcounter.com/category/features/" target="_blank">Features</a></li>
+									<li><a href="https://blog.statcounter.com/category/global-stats/" target="_blank">Global Stats</a></li>
+									<li><a href="https://blog.statcounter.com/category/how-to/" target="_blank">How-to</a></li>
+									<li><a href="https://blog.statcounter.com/category/installation/" target="_blank">Installation</a></li>
+								</ul>
+							</div></div><div class="mobile-menu-signup">
+								<a href="https://statcounter.com/sign-up/" class="btn btn-green">Try it for Free!</a>
+							</div></div><div class="row clearfix">
+
+						<div class="col col-span-9 col-nav"><nav id="nav-main">
+				        <ul class="clearfix"><li id="nav-product"><a href="https://statcounter.com/features/">Features</a></li>
+						<li id="pricing"><a href="https://statcounter.com/pricing/">Pricing</a></li>
+						<li id="nav-demo"><a href="https://statcounter.com/demo/summary/">Demo</a></li>
+						<li id="nav-sign-up"><a href="https://statcounter.com/sign-up/">Try it for FREE!</a></li>
+						<li id="nav-log-in"><a href="https://statcounter.com/login/">Log In</a></li></ul>
+					</nav></div>
+						<div class="col col-span-3 col-logo">
+							<div id="logo-statcounter-2017-blue">
+								<a href="https://statcounter.com/">Statcounter</a>
+
+							</div>
+						</div>
+						<div id="navicon">
+		            <span>Menu</span>
+		        </div>
+					</div>
+		        </div><div id="header-content"><div class="row clearfix">
+		            <div class="col col-span-12"><div class="header-content"><div class="text-container"><h1>Understand your visitors the <strong>easy</strong> way.</h1><div class="signup-container"><a href="https://statcounter.com/sign-up/" class="btn btn-green sign-up">Try it for FREE!</a><div class="trustedSubButtonText">Trusted on over <strong>2 million</strong> websites worldwide.</div><div class="review-stars"><img src="./index_files/rating_capterra.png"><img src="./index_files/rating_trustradius.png"><img src="./index_files/rating_g2crowd.png"></div></div></div><div class="image-container"><img src="./index_files/home_hero.svg" importance="high"></div></div>
+		            	</div>
+		            </div></div></header><div class="section clearfix"><div class="row clearfix"><h2>Crucial insights for time–strapped business owners.</h2><div class="row home-crucial-insights-cards"><div class="card"><div class="main-image-container"><img src="./index_files/home_sessionreplay.svg"></div><div class="card-content"><img src="./index_files/icon_home_sessionreplay.svg"><h3>Session Replay</h3><p>See how your visitors are <strong>really</strong> experiencing your website, where they’re getting stuck and why they're getting frustrated.</p></div></div><div class="card"><div class="main-image-container"><img src="./index_files/home_livevisitorfeed.svg"></div><div class="card-content"><img src="./index_files/icon_home_livevisitorfeed.svg"><h3>Live Visitor Feed</h3><p>Watch a <strong>real-time</strong>, live feed of your visitors. See individual visitor's location and system stats and set alerts for important visitors.</p></div></div><div class="card"><div class="main-image-container"><img src="./index_files/home_analytics.svg"></div><div class="card-content"><img src="./index_files/icon_home_analytics.svg"><h3>Analytics</h3><p>See how your website is doing <strong>at-a-glance</strong>. Track your traffic trends, highlight problems and discover new opportunities.</p></div></div></div>
+		</div>
+	</div><div class="home-join clearfix"><h2>Try Statcounter free for 30 days</h2><div class="padded-benefits"><span><img src="./index_files/check-exposure.svg">Free 30 day trial</span><span><img src="./index_files/check-exposure.svg">No credit card required</span><span><img src="./index_files/check-exposure.svg">Plans from €9 / month</span></div><a href="https://statcounter.com/sign-up/" class="btn btn-green">Try it for FREE!</a></div><div class="section how-it-works-cards clearfix"><div class="row home-signup-cards"><div class="card"><img src="./index_files/howitworks_signup.svg"><h3>1. Sign up</h3><p><a href="https://statcounter.com/sign-up/">Create your account</a> and start your 30 day trial.</p></div><div class="card"><img src="./index_files/howitworks_insertcode.svg"><h3>2. Insert the code</h3><p>You'll receive a small piece of code to insert on your website.</p></div><div class="card"><img src="./index_files/howitworks_getinsights.svg"><h3>3. Get visitor insights!</h3><p>Understand your visitors and see why they aren't converting.</p></div></div></div><div class="section testimonials clearfix">
+		<h2>Trusted on over 2 million websites worldwide.</h2>
+		<div class="sc-row sc-clearfix">
+			<div class="sc-col sc-col-span-6 testimonial">
+				<div class="text">I have used Statcounter.com for many years. I wouldn't have a website without it. It's really easy to see the data and make decisions from it without having to be an expert.</div>
+				<div class="tip"><img src="./index_files/base-triangle-no-border.png"></div>
+				<div class="user clearfix">
+					<img src="./index_files/logo_hoowla.png" class="image">
+					<div class="usertext">
+						<div class="name">Adam Curtis</div>
+						<div class="title">Hoowla</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sc-row sc-clearfix">
+			<div class="sc-col sc-col-span-6 testimonial">
+				<div class="text">With Statcounter, we don't have to dig for what we want to see, and that has enabled us to react quickly to problems and take advantage of opportunities we may have otherwise missed.</div>
+				<div class="tip"><img src="./index_files/base-triangle-no-border.png"></div>
+				<div class="user clearfix">
+					<img src="./index_files/logo_freerangestock.png" class="image">
+					<div class="usertext">
+						<div class="name">Chance Agrella</div>
+						<div class="title">Freerange Stock</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sc-row sc-clearfix">
+			<div class="sc-col sc-col-span-6 testimonial">
+				<div class="text">Statcounter gives us quick insights about our website that helps us increase our sales without the headache of trying to understand how analytics programs work.</div>
+				<div class="tip"><img src="./index_files/base-triangle-no-border.png"></div>
+				<div class="user clearfix">
+					<img src="./index_files/logo_happyhealthy.png" class="image">
+					<div class="usertext">
+						<div class="name">Oscar Helm</div>
+						<div class="title">HappyHealthy</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><div class="home-installation-guides clearfix">
+		<div class="row clearfix">
+			<div class="col col-span-12">
+				<h2>Works on your favourite platforms</h2></div>
+		</div>
+
+		<ul class="row clearfix">
+			<li>
+				<figure>
+					<a href="https://statcounter.com/tumblr/"><img src="./index_files/logo_tumblr.svg" alt="Tumblr"></a>
+					<figcaption>Tumblr</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<a href="https://statcounter.com/blogger/"><img src="./index_files/logo_blogger.svg" alt="Blogger"></a>
+					<figcaption>Blogger</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<a href="https://statcounter.com/wordpress/"><img src="./index_files/logo_wordpress.svg" alt="WordPress"></a>
+					<figcaption>WordPress</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<a href="https://statcounter.com/squarespace/"><img src="./index_files/logo_squarespace.svg" alt="Squarespace"></a>
+					<figcaption>Squarespace</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<a href="https://statcounter.com/smugmug/"><img src="./index_files/logo_smugmug.svg" alt="SmugMug"></a>
+					<figcaption>SmugMug</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<a href="https://statcounter.com/google_sites/"><img src="./index_files/logo_google.svg" alt="Google Sites"></a>
+					<figcaption>Google Sites</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<a href="https://statcounter.com/weebly/"><img src="./index_files/logo_weebly.svg" alt="Weebly"></a>
+					<figcaption>Weebly</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<a href="https://statcounter.com/wix_html5_version/"><img src="./index_files/logo_wix.svg" alt="Wix"></a>
+					<figcaption>Wix</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<a href="https://statcounter.com/joomla/"><img src="./index_files/logo_joomla.svg" alt="Joomla"></a>
+					<figcaption></figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<a href="https://statcounter.com/godaddy_website_builder/"><img src="./index_files/logo_godaddy.svg" alt="GoDaddy"></a>
+					<figcaption>GoDaddy</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<a href="https://statcounter.com/drupal/"><img src="./index_files/logo_drupal.svg" alt="Drupal"></a>
+					<figcaption>Drupal</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<a href="https://statcounter.com/shopify/"><img src="./index_files/logo_shopify.svg" alt="Shopify"></a>
+					<figcaption>Shopify</figcaption>
+				</figure>
+			</li>
+		</ul><div class="row guide-link-text clearfix">Follow our step by step <a href="https://statcounter.com/install-guides/" class="link">installation guides</a> for over 70 platforms</div></div><footer>
+
+		        <div class="row clearfix">
+		            <div class="col col-span-3">
+		                <h3 id="product-title">Product</h3>
+		                <ul id="product-menu">
+							<li><a href="https://statcounter.com/features/">Features</a></li>
+							<li><a href="https://statcounter.com/pricing/">Pricing</a></li>
+		                    <li><a href="https://statcounter.com/how-it-works/">How It Works</a></li>
+		                    <li><a href="https://statcounter.com/about/recommendations/">Our Customers</a></li><li><a href="https://statcounter.com/success-stories/">Success Stories</a></li><li><a href="https://statcounter.com/demo/summary/">Demo</a></li>
+						</ul>
+		                <h3>Get the App</h3>
+		                <ul id="mobile-apps" class="clearfix">
+		                    <li id="app-ios"><a href="https://itunes.apple.com/ie/app/statcounter-free-real-time/id903409665?mt=8" target="_blank">Statcounter iOS App</a></li><li id="app-android"><a href="https://play.google.com/store/apps/details?id=com.statcounter.statcounterapp" target="_blank">Statcounter Android App</a></li><li id="app-windows"><a href="https://www.microsoft.com/en-us/store/p/statcounter-web-analytics/9nblggh5q10j" target="_blank">Statcounter Windows App</a></li>       </ul>
+		            </div>
+
+		            <div class="col col-span-3">
+		                <h3>Company</h3>
+		                <ul>
+		                    <li><a href="https://statcounter.com/about/mission/">Mission</a></li>
+		                    <li><a href="https://statcounter.com/press-release/">Press Releases</a></li>
+		                    <li><a href="https://statcounter.com/careers/">Careers</a></li>
+		                    <li><a href="https://statcounter.com/about/legal/">Legal</a></li>
+		                    <li><a href="https://statcounter.com/about/link-to-us">Link To Us</a></li>
+							<li><a href="http://gs.statcounter.com/" target="_blank">Global Stats</a></li>
+		                </ul>
+					</div>
+
+		            <div class="col col-span-3">
+		                <h3>Support</h3>
+		                <ul>
+		                    <li><a href="https://statcounter.com/default/">Installation</a></li>
+		                    <li><a href="https://statcounter.com/support/using-statcounter/">Using Statcounter</a></li>
+		                    <li><a href="https://statcounter.com/support/faq/">FAQ</a></li>
+							<li><a href="https://forum.statcounter.com/" target="_blank">User Forum</a></li>
+		                    <li><a href="https://api.statcounter.com/" target="_blank">API</a></li>
+		                    <li><a href="https://statcounter.com/support/contact/">Contact Us</a></li>
+		                </ul>
+		            </div>
+
+		            <div class="col col-span-3">
+						<h3>Learning Center</h3>
+							<div>
+								<ul><li>
+											<a href="https://statcounter.com/learning-center/seo">Search Engine Optimization</a>
+										</li><li>
+											<a href="https://statcounter.com/learning-center/cro">Conversion Rate Optimization</a>
+										</li></ul>
+							</div>
+		                <h3>Blog</h3>
+		                <ul>
+							<li><a href="https://blog.statcounter.com/" target="_blank">Statcounter Blog</a></li>
+		                </ul></div>
+		        </div>
+
+		    </footer><div id="sub-footer">
+		        <div class="row clearfix">
+		            <div class="col col-span-6">
+		                <p class="center-text"><span class="nowrap">© Statcounter 1999-2021.</span> &nbsp; <span class="nowrap">All rights reserved.</span></p>
+		            </div><div class="col col-span-6 clearfix">
+
+		                <ul id="social-links" class="clearfix">
+		                    <li id="link-facebook"><a href="https://www.facebook.com/StatCounter-276618292699885/" target="_blank">Statcounter on Facebook</a></li>
+		                    <li id="link-twitter"><a href="https://twitter.com/statcounter" target="_blank">Statcounter on Twitter</a></li>
+		                </ul>
+		                <div id="language-selector">
+		                    <form>
+		                        <select id="language-select"><option href="#" id="language-switcher">English</option><option value="https://zh_CN.statcounter.com/" title="中文 (简体) - Chinese (Simplified)">中文 (简体) (87%)</option><option value="https://zh_TW.statcounter.com/" title="中文 (繁体) - Chinese (Traditional)">中文 (繁体) (83%)</option><option value="https://ca.statcounter.com/" title="català, valencià - Catalan; Valencian">català (83%)</option><option value="https://hu.statcounter.com/" title="Magyar - Hungarian">Magyar (70%)</option><option value="https://nl.statcounter.com/" title="Nederlands, Vlaams - Dutch; Flemish">Nederlands (55%)</option><option value="https://fr.statcounter.com/" title="français, langue française - French">français (48%)</option><option value="https://fi.statcounter.com/" title="suomi, suomen kieli - Finnish">suomi (47%)</option><option value="https://pl.statcounter.com/" title="język polski, polszczyzna - Polish">język polski (42%)</option><option value="https://nb.statcounter.com/" title="Norsk bokmål - Norwegian Bokmal">Norsk bokmål (30%)</option><option value="https://ro.statcounter.com/" title="limba română, limba moldovenească - Romanian">limba română (29%)</option><option value="https://es.statcounter.com/" title="español, castellano - Spanish; Castilian">español (29%)</option><option value="https://sr.statcounter.com/" title="српски језик - Serbian">српски језик (23%)</option><option value="https://pt.statcounter.com/" title="português - Portuguese">português (22%)</option><option value="https://pt_BR.statcounter.com/" title="português do Brasil - Portuguese (Brazil)">português do Brasil (5%)</option><option value="https://tl.statcounter.com/" title="Tagalog, ᜏᜒᜃᜅ᜔ ᜆᜄᜎᜓᜄ᜔ - Tagalog">Tagalog (20%)</option><option value="https://af.statcounter.com/" title="Afrikaans - Afrikaans">Afrikaans (18%)</option><option value="https://tr.statcounter.com/" title="Türkçe - Turkish">Türkçe (16%)</option><option value="https://ml.statcounter.com/" title="മലയാളം - Malayalam">മലയാളം (15%)</option><option value="https://ru.statcounter.com/" title="русский язык - Russian">русский язык (14%)</option><option value="https://cs.statcounter.com/" title="čeština, český jazyk - Czech">čeština (13%)</option><option value="https://th.statcounter.com/" title="ไทย - Thai">ไทย (12%)</option><option value="https://it.statcounter.com/" title="italiano - Italian">italiano (11%)</option><option value="https://de.statcounter.com/" title="Deutsch - German">Deutsch (11%)</option><option value="https://gl.statcounter.com/" title="galego - Galician">galego (4%)</option><option value="https://az.statcounter.com/" title="azərbaycan dili - Azerbaijani">azərbaycan dili (2%)</option><option value="https://hi.statcounter.com/" title="हिन्दी, हिंदी - Hindi">हिन्दी (1%)</option><option value="https://fa.statcounter.com/" title="فارسی - Persian">فارسی (1%)</option></select>
+		            </form>
+		            </div>
+		            </div></div>
+		    </div><div id="sc-perf-path" class="sc-perf">logged_out_homepage</div><div id="sc-perf-wh" class="sc-perf">44</div><div id="sc-ttfb-bd" class="sc-perf">47.02615737915</div>
+		<script src="./index_files/jquery-2.1.3.min.js.download"></script>
+        <script src="./index_files/jquery-ui.min.js.download"></script><script type="text/javascript" src="./index_files/statcounter-563d9bd53b.js.download"></script><script type="text/javascript" src="./index_files/sc-perf-e5a2ad71e4.js.download"></script><script type="text/javascript" src="./index_files/sticky-nav-inline.jquery.js.download"></script><script type="text/javascript" src="./index_files/scroll-with-stickynav-inline.jquery.js.download"></script><!-- Start of StatCounter Code for Default Guide -->
+					<script type="text/javascript">
+					if(document.cookie.indexOf("landing=")==-1) {
+					        var exdate=new Date();
+					        exdate.setDate(exdate.getDate()+365);
+					        document.cookie="landing=" +escape(document.location)+"|||"+escape(document.referrer)+";expires="+exdate.toGMTString()+";path=/;domain=.statcounter.com";
+					}
+					var sc_project=11601825;
+					var sc_invisible=1;
+					var sc_security="9b281417";
+					if (document.location.search.indexOf("scJsHost") !== -1) {
+					    var scJsHost = parseQueryString(document.location.search)["scJsHost"];
+					} else {
+						var scJsHost = "https://";
+					}
+					document.write("<sc"+"ript type='text/javascript' src='" +
+					scJsHost+
+					"statcounter.com/counter/counter_test.js?cb=d59f69'></"+"script>");
+					</script><script type="text/javascript" src="./index_files/counter_test.js.download"></script>
+					<noscript><div class="statcounter"><a title="Web Analytics
+					Made Easy - StatCounter" href="https://statcounter.com/"
+					target="_blank"><img class="statcounter"
+					src="//c.statcounter.com/11601825/0/9b281417/1/" alt="Web
+					Analytics Made Easy - StatCounter"></a></div></noscript>
+					<!-- End of StatCounter Code for Default Guide --><!-- Start of StatCounter Code -->
+		<script type="text/javascript">
+		if(document.cookie.indexOf("landing=")==-1) {
+		        var exdate=new Date();
+		        exdate.setDate(exdate.getDate()+365);
+		        document.cookie="landing=" +escape(document.location)+"|||"+escape(document.referrer)+";expires="+exdate.toGMTString()+";path=/;domain=.statcounter.com";
+		}
+		var sc_project=204609;
+		var sc_invisible=1;
+		var sc_security="0c932f53";
+		var sc_click_stat=1;
+		if (document.location.search.indexOf("scJsHost") !== -1) {
+		    var scJsHost = parseQueryString(document.location.search)["scJsHost"];
+		} else {
+			var scJsHost = "https://";
+		}
+		document.write("<sc"+"ript type='text/javascript' src='" + scJsHost + "statcounter.com/counter/counter_test.js?cb=d59f69'></"+"script>");</script><script type="text/javascript" src="./index_files/counter_test.js.download"></script>
+		<noscript><div class="statcounter"><a title="blogger visitor counter" href="http://statcounter.com/blogger/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/204609/0/0c932f53/1/" alt="blogger visitor counter"></a></div></noscript>
+		<!-- End of StatCounter Code --></body></html>

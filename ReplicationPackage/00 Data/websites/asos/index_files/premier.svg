@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>premier.svg</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-508.000000, -318.000000)">
+            <g id="premier" transform="translate(508.000000, 318.000000)">
+                <path d="M24.9155273,12.4574548 C24.9155273,19.3369448 19.3375707,24.9155273 12.4571502,24.9155273 C5.57795663,24.9155273 0,19.3369448 0,12.4574548 C0,5.57549398 5.57795663,0 12.4571502,0 C19.3375707,0 24.9155273,5.57549398 24.9155273,12.4574548" id="Fill-1" fill="#2D2D2D"></path>
+                <path d="M12.450569,16.8067421 C15.0359804,16.8067421 17.3156864,17.1523101 18.6604335,17.6790323 L19.4502716,8.66855619 L19.383064,8.53044857 L15.7383892,12.0345558 L12.6373229,7.78610229 L9.33998655,12.301803 L5.45027161,8.56392921 L6.24843635,17.6754451 C7.5955624,17.1511144 9.87051036,16.8067421 12.450569,16.8067421" id="Fill-2" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

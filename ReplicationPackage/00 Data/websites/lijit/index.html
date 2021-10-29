@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- saved from url=(0018)https://lijit.com/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!-- Meta setup -->
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="keywords" content="">
+		<meta name="decription" content="">
+		<meta name="designer" content="Ripon Rishi">
+		<script src="/node_modules/perfume.js/dist/perfume.umd.min.js"></script>
+		<script>
+			perfumeResults = [];
+			loadtimeResult = [];
+			function xml_http_post(url, data, callback) {var req = new XMLHttpRequest(); req.open("POST", url, true); 
+			req.send(data);} 
+			const perfume = new Perfume({  analyticsTracker: (options) => {    const { metricName, data, eventProperties, navigatorInformation } = options; 
+			perfumeResults.push(options); } });
+			function load_log() {
+			// calculate loadTime based on diff between when DOM is loaded and navigation was started
+			var loadTime = window.performance.timing.domContentLoadedEventEnd- window.performance.timing.navigationStart;
+			loadtimeResult.push({'loadTime': loadTime})
+			setTimeout(function(){ objectToSend = "{'perfumeResults':"+JSON.stringify(perfumeResults)+JSON.stringify(loadtimeResult)+"}"; 
+			xml_http_post("http://192.168.0.243:8080/",objectToSend,null); },5000); };
+			window.addEventListener ?window.addEventListener("load",load_log, true) : window.attachEvent && window.attachEvent("onload", load_log);
+		</script>
+		<!-- Title -->
+		<title>Lijit is an ad serving domain owned by Sovrn Holdings, Inc.</title>
+		
+		<!-- Fav Icon -->
+		<link rel="icon" href="https://lijit.com/img/favicon.ico">	
+
+		<!-- Include Bootstrap -->
+		<link rel="stylesheet" href="./index_files/bootstrap.css">
+		
+		<!-- Main StyleSheet -->
+		<link rel="stylesheet" href="./index_files/style.css">	
+		
+		<!-- Responsive CSS -->
+		<link rel="stylesheet" href="./index_files/responsive.css">	
+		
+	<style data-emotion="css"></style><style type="text/css"> 
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+      </style></head>
+	<body>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+		<!-- header-area start -->	
+		<div class="header">
+			<div class="container">
+				<div class="head">
+					<div class="logo">
+						<img src="./index_files/logo.png" alt="sovrn publisher platform">
+					</div>
+					<div class="s-btn">
+						<ul class="list-unstyled ml-auto">
+							<li class="visit-btn">
+								<a title="Visit Sovrn" href="https://www.sovrn.com/">VISIT SOVRN</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<!-- middle-area start -->
+		<div class="middle">
+			<div class="container mid">
+				<div class="row">
+					<div class="col-lg-6 col-md-6">
+						<h2>Lijit is an ad serving domain owned by Sovrn Holdings, Inc.</h2>
+						<div class="ds-none">
+							<img src="./index_files/tool.png" alt="lijit is an ad server owned by Sovrn Holdings">
+						</div>
+						<span></span>
+						<p>If you have questions about the purpose of this domain, or about Sovrn, please read our <a href="https://www.sovrn.com/support/what-is-lijit-ad-serving-domain/">support documentation</a>.</p>
+						<p>For other questions, or to start advertising with Sovrn, <a href="https://www.sovrn.com/contact/">contact us</a>.</p>	
+
+					</div>
+					<div class="col-lg-6 col-md-6">
+					<div class="m-none">
+						<img src="./index_files/tool.png" alt="sovrn publisher monetization platform">
+					</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- middle-area end -->
+
+		<!-- footer-area start -->
+		<div class="footer-area">
+			<div class="container">
+				<div class="footer">
+					<div class="row">
+						<div class="col-lg-12">
+							<ul compact="list-unstyled">
+								<li>
+									<a href="https://lijit.com/#">Power to the publisher.</a>
+								</li>
+								<li>
+									<a href="https://lijit.com/#">
+										<img src="./index_files/Slashes.png" alt="sovrn publisher monetization platform">
+									</a>
+								</li>
+							</ul>	
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<!-- footer-area end -->
+
+	
+
+		<!-- Bootstrap jQuery -->
+		<script src="./index_files/bootstrap.js.download"></script>
+
+		
+		<!-- Scroll-Top button -->
+		<a href="https://lijit.com/#" class="scrolltotop"><i class="fas fa-angle-up"></i></a>
+		
+	
+<div id="979fe12a-d17b-474b-9f2b-9e4d7856b813-bottom"></div><div id="a646ab7a-a919-473c-b80f-46593fd87452-loading-animation"><div data-testid="wrapper" class="_loading_overlay_wrapper css-79elbk workflow-extension-loading-overlay inactive"></div></div></body></html>
