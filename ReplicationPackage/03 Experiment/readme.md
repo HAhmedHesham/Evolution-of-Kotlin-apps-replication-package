@@ -5,8 +5,7 @@ Firstly, each URL in the 'paths' parameter must be adjusted to the local IP adre
 
 Secondly, if new webpage URLs are added to the list they must be injected with the updated PerfumeJS script.
 
-## Requirements
-Throttling network speed  
+## Requirements 
 Running Flask Server
 
 ## Usage
@@ -19,7 +18,7 @@ cd wondershaper
 sudo /home/pi/external_memory/wondershaper/wondershaper -a eth0 -d 20480 -u 20480
 ```
 
-### Flask server requirements
+### Setting experiment parameters
 Each URL must be of the following syntax: ``Local-IP-Address:PortNumber/path/to/index.html``
 
 Within the index.html the following script must be added in the ``<head>`` tag:
