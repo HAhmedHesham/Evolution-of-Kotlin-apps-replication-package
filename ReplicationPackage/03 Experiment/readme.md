@@ -6,7 +6,7 @@ Firstly, each URL in the 'paths' parameter must be adjusted to the local IP adre
 Secondly, if new webpage URLs are added to the list they must be injected with the updated PerfumeJS script.
 
 ## Requirements
-Throttling network speed
+Throttling network speed  
 Running Flask Server
 
 ## Usage
