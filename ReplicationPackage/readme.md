@@ -7,7 +7,7 @@ This project was carried out for the course GreenLab at the Vrije Universiteit A
 A more detailed explanation of the problem and overview of results can be found in the paper (paper.pdf).
 
 ### Requirements
-Experiments were performed using a RasberryPi and Nexus6P device running on Android 6.0.1. Software requirements are listed in the designated subfolders.
+Experiments were performed using a RasberryPi and Nexus6P device running on Android 6.0.1. Software requirements are listed in the designated subfolders. Besides the requirements for Android-Runner, some python packages should be installed list in requirements.txt. 
 
 ### Reproduction
 This repository consists of subfolders that allow the replication of the project. Each subfolder (except 00 Data) contains its own readme file that provides a detailed description on the requirements and usage. **If only interested in replicating the data analysis the subfolder 00 Data and 05 Analysis are sufficient.**
