@@ -1,0 +1,50 @@
+{
+  "type": "web",
+  "devices": {
+    "nexus6p-wifi":  {
+      "root_disable_charging": "True",
+      "charging_disabled_value": 0,
+      "usb_charging_disabled_file": "sys/class/power_supply/battery/charging_enabled"
+    }
+  },
+  "repetitions": 10,
+  "duration": 30000,
+  "randomization": true,
+  "clear_cache": true,
+  "reset_adb_among_runs": false,
+  "usb_handler" : {
+    "enable_command"  : "sudo /usr/sbin/uhubctl/uhubctl -l 1 -p 1 -a 1",
+    "disable_command" : "sudo /usr/sbin/uhubctl/uhubctl -l 1 -p 1 -a 0"
+    },
+  "browsers": ["firefox", "chrome"],
+  "paths" : ["192.168.0.243:5000/unicef/index.html", "192.168.0.243:5000/unicef/index.critical.html", "192.168.0.243:5000/lazada/index.html", "192.168.0.243:5000/lazada/index.critical.html", "192.168.0.243:5000/bestbuy/index.html", "192.168.0.243:5000/bestbuy/index.critical.html", "192.168.0.243:5000/opendns/index.html", "192.168.0.243:5000/opendns/index.critical.html", "192.168.0.243:5000/etsy/index.html", "192.168.0.243:5000/etsy/index.critical.html", "192.168.0.243:5000/eff/index.html", "192.168.0.243:5000/eff/index.critical.html", "192.168.0.243:5000/cam/index.html", "192.168.0.243:5000/cam/index.critical.html", "192.168.0.243:5000/applenews/index.html", "192.168.0.243:5000/applenews/index.critical.html", "192.168.0.243:5000/theverge/index.html", "192.168.0.243:5000/theverge/index.critical.html"],
+  "profilers": {
+    "trepn": {
+      "subject_aggregation": "default",
+      "preferences": {
+        "profiling_interval": 500,
+        "battery_power_source_selection": "Estimate Power Consumption"
+      },
+      "data_points": ["battery_power"]
+    },
+    "perfume_js": {
+      "metrics":["fp","fcp","loadTime"]
+    }
+  },
+  "scripts": {
+    "before_experiment": "scripts/before_experiment.py",
+    "before_run": "scripts/before_run.py",
+    "after_launch": "scripts/after_launch.py",
+    "interaction": [
+      {
+        "type": "python3",
+        "path": "scripts/interaction.py",
+        "timeout": 500
+      }
+    ],
+    "before_close": "scripts/before_close.py",
+    "after_run": "scripts/after_run.py",
+    "after_experiment": "scripts/after_experiment.py"
+  },
+  "time_between_run": 60000
+}
