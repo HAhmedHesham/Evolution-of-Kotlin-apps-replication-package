@@ -178,3 +178,37 @@ legend("topright",
        cex=1.5
 )
 
+data1 = data[which(data$browser == "chrome" & data$crit==0), ]$lt
+data2 = data[which(data$browser == "chrome" & data$crit==1), ]$lt
+wilcox.test(data1, data2, paired=TRUE)
+cliff.delta(data2, data1)
+data1 = data[which(data$browser == "chrome" & data$crit==0), ]$fp
+data2 = data[which(data$browser == "chrome" & data$crit==1), ]$fp
+wilcox.test(data1, data2, paired=TRUE)
+cliff.delta(data2, data1)
+data1 = data[which(data$browser == "chrome" & data$crit==0), ]$fcp
+data2 = data[which(data$browser == "chrome" & data$crit==1), ]$fcp
+wilcox.test(data1, data2, paired=TRUE)
+cliff.delta(data2, data1)
+data1 = data[which(data$browser == "chrome" & data$crit==0), ]$e
+data2 = data[which(data$browser == "chrome" & data$crit==1), ]$e
+wilcox.test(data1, data2, paired=TRUE)
+cliff.delta(data2, data1)
+
+data1 = data[which(data$browser == "firefox" & data$crit==0), ]$lt
+data2 = data[which(data$browser == "firefox" & data$crit==1), ]$lt
+wilcox.test(data1, data2, paired=TRUE)
+cliff.delta(data2, data1)
+data1 = data[which(data$browser == "firefox" & data$crit==0), ]$fp
+data2 = data[which(data$browser == "firefox" & data$crit==1), ]$fp
+wilcox.test(data1, data2, paired=TRUE)
+cliff.delta(data2, data1)
+data1 = data[which(data$browser == "firefox" & data$crit==0), ]$fcp
+data2 = data[which(data$browser == "firefox" & data$crit==1), ]$fcp
+wilcox.test(data1, data2, paired=TRUE)
+cliff.delta(data2, data1)
+data1 = data[which(data$browser == "firefox" & data$crit==0), ]$e
+data2 = data[which(data$browser == "firefox" & data$crit==1), ]$e
+wilcox.test(data1, data2, paired=TRUE)
+cliff.delta(data2, data1)
+
