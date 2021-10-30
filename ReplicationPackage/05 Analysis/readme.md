@@ -5,11 +5,12 @@ These scripts can be used to prepare and statistically analyse the results from 
 ## Installation
 RStudio version 2021.09.0+351 should be installed with R version 4.1.1.
 
-The R packages plyr and ggplot2 need to be installed by running the following commands in RStudio.
+The R packages plyr, ggplot2, and effsize need to be installed by running the following commands in RStudio.
 
 ```R
 install.packages("ggplot2")
 install.packages("plyr")
+install.packages("effsize")
 ```
 
 ## Usage
