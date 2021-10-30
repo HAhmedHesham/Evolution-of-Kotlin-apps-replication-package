@@ -1,5 +1,6 @@
 rm(list=ls())
 library(ggplot2)
+library(effsize)
 
 # loading data
 data = read.table("final_data.txt", header = TRUE, sep = ",", dec = ".")
