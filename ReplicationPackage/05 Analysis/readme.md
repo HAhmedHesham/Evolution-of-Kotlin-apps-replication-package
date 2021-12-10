@@ -11,6 +11,8 @@ The R packages plyr, ggplot2, and effsize need to be installed by running the fo
 install.packages("ggplot2")
 install.packages("plyr")
 install.packages("effsize")
+install.packages("tidyr")
+install.packages("gridExtra")
 ```
 
 ## Usage
