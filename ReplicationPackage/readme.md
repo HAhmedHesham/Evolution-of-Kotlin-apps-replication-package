@@ -1,8 +1,7 @@
 # Replication package
-###### Vrije Universiteit Amsterdam - Lucas de Geus, Reinier van der Gronden, Tim Pelle and Kalle Janssen
 
 ### About
-This project was carried out for the course GreenLab at the Vrije Universiteit Amsterdam. The purpose was to test the impact of Critical CSS on android browsing performance and energy consumption. 
+The purpose is to test the impact of Critical CSS on android browsing performance and energy consumption. 
 
 A more detailed explanation of the problem and overview of results can be found in the paper (paper.pdf).
 
