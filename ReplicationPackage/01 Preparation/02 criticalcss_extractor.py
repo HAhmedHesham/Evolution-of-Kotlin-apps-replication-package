@@ -15,8 +15,6 @@ import subprocess
 from subprocess import DEVNULL, STDOUT
 from pathlib import Path
 
-
-__author__ = "Lucas de Geus, Kalle Janssen, Tim Pelle, Reinier van der Gronden"
 __version__ = "1.0.1"
 
 
