@@ -18,4 +18,4 @@ install.packages("gridExtra")
 ## Usage
 clean_data.R can be used to remove duplicates and transform the raw data from 04 Data Processing to usable txt files.
 
-GreenLab_statistics.R can be used to create figures and statistically analyse the collected data.
+statistics.R can be used to create figures and statistically analyse the collected data.
