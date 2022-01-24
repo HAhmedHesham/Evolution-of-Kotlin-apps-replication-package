@@ -3,8 +3,6 @@
 ### About
 The purpose is to test the impact of Critical CSS on android browsing performance and energy consumption. 
 
-A more detailed explanation of the problem and overview of results can be found in the paper (paper.pdf).
-
 ### Requirements
 Experiments were performed using a RasberryPi and Nexus6P device running on Android 6.0.1. Software requirements are listed in the designated subfolders. Besides the requirements for Android-Runner, some python packages should be installed list in requirements.txt. 
 
