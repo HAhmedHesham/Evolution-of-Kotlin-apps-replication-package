@@ -3,8 +3,8 @@ library(plyr)
 library(tidyr)
 
 # loading data
-data1 = read.table("greenlab_parsed_data_v02.txt", header = TRUE, sep = ",", dec = ".")
-data2 = read.table("greenlab_parsed_data_v03.txt", header = TRUE, sep = ",", dec = ".")
+data1 = read.table("parsed_data_v02.txt", header = TRUE, sep = ",", dec = ".")
+data2 = read.table("parsed_data_v03.txt", header = TRUE, sep = ",", dec = ".")
 
 # remove the uncompleted sites from data1 that were tested again in data2
 data1 = data1[!(data1$site %in% data2$site),]
