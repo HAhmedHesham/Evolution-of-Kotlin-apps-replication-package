@@ -31,20 +31,20 @@ get_std(data, "firefox", 1)
 
 # Box plots
 p <- ggplot(data, aes(x = crit, y=lt, group=crit)) + 
-  geom_boxplot() + xlab("Critical CSS") + ylab("Laoding time (ms)")
-p1 = p + stat_summary(fun=mean, geom="point", shape=23, size=4) + theme(text = element_text(size = 20)) + scale_x_discrete(labels=c("Not applied", "Applied"))
+  geom_boxplot() + xlab("Critical CSS") + ylab("Laoding time (ms)") + ggtitle("Loading time (ms) Critical CSS not applied and applied")
+p1 = p + stat_summary(fun=mean, geom="point", shape=23, size=4) + theme(text = element_text(size = 15)) + scale_x_discrete(labels=c("Not applied", "Applied"))
 
 p <- ggplot(data, aes(x = crit, y=fp, group=crit)) + 
   geom_boxplot() + xlab("Critical CSS") + ylab("First paint (ms)")
-p2 = p + stat_summary(fun=mean, geom="point", shape=23, size=4) + theme(text = element_text(size = 20)) + scale_x_discrete(labels=c("Not applied", "Applied"))
+p2 = p + stat_summary(fun=mean, geom="point", shape=23, size=4) + theme(text = element_text(size = 15)) + scale_x_discrete(labels=c("Not applied", "Applied"))
 
 p <- ggplot(data, aes(x = crit, y=fcp, group=crit)) + 
   geom_boxplot() + xlab("Critical CSS") + ylab("First contentful paint (ms)")
-p3 = p + stat_summary(fun=mean, geom="point", shape=23, size=4) + theme(text = element_text(size = 20)) + scale_x_discrete(labels=c("Not applied", "Applied"))
+p3 = p + stat_summary(fun=mean, geom="point", shape=23, size=4) + theme(text = element_text(size = 15)) + scale_x_discrete(labels=c("Not applied", "Applied"))
 
 p <- ggplot(data, aes(x = crit, y=e, group=crit)) + 
   geom_boxplot() + xlab("Critical CSS") + ylab("Energy (J)")
-p4 = p + stat_summary(fun=mean, geom="point", shape=23, size=4) + theme(text = element_text(size = 20)) + scale_x_discrete(labels=c("Not applied", "Applied"))
+p4 = p + stat_summary(fun=mean, geom="point", shape=23, size=4) + theme(text = element_text(size = 15)) + scale_x_discrete(labels=c("Not applied", "Applied"))
 
 grid.arrange(p1, p2, p3, p4, ncol=2)
 
