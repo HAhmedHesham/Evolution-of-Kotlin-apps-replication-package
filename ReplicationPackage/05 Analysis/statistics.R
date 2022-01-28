@@ -31,19 +31,19 @@ get_std(data, "firefox", 1)
 
 # Box plots
 p <- ggplot(data, aes(x = crit, y=lt, group=crit)) + 
-  geom_boxplot() + xlab("Critical CSS") + ylab("Laoding time (ms)") + ggtitle("Loading time (ms) Critical CSS not applied and applied")
+  geom_boxplot() + xlab("Critical CSS") + ylab("Laoding time (ms)") + ggtitle("Loading time (ms), Critical CSS not applied and applied") + theme(plot.title = element_text(size=13, hjust = 0.5, face = "bold"))
 p1 = p + stat_summary(fun=mean, geom="point", shape=23, size=4) + theme(text = element_text(size = 15)) + scale_x_discrete(labels=c("Not applied", "Applied"))
 
 p <- ggplot(data, aes(x = crit, y=fp, group=crit)) + 
-  geom_boxplot() + xlab("Critical CSS") + ylab("First paint (ms)")
+  geom_boxplot() + xlab("Critical CSS") + ylab("First paint (ms)") + ggtitle("First paint (ms), Critical CSS not applied and applied") + theme(plot.title = element_text(size=13, hjust = 0.5, face = "bold"))
 p2 = p + stat_summary(fun=mean, geom="point", shape=23, size=4) + theme(text = element_text(size = 15)) + scale_x_discrete(labels=c("Not applied", "Applied"))
 
 p <- ggplot(data, aes(x = crit, y=fcp, group=crit)) + 
-  geom_boxplot() + xlab("Critical CSS") + ylab("First contentful paint (ms)")
+  geom_boxplot() + xlab("Critical CSS") + ylab("First contentful paint (ms)") + ggtitle("First contentful paint (ms), Critical CSS not applied and applied") + theme(plot.title = element_text(size=13, hjust = 0.5, face = "bold"))
 p3 = p + stat_summary(fun=mean, geom="point", shape=23, size=4) + theme(text = element_text(size = 15)) + scale_x_discrete(labels=c("Not applied", "Applied"))
 
 p <- ggplot(data, aes(x = crit, y=e, group=crit)) + 
-  geom_boxplot() + xlab("Critical CSS") + ylab("Energy (J)")
+  geom_boxplot() + xlab("Critical CSS") + ylab("Energy (J)") + ggtitle("Energy (J), Critical CSS not applied and applied") + theme(plot.title = element_text(size=13, hjust = 0.5, face = "bold"))
 p4 = p + stat_summary(fun=mean, geom="point", shape=23, size=4) + theme(text = element_text(size = 15)) + scale_x_discrete(labels=c("Not applied", "Applied"))
 
 grid.arrange(p1, p2, p3, p4, ncol=2)
