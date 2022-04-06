@@ -1,5 +1,8 @@
-# Replication package
-This repository contains the full replication package of the study titled **On the Impact of the Critical CSS Technique on the Browser Performance and Energy Consumption in Android**
+# EASE 2022 Replication package
+This repository contains the replication package of the paper titled On the Impact of the Critical CSS Technique on the Performance
+and Energy Consumption of Mobile Browsers and published at the 25th International Conference on Evaluation and Assessment in Software Engineering (EASE 2022).
+
+The full dataset including raw data, data analysis scripts and automatization scripts produced during the study are available below.
 
 Contents of the replication package:
 - *AndroidRunnerGit*: a copy of the source code of the Android Runner framework, which we used and customized for running our experiment;
