@@ -1,4 +1,4 @@
-# EASE 2022 Replication package
+# EASE 2022 Replication Package
 This repository contains the replication package of the paper titled On the Impact of the Critical CSS Technique on the Performance
 and Energy Consumption of Mobile Browsers and published at the 25th International Conference on Evaluation and Assessment in Software Engineering (EASE 2022).
 
