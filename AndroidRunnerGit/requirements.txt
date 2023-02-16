@@ -1,4 +1,0 @@
-python-slugify
-pluginbase
-lxml
-psutil
