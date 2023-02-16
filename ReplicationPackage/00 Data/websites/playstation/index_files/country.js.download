@@ -1,1 +1,0 @@
-(function () { /*NL Netherlands Nederland Je maintiendrai lang:Dutch, West Frisian*/	var country = {'code':'nl','id':8,'defaultLangauge':'nl'};	if (!window.evidon) window.evidon = {};	if (window.evidon.notice) {window.evidon.notice.setLocation(country);}	window.evidon.location = country;})(); 

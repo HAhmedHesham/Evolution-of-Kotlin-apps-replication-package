@@ -1,1 +1,0 @@
-(window.sharedJsonP=window.sharedJsonP||[]).push([["isomorphic-fetch|2.2.1|46289"],{"47cec":function(e,s,o){o("8a5ae"),e.exports=self.fetch.bind(self)}}]);
