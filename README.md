@@ -1,11 +1,35 @@
-# EASE 2022 Replication Package
-This repository contains the replication package of the paper titled On the Impact of the Critical CSS Technique on the Performance
-and Energy Consumption of Mobile Browsers and published at the 25th International Conference on Evaluation and Assessment in Software Engineering (EASE 2022).
+# Evolution of Kotlin apps replication package
 
-The full dataset including raw data, data analysis scripts and automatization scripts produced during the study are available below.
+### About
+The purpose is to test how the energy consumption of Kotlin applications changes with time. For each selected application, a different number of releases were chosen to run the tests on. The test are recorded keystrokes and inputs used to run a specific feature of the application. After ruuning the trial, the energy(In Joules) that were consumed was collected. After collecting the data, statistical tests were performed to help interpret the results.
 
-Contents of the replication package:
-- *AndroidRunnerGit*: a copy of the source code of the Android Runner framework, which we used and customized for running our experiment;
-- *ReplicationPackage*: the folder containing all the additional Python source code we developed for the experiment, its raw data, R analysis scripts, etc.
+### Requirements
+##### Hardware:
+• Raspberry Pi 3: Debian 11, ARM Cortex-A53, 1 GB RAM <br>
+• Android Device: Nokia 6.2, Android 10, Qualcomm SDM636, 4GB RAM, eMMC 5.1 <br> 
+• Personal computer for connecting to Raspberry PI via SSH connection.<br> 
+##### Software:
+• Android Runner: A tool for launching applications and automating testing on an Android device.<br> 
+• Python v.3.9.13: Python development environment and application interpreter, used to run the Android Runner.<br> 
+• Android SDK: Set of tools to build, test, and debug apps for Android.<br> 
+• Monkeyrunner : A tool provides an API for writing programs that control an Android device or emulator from outside of Android code.<br> 
+• RStudio v.2022.07.2-576 4
 
-Each of the folders above has its own readme file providing additional details.
+
+### Reproduction
+This repository consists of subfolders that allow the replication of the project. Each subfolder contains its own readme file that provides a description on the requirements and usage. If only interested in replicating the data analysis the subfolder 01 Data and 05 Analysis are sufficient.
+<br> 
+### 01 Data
+Contains a list of 87 mobile apps that represents the initial pool of apps to choose from. Also, it contains the list after applying the inclusion and exclusion criteria. Finally, it contains the data that were collected after each trial of the experiment.
+<br> 
+### 02 Tests
+Contains the tests(recorded keystrokes) that were used on each release of each application.
+<br> 
+### 03 Source code
+Contains scripts for android-runner and the required android-runner config file.
+<br>
+### 04 Figures
+Contains the plots created after running the statistical tests
+<br> 
+### 05 Analysis
+Contains R scripts to perform statistical tests
