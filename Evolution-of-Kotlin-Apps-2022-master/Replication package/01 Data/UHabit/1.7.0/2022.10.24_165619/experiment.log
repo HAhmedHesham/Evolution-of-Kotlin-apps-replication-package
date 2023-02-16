@@ -1,0 +1,706 @@
+2022-10-24 16:56:19,045:INFO:ExperimentFactory:/home/pi/android-runner/examples/batterystats/config.json
+2022-10-24 16:56:19,091:DEBUG:AndroidRunner.Adb:Device list:
+{0: 'D0AA002279J91969581'}
+2022-10-24 16:56:19,092:INFO:Device:Setting logcat buffer size to 57344K
+2022-10-24 16:56:19,168:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "logcat -G 57344K" returned: 
+
+2022-10-24 16:56:19,194:DEBUG:PluginHandler:batterystats: Initialized
+2022-10-24 16:56:19,195:DEBUG:Python3:Imported /home/pi/android-runner/examples/batterystats/Scripts/before_experiment.py
+2022-10-24 16:56:19,196:DEBUG:Python3:Imported /home/pi/android-runner/examples/batterystats/Scripts/before_run.py
+2022-10-24 16:56:19,198:DEBUG:Python3:Imported /home/pi/android-runner/examples/batterystats/Scripts/after_launch.py
+2022-10-24 16:56:19,199:DEBUG:Python3:Imported /home/pi/android-runner/examples/batterystats/Scripts/interaction.py
+2022-10-24 16:56:19,200:DEBUG:Python3:Imported /home/pi/android-runner/examples/batterystats/Scripts/before_close.py
+2022-10-24 16:56:19,201:DEBUG:Python3:Imported /home/pi/android-runner/examples/batterystats/Scripts/after_run.py
+2022-10-24 16:56:19,202:DEBUG:Python3:Imported /home/pi/android-runner/examples/batterystats/Scripts/after_experiment.py
+2022-10-24 16:56:19,291:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.release" returned: 
+10
+
+2022-10-24 16:56:19,345:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.sdk" returned: 
+29
+
+2022-10-24 16:56:19,346:INFO:NativeExperiment:Device: nokia (D0AA002279J91969581, Android 10, API level 29)
+2022-10-24 16:56:19,347:INFO:Profilers:Loading
+2022-10-24 16:56:19,409:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.release" returned: 
+10
+
+2022-10-24 16:56:19,480:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.sdk" returned: 
+29
+
+2022-10-24 16:56:19,481:DEBUG:PluginHandler:Batterystats: nokia (D0AA002279J91969581, Android 10, API level 29): Loading configuration
+2022-10-24 16:56:19,481:INFO:Device:Default unplug
+2022-10-24 16:56:19,539:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.sdk" returned: 
+29
+
+2022-10-24 16:56:19,623:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "dumpsys battery unplug" returned: 
+
+2022-10-24 16:56:19,687:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.release" returned: 
+10
+
+2022-10-24 16:56:19,737:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.sdk" returned: 
+29
+
+2022-10-24 16:56:19,738:DEBUG:Scripts:Running hook before_experiment on device nokia (D0AA002279J91969581, Android 10, API level 29)
+args: ()
+kwargs: {}
+2022-10-24 16:56:19,753:INFO:Python3:before_experiment.py
+2022-10-24 16:56:19,755:DEBUG:Python3:before_experiment.py returned None
+2022-10-24 16:56:19,760:INFO:Profilers:Setting output
+2022-10-24 16:56:19,762:DEBUG:PluginHandler:Batterystats: Setting output: /home/pi/android-runner/examples/batterystats/output/2022.10.24_165619/data/nokia/org-isoron-uhabits/batterystats
+2022-10-24 16:56:19,763:INFO:NativeExperiment:Run 1/1 of subject "org.isoron.uhabits" on nokia
+2022-10-24 16:56:19,826:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "logcat -c" returned: 
+
+2022-10-24 16:56:19,827:INFO:NativeExperiment:Logcat cleared
+2022-10-24 16:56:19,889:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.release" returned: 
+10
+
+2022-10-24 16:56:19,950:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.sdk" returned: 
+29
+
+2022-10-24 16:56:19,951:DEBUG:Scripts:Running hook before_run on device nokia (D0AA002279J91969581, Android 10, API level 29)
+args: ()
+kwargs: {}
+2022-10-24 16:56:19,965:INFO:Python3:before_run.py
+2022-10-24 16:56:19,966:DEBUG:Python3:before_run.py returned None
+2022-10-24 16:56:20,599:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "monkey -p org.isoron.uhabits 1" returned: 
+  bash arg: -p
+  bash arg: org.isoron.uhabits
+  bash arg: 1
+args: [-p, org.isoron.uhabits, 1]
+ arg: "-p"
+ arg: "org.isoron.uhabits"
+ arg: "1"
+data="org.isoron.uhabits"
+Events injected: 1
+## Network stats: elapsed time=33ms (0ms mobile, 0ms wifi, 33ms not connected)
+
+2022-10-24 16:56:21,684:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "dumpsys activity recents | grep "Recent #0" | cut -d "=" -f2 | grep -o -p "[a-z|.]*"" returned: 
+org.isoron.uhabits
+
+
+2022-10-24 16:56:21,685:DEBUG:Device:Current activity: org.isoron.uhabits
+2022-10-24 16:56:21,745:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.release" returned: 
+10
+
+2022-10-24 16:56:21,808:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.sdk" returned: 
+29
+
+2022-10-24 16:56:21,808:DEBUG:Scripts:Running hook after_launch on device nokia (D0AA002279J91969581, Android 10, API level 29)
+args: ('D0AA002279J91969581', 'org.isoron.uhabits')
+kwargs: {}
+2022-10-24 16:56:21,821:INFO:Python3:after_launch.py
+2022-10-24 16:56:21,823:DEBUG:Python3:after_launch.py returned None
+2022-10-24 16:56:21,827:INFO:Profilers:Start profiling
+2022-10-24 16:56:21,892:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.release" returned: 
+10
+
+2022-10-24 16:56:21,942:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.sdk" returned: 
+29
+
+2022-10-24 16:56:21,943:DEBUG:PluginHandler:Batterystats: nokia (D0AA002279J91969581, Android 10, API level 29): Start profiling
+2022-10-24 16:56:22,026:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "dumpsys batterystats --reset" returned: 
+Battery stats reset.
+
+2022-10-24 16:56:22,095:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.release" returned: 
+10
+
+2022-10-24 16:56:22,152:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.sdk" returned: 
+29
+
+2022-10-24 16:56:22,153:DEBUG:Scripts:Running hook interaction on device nokia (D0AA002279J91969581, Android 10, API level 29)
+args: (<AndroidRunner.NativeExperiment.NativeExperiment object at 0x7facd0e760>,)
+kwargs: {}
+2022-10-24 16:56:22,167:INFO:Python3:interaction.py
+2022-10-24 16:56:22,262:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "dumpsys activity recents | grep "Recent #0" | cut -d "=" -f2 | grep -o -p "[a-z|.]*"" returned: 
+org.isoron.uhabits
+
+
+2022-10-24 16:56:22,263:DEBUG:Device:Current activity: org.isoron.uhabits
+2022-10-24 16:56:47,852:DEBUG:Python3:interaction.py returned None
+2022-10-24 16:57:17,887:INFO:Profilers:Stop profiling
+2022-10-24 16:57:17,982:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.release" returned: 
+10
+
+2022-10-24 16:57:18,060:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.sdk" returned: 
+29
+
+2022-10-24 16:57:18,061:DEBUG:PluginHandler:Batterystats: nokia (D0AA002279J91969581, Android 10, API level 29): Stop profiling
+2022-10-24 16:57:18,134:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "dumpsys activity recents | grep "Recent #0" | cut -d "=" -f2 | grep -o -p "[a-z|.]*"" returned: 
+org.isoron.uhabits
+
+
+2022-10-24 16:57:18,135:DEBUG:Device:Current activity: org.isoron.uhabits
+2022-10-24 16:57:18,194:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.release" returned: 
+10
+
+2022-10-24 16:57:18,275:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.sdk" returned: 
+29
+
+2022-10-24 16:57:18,277:DEBUG:Scripts:Running hook before_close on device nokia (D0AA002279J91969581, Android 10, API level 29)
+args: ('D0AA002279J91969581', 'org.isoron.uhabits')
+kwargs: {}
+2022-10-24 16:57:18,296:INFO:Python3:before_close.py
+2022-10-24 16:57:18,299:DEBUG:Python3:before_close.py returned None
+2022-10-24 16:57:18,475:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "am force-stop org.isoron.uhabits" returned: 
+
+2022-10-24 16:57:21,576:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.release" returned: 
+10
+
+2022-10-24 16:57:21,657:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.sdk" returned: 
+29
+
+2022-10-24 16:57:21,658:DEBUG:Scripts:Running hook after_run on device nokia (D0AA002279J91969581, Android 10, API level 29)
+args: ()
+kwargs: {}
+2022-10-24 16:57:21,676:INFO:Python3:after_run.py
+2022-10-24 16:57:22,264:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "input tap 600 1000" returned: 
+
+2022-10-24 16:57:22,266:DEBUG:Python3:after_run.py returned None
+2022-10-24 16:57:22,274:INFO:Profilers:Collecting results
+2022-10-24 16:57:22,361:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.release" returned: 
+10
+
+2022-10-24 16:57:22,428:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.sdk" returned: 
+29
+
+2022-10-24 16:57:22,429:DEBUG:PluginHandler:Batterystats: nokia (D0AA002279J91969581, Android 10, API level 29): Collecting data
+2022-10-24 16:57:22,513:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.sdk" returned: 
+29
+
+2022-10-24 16:57:22,648:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "logcat -f /mnt/sdcard/logcat.txt -d" returned: 
+
+2022-10-24 16:57:22,802:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "rm -f /mnt/sdcard/logcat.txt" returned: 
+
+2022-10-24 16:57:22,946:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "dumpsys batterystats --history" returned: 
+Battery History (0% used, 388 used of 4096KB, 5 strings using 314):
+                    0 (14) RESET:TIME: 2022-10-24-16-57-38
+                    0 (1) 100 status=full health=good plug=none temp=300 volt=4338 charge=3475 modemRailChargemAh=0 wifiRailChargemAh=0 +running +wake_lock +phone_scanning +screen phone_state=out +wifi_running +wifi +usb_data wifi_suppl=disconn +ble_scan
+                    0 (2) 100 top=u0a189:"org.isoron.uhabits"
+                    0 (2) 100 user=0:"0"
+                    0 (2) 100 userfg=0:"0"
+                +37ms (2) 100 stats=0:"dump"
+            +51s426ms (2) 100 +wifi_scan +job=u0a35:"com.hmdglobal.support/androidx.work.impl.background.systemjob.SystemJobService"
+            +51s516ms (2) 100 -job=u0a35:"com.hmdglobal.support/androidx.work.impl.background.systemjob.SystemJobService"
+            +54s282ms (1) 100 -wifi_scan wifi_suppl=associating
+            +54s359ms (1) 100 wifi_suppl=associated
+            +54s361ms (1) 100 wifi_suppl=4-way-handshake
+            +56s426ms (2) 100 -top=u0a189:"org.isoron.uhabits"
+            +56s426ms (2) 100 +top=u0a15:"com.android.launcher3"
+            +58s452ms (1) 100 wifi_suppl=disconn
+          +1m00s894ms (2) 100 stats=0:"dump"
+
+Total cpu time reads: 0
+Batched cpu time reads: 0
+Batching Duration (min): 3971
+All UID cpu time reads since the later of device start or stats reset: 8
+UIDs removed since the later of device start or stats reset: 1
+
+2022-10-24 16:57:23,176:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "dumpsys batterystats | grep "Computed drain:"" returned: 
+    Capacity: 3500, Computed drain: 2.64, actual drain: 0
+
+2022-10-24 16:57:23,313:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "dumpsys batterystats | grep "volt="" returned: 
+                    0 (1) 100 status=full health=good plug=none temp=300 volt=4338 charge=3475 modemRailChargemAh=0 wifiRailChargemAh=0 +running +wake_lock +phone_scanning +screen phone_state=out +wifi_running +wifi +usb_data wifi_suppl=disconn +ble_scan
+
+2022-10-24 16:57:25,627:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "cat /proc/cpuinfo | grep processor | wc -l" returned: 
+8
+
+2022-10-24 16:57:25,638:INFO:NativeExperiment:Sleeping for 3000 milliseconds
+2022-10-24 16:57:28,780:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "pm list packages" returned: 
+package:com.google.android.apps.subscriptions.red
+package:com.android.cts.priv.ctsshim
+package:com.qualcomm.qti.qms.service.telemetry
+package:com.google.android.youtube
+package:com.android.internal.display.cutout.emulation.corner
+package:com.google.android.ext.services
+package:com.android.internal.display.cutout.emulation.double
+package:com.android.providers.telephony
+package:com.android.dynsystem
+package:com.hmdglobal.app.puredisplay
+package:com.google.android.googlequicksearchbox
+package:com.android.providers.calendar
+package:com.google.android.apps.googleassistant
+package:com.android.providers.media
+package:com.hmdglobal.app.swfp
+package:com.qti.service.colorservice
+package:com.android.theme.icon.square
+package:com.google.android.onetimeinitializer
+package:com.google.android.ext.shared
+package:com.ichi2.anki
+package:com.android.internal.systemui.navbar.gestural_wide_back
+package:com.qualcomm.qti.simcontacts
+package:com.android.wallpapercropper
+package:com.android.theme.color.cinnamon
+package:com.android.protips
+package:com.android.theme.icon_pack.rounded.systemui
+package:com.android.documentsui
+package:com.android.externalstorage
+package:com.qualcomm.uimremoteclient
+package:com.android.htmlviewer
+package:com.qualcomm.qti.uceShimService
+package:com.android.companiondevicemanager
+package:com.hmdglobal.app.activation
+package:com.android.mms.service
+package:com.wos.face.service
+package:com.qualcomm.qti.qms.service.connectionsecurity
+package:com.android.providers.downloads
+package:com.qualcomm.qtil.aptxalsOverlay
+package:org.isoron.uhabits
+package:com.google.android.apps.messaging
+package:com.android.networkstack.inprocess
+package:com.android.partnerbrowsercustomizations.example
+package:com.android.theme.icon_pack.rounded.android
+package:vendor.qti.hardware.cacert.server
+package:com.qualcomm.qti.callenhancement
+package:com.qualcomm.qti.telephonyservice
+package:com.android.theme.icon_pack.circular.themepicker
+package:com.google.android.overlay.gmsgsaconfig
+package:vendor.qti.iwlan
+package:com.google.android.configupdater
+package:com.qualcomm.qti.optinoverlay
+package:com.google.android.overlay.modules.permissioncontroller
+package:com.qualcomm.uimremoteserver
+package:com.qti.confuridialer
+package:com.google.ar.core
+package:com.google.ar.lens
+package:com.android.providers.downloads.ui
+package:com.android.vending
+package:com.android.pacprocessor
+package:com.android.simappdialog
+package:com.android.internal.display.cutout.emulation.tall
+package:com.android.certinstaller
+package:com.android.theme.color.black
+package:com.android.carrierconfig
+package:com.google.android.marvin.talkback
+package:com.android.theme.color.green
+package:com.hmdglobal.app.customizationclient
+package:com.android.theme.color.ocean
+package:com.android.theme.color.space
+package:org.codeaurora.bluetooth
+package:com.android.internal.systemui.navbar.threebutton
+package:com.google.android.apps.work.oobconfig
+package:com.qti.qualcomm.datastatusnotification
+package:com.hmdglobal.app.fmradio
+package:android
+package:com.qualcomm.qti.callfeaturessetting
+package:com.qualcomm.wfd.service
+package:com.qualcomm.qtil.aptxals
+package:com.android.theme.icon_pack.rounded.launcher
+package:com.qti.qualcomm.deviceinfo
+package:com.android.egg
+package:com.android.mtp
+package:com.android.nfc
+package:com.android.ons
+package:com.android.stk
+package:com.android.launcher3
+package:com.android.backupconfirm
+package:com.vrem.wifianalyzer
+package:com.google.android.deskclock
+package:com.android.internal.systemui.navbar.twobutton
+package:org.codeaurora.ims
+package:com.android.statementservice
+package:com.android.hotspot2
+package:com.google.android.as
+package:com.google.android.gm
+package:com.hmdglobal.app.myphonehelper
+package:com.android.settings.intelligence
+package:com.android.internal.systemui.navbar.gestural_extra_wide_back
+package:com.google.android.permissioncontroller
+package:com.google.android.setupwizard
+package:com.qualcomm.qcrilmsgtunnel
+package:com.android.providers.settings
+package:com.android.sharedstoragebackup
+package:com.android.printspooler
+package:com.android.theme.icon_pack.filled.settings
+package:com.android.dreams.basic
+package:com.google.android.overlay.modules.ext.services
+package:com.android.se
+package:com.android.inputdevices
+package:com.qualcomm.qti.biometrics.fingerprint.service
+package:com.google.android.apps.wellbeing
+package:com.google.android.dialer
+package:com.android.bips
+package:com.qti.dpmserviceapp
+package:com.google.android.apps.nbu.files
+package:android.autoinstalls.config.hmdglobal.starlord
+package:com.android.theme.icon_pack.circular.settings
+package:com.qti.xdivert
+package:com.android.musicfx
+package:com.android.settings.overlay.common
+package:com.hmdglobal.app.setupwizardext
+package:com.google.android.overlay.gmsconfig
+package:com.google.android.apps.docs
+package:com.google.android.apps.maps
+package:com.google.android.modulemetadata
+package:com.android.cellbroadcastreceiver
+package:com.google.android.webview
+package:com.android.theme.icon.teardrop
+package:com.qualcomm.qti.simsettings
+package:com.google.android.contacts
+package:com.android.server.telecom
+package:com.google.android.syncadapters.contacts
+package:com.android.keychain
+package:com.mytechia.robobo.app.ros.robobodeveloper
+package:com.android.chrome
+package:com.android.theme.icon_pack.filled.systemui
+package:com.google.android.packageinstaller
+package:com.google.android.gms
+package:com.google.android.gsf
+package:com.google.android.ims
+package:com.google.android.tag
+package:com.google.android.tts
+package:com.google.android.gmsintegration
+package:com.qualcomm.qti.qtisystemservice
+package:com.android.calllogbackup
+package:com.google.android.partnersetup
+package:com.android.localtransport
+package:com.android.carrierdefaultapp
+package:com.hmdglobal.app.camera
+package:com.dsi.ant.server
+package:com.qualcomm.qti.remoteSimlockAuth
+package:com.android.theme.font.notoserifsource
+package:com.android.theme.icon_pack.filled.android
+package:com.android.proxyhandler
+package:com.qualcomm.qti.workloadclassifier
+package:com.android.theme.icon_pack.circular.systemui
+package:com.google.android.overlay.modules.permissioncontroller.forframework
+package:com.example.simplebutton
+package:com.google.android.feedback
+package:com.google.android.printservice.recommendation
+package:com.google.android.apps.photos
+package:com.google.android.calendar
+package:com.android.managedprovisioning
+package:com.fsck.k9
+package:com.android.providers.partnerbookmarks
+package:com.android.smspush
+package:com.trustonic.teeservice
+package:com.android.wallpaper.livepicker
+package:com.hmdglobal.app.midtest
+package:com.android.theme.icon.squircle
+package:com.android.storagemanager
+package:com.android.bookmarkprovider
+package:com.android.settings
+package:com.qualcomm.qti.cne
+package:com.qualcomm.qti.ims
+package:com.android.theme.icon_pack.filled.launcher
+package:com.android.networkstack.permissionconfig
+package:com.hmdglobal.support
+package:com.google.android.projection.gearhead
+package:com.qualcomm.location
+package:com.qualcomm.simcontacts
+package:com.google.android.apps.turbo
+package:com.android.cts.ctsshim
+package:com.android.theme.icon_pack.circular.launcher
+package:com.qualcomm.qti.services.secureui
+package:com.hmdglobal.enterprise.api
+package:com.android.vpndialogs
+package:com.qualcomm.location.XT
+package:com.google.android.apps.wallpaper
+package:com.android.phone
+package:com.android.shell
+package:com.android.theme.icon_pack.filled.themepicker
+package:com.android.wallpaperbackup
+package:com.android.providers.blockednumber
+package:com.android.providers.userdictionary
+package:com.android.emergency
+package:com.qualcomm.qti.seccamservice
+package:com.qualcomm.qti.qmmi
+package:com.google.android.gms.location.history
+package:com.android.internal.systemui.navbar.gestural
+package:com.android.location.fused
+package:com.hmdglobal.app.midfm
+package:com.android.theme.color.orchid
+package:com.hmdglobal.app.omacp
+package:com.android.systemui
+package:com.android.theme.color.purple
+package:com.hmdglobal.app.sarauth
+package:com.android.bluetoothmidiservice
+package:com.qualcomm.qti.confdialer
+package:com.qualcomm.qti.poweroffalarm
+package:com.qualcomm.qti.networksetting
+package:com.hmdglobal.app.bokeheditor
+package:com.quicinc.trepn
+package:com.android.traceur
+package:com.android.apppredictionservice
+package:com.qualcomm.qti.qms.service.trustzoneaccess
+package:com.hmdglobal.app.legalinformation
+package:com.google.android.apps.magazines
+package:com.android.bluetooth
+package:com.qualcomm.timeservice
+package:com.android.wallpaperpicker
+package:com.android.providers.contacts
+package:com.android.captiveportallogin
+package:com.hmdglobal.app.cdfinger
+package:com.android.theme.icon.roundedrect
+package:com.android.internal.systemui.navbar.gestural_narrow_back
+package:com.android.theme.icon_pack.rounded.settings
+package:com.google.android.inputmethod.latin
+package:com.android.theme.icon_pack.circular.android
+package:com.google.android.apps.restore
+package:com.google.android.overlay.searchlauncherconfig
+
+2022-10-24 16:57:28,783:INFO:Profilers:Start subject aggregation
+2022-10-24 16:57:28,783:DEBUG:PluginHandler:%s: aggregating subject results
+2022-10-24 16:57:28,788:INFO:NativeExperiment:Experiment completed, start cleanup
+2022-10-24 16:57:28,873:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.release" returned: 
+10
+
+2022-10-24 16:57:28,954:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.sdk" returned: 
+29
+
+2022-10-24 16:57:28,956:DEBUG:Scripts:Running hook after_experiment on device nokia (D0AA002279J91969581, Android 10, API level 29)
+args: ()
+kwargs: {}
+2022-10-24 16:57:28,976:INFO:Python3:after_experiment.py
+2022-10-24 16:57:29,132:DEBUG:Python3:after_experiment.py returned None
+2022-10-24 16:57:29,255:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "dumpsys battery reset" returned: 
+
+2022-10-24 16:57:29,257:INFO:Profilers:Stop profiling
+2022-10-24 16:57:29,330:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.release" returned: 
+10
+
+2022-10-24 16:57:29,400:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.sdk" returned: 
+29
+
+2022-10-24 16:57:29,401:DEBUG:PluginHandler:Batterystats: nokia (D0AA002279J91969581, Android 10, API level 29): Stop profiling
+2022-10-24 16:57:29,402:INFO:Profilers:Unloading
+2022-10-24 16:57:29,470:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.release" returned: 
+10
+
+2022-10-24 16:57:29,553:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "getprop ro.build.version.sdk" returned: 
+29
+
+2022-10-24 16:57:29,554:DEBUG:PluginHandler:Batterystats: nokia (D0AA002279J91969581, Android 10, API level 29): Cleanup
+2022-10-24 16:57:29,685:DEBUG:AndroidRunner.Adb:D0AA002279J91969581: "pm list packages" returned: 
+package:com.google.android.apps.subscriptions.red
+package:com.android.cts.priv.ctsshim
+package:com.qualcomm.qti.qms.service.telemetry
+package:com.google.android.youtube
+package:com.android.internal.display.cutout.emulation.corner
+package:com.google.android.ext.services
+package:com.android.internal.display.cutout.emulation.double
+package:com.android.providers.telephony
+package:com.android.dynsystem
+package:com.hmdglobal.app.puredisplay
+package:com.google.android.googlequicksearchbox
+package:com.android.providers.calendar
+package:com.google.android.apps.googleassistant
+package:com.android.providers.media
+package:com.hmdglobal.app.swfp
+package:com.qti.service.colorservice
+package:com.android.theme.icon.square
+package:com.google.android.onetimeinitializer
+package:com.google.android.ext.shared
+package:com.ichi2.anki
+package:com.android.internal.systemui.navbar.gestural_wide_back
+package:com.qualcomm.qti.simcontacts
+package:com.android.wallpapercropper
+package:com.android.theme.color.cinnamon
+package:com.android.protips
+package:com.android.theme.icon_pack.rounded.systemui
+package:com.android.documentsui
+package:com.android.externalstorage
+package:com.qualcomm.uimremoteclient
+package:com.android.htmlviewer
+package:com.qualcomm.qti.uceShimService
+package:com.android.companiondevicemanager
+package:com.hmdglobal.app.activation
+package:com.android.mms.service
+package:com.wos.face.service
+package:com.qualcomm.qti.qms.service.connectionsecurity
+package:com.android.providers.downloads
+package:com.qualcomm.qtil.aptxalsOverlay
+package:org.isoron.uhabits
+package:com.google.android.apps.messaging
+package:com.android.networkstack.inprocess
+package:com.android.partnerbrowsercustomizations.example
+package:com.android.theme.icon_pack.rounded.android
+package:vendor.qti.hardware.cacert.server
+package:com.qualcomm.qti.callenhancement
+package:com.qualcomm.qti.telephonyservice
+package:com.android.theme.icon_pack.circular.themepicker
+package:com.google.android.overlay.gmsgsaconfig
+package:vendor.qti.iwlan
+package:com.google.android.configupdater
+package:com.qualcomm.qti.optinoverlay
+package:com.google.android.overlay.modules.permissioncontroller
+package:com.qualcomm.uimremoteserver
+package:com.qti.confuridialer
+package:com.google.ar.core
+package:com.google.ar.lens
+package:com.android.providers.downloads.ui
+package:com.android.vending
+package:com.android.pacprocessor
+package:com.android.simappdialog
+package:com.android.internal.display.cutout.emulation.tall
+package:com.android.certinstaller
+package:com.android.theme.color.black
+package:com.android.carrierconfig
+package:com.google.android.marvin.talkback
+package:com.android.theme.color.green
+package:com.hmdglobal.app.customizationclient
+package:com.android.theme.color.ocean
+package:com.android.theme.color.space
+package:org.codeaurora.bluetooth
+package:com.android.internal.systemui.navbar.threebutton
+package:com.google.android.apps.work.oobconfig
+package:com.qti.qualcomm.datastatusnotification
+package:com.hmdglobal.app.fmradio
+package:android
+package:com.qualcomm.qti.callfeaturessetting
+package:com.qualcomm.wfd.service
+package:com.qualcomm.qtil.aptxals
+package:com.android.theme.icon_pack.rounded.launcher
+package:com.qti.qualcomm.deviceinfo
+package:com.android.egg
+package:com.android.mtp
+package:com.android.nfc
+package:com.android.ons
+package:com.android.stk
+package:com.android.launcher3
+package:com.android.backupconfirm
+package:com.vrem.wifianalyzer
+package:com.google.android.deskclock
+package:com.android.internal.systemui.navbar.twobutton
+package:org.codeaurora.ims
+package:com.android.statementservice
+package:com.android.hotspot2
+package:com.google.android.as
+package:com.google.android.gm
+package:com.hmdglobal.app.myphonehelper
+package:com.android.settings.intelligence
+package:com.android.internal.systemui.navbar.gestural_extra_wide_back
+package:com.google.android.permissioncontroller
+package:com.google.android.setupwizard
+package:com.qualcomm.qcrilmsgtunnel
+package:com.android.providers.settings
+package:com.android.sharedstoragebackup
+package:com.android.printspooler
+package:com.android.theme.icon_pack.filled.settings
+package:com.android.dreams.basic
+package:com.google.android.overlay.modules.ext.services
+package:com.android.se
+package:com.android.inputdevices
+package:com.qualcomm.qti.biometrics.fingerprint.service
+package:com.google.android.apps.wellbeing
+package:com.google.android.dialer
+package:com.android.bips
+package:com.qti.dpmserviceapp
+package:com.google.android.apps.nbu.files
+package:android.autoinstalls.config.hmdglobal.starlord
+package:com.android.theme.icon_pack.circular.settings
+package:com.qti.xdivert
+package:com.android.musicfx
+package:com.android.settings.overlay.common
+package:com.hmdglobal.app.setupwizardext
+package:com.google.android.overlay.gmsconfig
+package:com.google.android.apps.docs
+package:com.google.android.apps.maps
+package:com.google.android.modulemetadata
+package:com.android.cellbroadcastreceiver
+package:com.google.android.webview
+package:com.android.theme.icon.teardrop
+package:com.qualcomm.qti.simsettings
+package:com.google.android.contacts
+package:com.android.server.telecom
+package:com.google.android.syncadapters.contacts
+package:com.android.keychain
+package:com.mytechia.robobo.app.ros.robobodeveloper
+package:com.android.chrome
+package:com.android.theme.icon_pack.filled.systemui
+package:com.google.android.packageinstaller
+package:com.google.android.gms
+package:com.google.android.gsf
+package:com.google.android.ims
+package:com.google.android.tag
+package:com.google.android.tts
+package:com.google.android.gmsintegration
+package:com.qualcomm.qti.qtisystemservice
+package:com.android.calllogbackup
+package:com.google.android.partnersetup
+package:com.android.localtransport
+package:com.android.carrierdefaultapp
+package:com.hmdglobal.app.camera
+package:com.dsi.ant.server
+package:com.qualcomm.qti.remoteSimlockAuth
+package:com.android.theme.font.notoserifsource
+package:com.android.theme.icon_pack.filled.android
+package:com.android.proxyhandler
+package:com.qualcomm.qti.workloadclassifier
+package:com.android.theme.icon_pack.circular.systemui
+package:com.google.android.overlay.modules.permissioncontroller.forframework
+package:com.example.simplebutton
+package:com.google.android.feedback
+package:com.google.android.printservice.recommendation
+package:com.google.android.apps.photos
+package:com.google.android.calendar
+package:com.android.managedprovisioning
+package:com.fsck.k9
+package:com.android.providers.partnerbookmarks
+package:com.android.smspush
+package:com.trustonic.teeservice
+package:com.android.wallpaper.livepicker
+package:com.hmdglobal.app.midtest
+package:com.android.theme.icon.squircle
+package:com.android.storagemanager
+package:com.android.bookmarkprovider
+package:com.android.settings
+package:com.qualcomm.qti.cne
+package:com.qualcomm.qti.ims
+package:com.android.theme.icon_pack.filled.launcher
+package:com.android.networkstack.permissionconfig
+package:com.hmdglobal.support
+package:com.google.android.projection.gearhead
+package:com.qualcomm.location
+package:com.qualcomm.simcontacts
+package:com.google.android.apps.turbo
+package:com.android.cts.ctsshim
+package:com.android.theme.icon_pack.circular.launcher
+package:com.qualcomm.qti.services.secureui
+package:com.hmdglobal.enterprise.api
+package:com.android.vpndialogs
+package:com.qualcomm.location.XT
+package:com.google.android.apps.wallpaper
+package:com.android.phone
+package:com.android.shell
+package:com.android.theme.icon_pack.filled.themepicker
+package:com.android.wallpaperbackup
+package:com.android.providers.blockednumber
+package:com.android.providers.userdictionary
+package:com.android.emergency
+package:com.qualcomm.qti.seccamservice
+package:com.qualcomm.qti.qmmi
+package:com.google.android.gms.location.history
+package:com.android.internal.systemui.navbar.gestural
+package:com.android.location.fused
+package:com.hmdglobal.app.midfm
+package:com.android.theme.color.orchid
+package:com.hmdglobal.app.omacp
+package:com.android.systemui
+package:com.android.theme.color.purple
+package:com.hmdglobal.app.sarauth
+package:com.android.bluetoothmidiservice
+package:com.qualcomm.qti.confdialer
+package:com.qualcomm.qti.poweroffalarm
+package:com.qualcomm.qti.networksetting
+package:com.hmdglobal.app.bokeheditor
+package:com.quicinc.trepn
+package:com.android.traceur
+package:com.android.apppredictionservice
+package:com.qualcomm.qti.qms.service.trustzoneaccess
+package:com.hmdglobal.app.legalinformation
+package:com.google.android.apps.magazines
+package:com.android.bluetooth
+package:com.qualcomm.timeservice
+package:com.android.wallpaperpicker
+package:com.android.providers.contacts
+package:com.android.captiveportallogin
+package:com.hmdglobal.app.cdfinger
+package:com.android.theme.icon.roundedrect
+package:com.android.internal.systemui.navbar.gestural_narrow_back
+package:com.android.theme.icon_pack.rounded.settings
+package:com.google.android.inputmethod.latin
+package:com.android.theme.icon_pack.circular.android
+package:com.google.android.apps.restore
+package:com.google.android.overlay.searchlauncherconfig
+
+2022-10-24 16:57:29,688:INFO:Profilers:Start final aggregation
+2022-10-24 16:57:29,689:DEBUG:PluginHandler:%s: aggregating results

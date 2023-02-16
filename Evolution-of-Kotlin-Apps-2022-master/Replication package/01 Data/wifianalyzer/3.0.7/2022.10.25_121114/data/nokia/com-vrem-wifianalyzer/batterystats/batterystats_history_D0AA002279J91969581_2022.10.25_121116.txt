@@ -1,0 +1,32 @@
+Battery History (0% used, 612 used of 4096KB, 5 strings using 194):
+                    0 (14) RESET:TIME: 2022-10-25-12-12-33
+                    0 (1) 100 status=full health=good plug=none temp=300 volt=4367 charge=3497 modemRailChargemAh=0 wifiRailChargemAh=0 +running +wake_lock +wifi_scan +phone_scanning +screen phone_state=out +wifi_running +wifi +usb_data wifi_suppl=disconn +ble_scan
+                    0 (2) 100 top=u0a207:"com.vrem.wifianalyzer"
+                    0 (2) 100 user=0:"0"
+                    0 (2) 100 userfg=0:"0"
+                +20ms (2) 100 stats=0:"wakelock-change"
+             +1s832ms (1) 100 -wifi_scan wifi_suppl=associating
+             +1s912ms (1) 100 wifi_suppl=associated
+             +1s913ms (1) 100 wifi_suppl=4-way-handshake
+             +4s252ms (1) 100 +wifi_scan
+             +4s253ms (1) 100 -wifi_scan
+             +5s989ms (1) 100 wifi_suppl=disconn
+             +9s280ms (1) 100 +wifi_scan
+            +12s127ms (1) 100 -wifi_scan wifi_suppl=associating
+            +12s219ms (1) 100 wifi_suppl=associated
+            +12s222ms (1) 100 wifi_suppl=4-way-handshake
+            +16s285ms (1) 100 wifi_suppl=disconn
+            +48s223ms (1) 100 +wifi_scan
+            +51s057ms (1) 100 -wifi_scan wifi_suppl=associating
+            +51s133ms (1) 100 wifi_suppl=associated
+            +51s134ms (1) 100 wifi_suppl=4-way-handshake
+            +55s213ms (1) 100 wifi_suppl=disconn
+          +1m48s516ms (2) 100 -top=u0a207:"com.vrem.wifianalyzer"
+          +1m48s516ms (2) 100 +top=u0a15:"com.android.launcher3"
+          +1m53s049ms (2) 100 stats=0:"dump"
+
+Total cpu time reads: 0
+Batched cpu time reads: 0
+Batching Duration (min): 4268
+All UID cpu time reads since the later of device start or stats reset: 8
+UIDs removed since the later of device start or stats reset: 0
